@@ -1,0 +1,2074 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (1.0+r72)"
+   sodipodi:docname="QRcode_SP — 1.svg"
+   id="svg560"
+   version="1.1"
+   data-reactroot=""
+   fill="white"
+   viewBox="-6.6 -6.6 46.2 46.2"
+   height="100%"
+   width="100%"
+   class="Qr-item-svg">
+  <metadata
+     id="metadata566">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs564" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg560"
+     inkscape:window-maximized="1"
+     inkscape:window-y="25"
+     inkscape:window-x="0"
+     inkscape:cy="23.991947"
+     inkscape:cx="26.169063"
+     inkscape:zoom="8.3414112"
+     showgrid="false"
+     id="namedview562"
+     inkscape:window-height="738"
+     inkscape:window-width="1280"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     transform="matrix(1.375524,0,0,1.375524,-6.243716,-6.0125153)"
+     id="g847">
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="21.15"
+       y="0.15000001"
+       id="rect2" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="10.15"
+       y="1.15"
+       id="rect4" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="18.15"
+       y="1.15"
+       id="rect6" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="19.15"
+       y="2.1500001"
+       id="rect8" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="23.15"
+       y="2.1500001"
+       id="rect10" />
+    <rect
+       width="2.7"
+       height="2.7"
+       fill="#0b2d97"
+       x="2.1500001"
+       y="2.1500001"
+       id="rect12" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#0b2d97"
+       x="0.15000001"
+       y="2.1500001"
+       id="rect14" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#0b2d97"
+       x="6.1500001"
+       y="2.1500001"
+       id="rect16" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#0b2d97"
+       x="2.1500001"
+       y="0.15000001"
+       id="rect18" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#0b2d97"
+       x="2.1500001"
+       y="6.1500001"
+       id="rect20" />
+    <rect
+       width="2.7"
+       height="2.7"
+       fill="#0b2d97"
+       x="28.15"
+       y="2.1500001"
+       id="rect22" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#0b2d97"
+       x="26.15"
+       y="2.1500001"
+       id="rect24" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#0b2d97"
+       x="32.150002"
+       y="2.1500001"
+       id="rect26" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#0b2d97"
+       x="28.15"
+       y="0.15000001"
+       id="rect28" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#0b2d97"
+       x="28.15"
+       y="6.1500001"
+       id="rect30" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="8.1499996"
+       y="4.1500001"
+       id="rect32" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="13.15"
+       y="4.1500001"
+       id="rect34" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="17.15"
+       y="4.1500001"
+       id="rect36" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="20.15"
+       y="4.1500001"
+       id="rect38" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="11.15"
+       y="5.1500001"
+       id="rect40" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="15.15"
+       y="5.1500001"
+       id="rect42" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="17.15"
+       y="5.1500001"
+       id="rect44" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="12.15"
+       y="6.1500001"
+       id="rect46" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="20.15"
+       y="6.1500001"
+       id="rect48" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="24.15"
+       y="6.1500001"
+       id="rect50" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="0.15000001"
+       y="8.1499996"
+       id="rect52" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="13.15"
+       y="8.1499996"
+       id="rect54" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="19.15"
+       y="8.1499996"
+       id="rect56" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="21.15"
+       y="8.1499996"
+       id="rect58" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="28.15"
+       y="8.1499996"
+       id="rect60" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="32.150002"
+       y="8.1499996"
+       id="rect62" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="0.15000001"
+       y="9.1499996"
+       id="rect64" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="3.1500001"
+       y="9.1499996"
+       id="rect66" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="13.15"
+       y="9.1499996"
+       id="rect68" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="1.15"
+       y="10.15"
+       id="rect70" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="6.1500001"
+       y="10.15"
+       id="rect72" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="0.15000001"
+       y="12.15"
+       id="rect74" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="14.15"
+       y="12.15"
+       id="rect76" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="18.15"
+       y="12.15"
+       id="rect78" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="22.15"
+       y="12.15"
+       id="rect80" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="26.15"
+       y="12.15"
+       id="rect82" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="11.15"
+       y="13.15"
+       id="rect84" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="13.15"
+       y="13.15"
+       id="rect86" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="15.15"
+       y="13.15"
+       id="rect88" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="24.15"
+       y="13.15"
+       id="rect90" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="27.15"
+       y="13.15"
+       id="rect92" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="30.15"
+       y="13.15"
+       id="rect94" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="10.15"
+       y="14.15"
+       id="rect96" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="27.15"
+       y="14.15"
+       id="rect98" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="29.15"
+       y="14.15"
+       id="rect100" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="32.150002"
+       y="14.15"
+       id="rect102" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="0.15000001"
+       y="15.15"
+       id="rect104" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="9.1499996"
+       y="15.15"
+       id="rect106" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="12.15"
+       y="15.15"
+       id="rect108" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="0.15000001"
+       y="16.15"
+       id="rect110" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="3.1500001"
+       y="16.15"
+       id="rect112" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="6.1500001"
+       y="16.15"
+       id="rect114" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="12.15"
+       y="16.15"
+       id="rect116" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="16.15"
+       y="16.15"
+       id="rect118" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="25.15"
+       y="16.15"
+       id="rect120" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="15.15"
+       y="17.15"
+       id="rect122" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="1.15"
+       y="18.15"
+       id="rect124" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="8.1499996"
+       y="18.15"
+       id="rect126" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="10.15"
+       y="18.15"
+       id="rect128" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="14.15"
+       y="18.15"
+       id="rect130" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="20.15"
+       y="18.15"
+       id="rect132" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="22.15"
+       y="18.15"
+       id="rect134" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="26.15"
+       y="18.15"
+       id="rect136" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="1.15"
+       y="19.15"
+       id="rect138" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="6.1500001"
+       y="20.15"
+       id="rect140" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="20.15"
+       y="20.15"
+       id="rect142" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="26.15"
+       y="20.15"
+       id="rect144" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="30.15"
+       y="20.15"
+       id="rect146" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="15.15"
+       y="21.15"
+       id="rect148" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="25.15"
+       y="21.15"
+       id="rect150" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="31.15"
+       y="21.15"
+       id="rect152" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="6.1500001"
+       y="22.15"
+       id="rect154" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="17.15"
+       y="22.15"
+       id="rect156" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="21.15"
+       y="22.15"
+       id="rect158" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="31.15"
+       y="22.15"
+       id="rect160" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="0.15000001"
+       y="23.15"
+       id="rect162" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="10.15"
+       y="23.15"
+       id="rect164" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="10.15"
+       y="24.15"
+       id="rect166" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="13.15"
+       y="24.15"
+       id="rect168" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="15.15"
+       y="24.15"
+       id="rect170" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="11.15"
+       y="25.15"
+       id="rect172" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="14.15"
+       y="25.15"
+       id="rect174" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="23.15"
+       y="25.15"
+       id="rect176" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="32.150002"
+       y="25.15"
+       id="rect178" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="18.15"
+       y="26.15"
+       id="rect180" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="20.15"
+       y="26.15"
+       id="rect182" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="26.15"
+       y="26.15"
+       id="rect184" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="9.1499996"
+       y="27.15"
+       id="rect186" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="13.15"
+       y="27.15"
+       id="rect188" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="15.15"
+       y="27.15"
+       id="rect190" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="31.15"
+       y="27.15"
+       id="rect192" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="12.15"
+       y="28.15"
+       id="rect194" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="14.15"
+       y="28.15"
+       id="rect196" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="16.15"
+       y="28.15"
+       id="rect198" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="20.15"
+       y="28.15"
+       id="rect200" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="23.15"
+       y="28.15"
+       id="rect202" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="29.15"
+       y="28.15"
+       id="rect204" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="32.150002"
+       y="28.15"
+       id="rect206" />
+    <rect
+       width="2.7"
+       height="2.7"
+       fill="#0b2d97"
+       x="2.1500001"
+       y="28.15"
+       id="rect208" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#0b2d97"
+       x="0.15000001"
+       y="28.15"
+       id="rect210" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#0b2d97"
+       x="6.1500001"
+       y="28.15"
+       id="rect212" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#0b2d97"
+       x="2.1500001"
+       y="26.15"
+       id="rect214" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#0b2d97"
+       x="2.1500001"
+       y="32.150002"
+       id="rect216" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="10.15"
+       y="29.15"
+       id="rect218" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="18.15"
+       y="29.15"
+       id="rect220" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="16.15"
+       y="30.15"
+       id="rect222" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="21.15"
+       y="30.15"
+       id="rect224" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="25.15"
+       y="30.15"
+       id="rect226" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="29.15"
+       y="30.15"
+       id="rect228" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="14.15"
+       y="31.15"
+       id="rect230" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="16.15"
+       y="31.15"
+       id="rect232" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="27.15"
+       y="31.15"
+       id="rect234" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="29.15"
+       y="31.15"
+       id="rect236" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="8.1499996"
+       y="32.150002"
+       id="rect238" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="11.15"
+       y="32.150002"
+       id="rect240" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="23.15"
+       y="32.150002"
+       id="rect242" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="28.15"
+       y="32.150002"
+       id="rect244" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#f6b506"
+       x="32.150002"
+       y="32.150002"
+       id="rect246" />
+    <line
+       x1="13.247487"
+       y1="0.24748737"
+       x2="14.752513"
+       y2="1.7525126"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line248" />
+    <line
+       x1="14.752513"
+       y1="0.24748737"
+       x2="13.247487"
+       y2="1.7525126"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line250" />
+    <line
+       x1="19.247488"
+       y1="0.24748737"
+       x2="20.752512"
+       y2="1.7525126"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line252" />
+    <line
+       x1="20.752512"
+       y1="0.24748737"
+       x2="19.247488"
+       y2="1.7525126"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line254" />
+    <line
+       x1="16.247488"
+       y1="6.2474875"
+       x2="18.752512"
+       y2="8.7525129"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line256" />
+    <line
+       x1="18.752512"
+       y1="6.2474875"
+       x2="16.247488"
+       y2="8.7525129"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line258" />
+    <line
+       x1="29.247488"
+       y1="9.2474871"
+       x2="30.752512"
+       y2="10.752513"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line260" />
+    <line
+       x1="30.752512"
+       y1="9.2474871"
+       x2="29.247488"
+       y2="10.752513"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line262" />
+    <line
+       x1="4.2474875"
+       y1="10.247487"
+       x2="5.7525125"
+       y2="11.752513"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line264" />
+    <line
+       x1="5.7525125"
+       y1="10.247487"
+       x2="4.2474875"
+       y2="11.752513"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line266" />
+    <line
+       x1="8.2474871"
+       y1="13.247487"
+       x2="10.752513"
+       y2="15.752513"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line268" />
+    <line
+       x1="10.752513"
+       y1="13.247487"
+       x2="8.2474871"
+       y2="15.752513"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line270" />
+    <line
+       x1="3.2474873"
+       y1="15.247487"
+       x2="5.7525125"
+       y2="17.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line272" />
+    <line
+       x1="5.7525125"
+       y1="15.247487"
+       x2="3.2474873"
+       y2="17.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line274" />
+    <line
+       x1="15.247487"
+       y1="16.247488"
+       x2="17.752512"
+       y2="18.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line276" />
+    <line
+       x1="17.752512"
+       y1="16.247488"
+       x2="15.247487"
+       y2="18.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line278" />
+    <line
+       x1="31.247488"
+       y1="16.247488"
+       x2="32.752514"
+       y2="17.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line280" />
+    <line
+       x1="32.752514"
+       y1="16.247488"
+       x2="31.247488"
+       y2="17.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line282" />
+    <line
+       x1="8.2474871"
+       y1="20.247488"
+       x2="9.7525129"
+       y2="21.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line284" />
+    <line
+       x1="9.7525129"
+       y1="20.247488"
+       x2="8.2474871"
+       y2="21.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line286" />
+    <line
+       x1="23.247488"
+       y1="20.247488"
+       x2="24.752512"
+       y2="21.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line288" />
+    <line
+       x1="24.752512"
+       y1="20.247488"
+       x2="23.247488"
+       y2="21.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line290" />
+    <line
+       x1="3.2474873"
+       y1="21.247488"
+       x2="4.7525125"
+       y2="22.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line292" />
+    <line
+       x1="4.7525125"
+       y1="21.247488"
+       x2="3.2474873"
+       y2="22.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line294" />
+    <line
+       x1="8.2474871"
+       y1="22.247488"
+       x2="9.7525129"
+       y2="23.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line296" />
+    <line
+       x1="9.7525129"
+       y1="22.247488"
+       x2="8.2474871"
+       y2="23.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line298" />
+    <line
+       x1="11.247487"
+       y1="22.247488"
+       x2="12.752513"
+       y2="23.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line300" />
+    <line
+       x1="12.752513"
+       y1="22.247488"
+       x2="11.247487"
+       y2="23.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line302" />
+    <line
+       x1="15.247487"
+       y1="23.247488"
+       x2="17.752512"
+       y2="25.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line304" />
+    <line
+       x1="17.752512"
+       y1="23.247488"
+       x2="15.247487"
+       y2="25.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line306" />
+    <line
+       x1="29.247488"
+       y1="23.247488"
+       x2="30.752512"
+       y2="24.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line308" />
+    <line
+       x1="30.752512"
+       y1="23.247488"
+       x2="29.247488"
+       y2="24.752512"
+       fill="none"
+       stroke="#0b2d97"
+       stroke-width="0.7"
+       id="line310" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="8.1499996"
+       y="0.15000001"
+       id="rect312" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="24.15"
+       y="0.15000001"
+       id="rect314" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="24.15"
+       y="3.1500001"
+       id="rect316" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="12.15"
+       y="1.15"
+       id="rect318" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="12.15"
+       y="4.1500001"
+       id="rect320" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="9.1499996"
+       y="2.1500001"
+       id="rect322" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="9.1499996"
+       y="4.1500001"
+       id="rect324" />
+    <rect
+       width="0.69999999"
+       height="3.7"
+       fill="#e02020"
+       x="10.15"
+       y="3.1500001"
+       id="rect326" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="10.15"
+       y="7.1500001"
+       id="rect328" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="18.15"
+       y="3.1500001"
+       id="rect330" />
+    <rect
+       width="0.69999999"
+       height="3.7"
+       fill="#e02020"
+       x="22.15"
+       y="3.1500001"
+       id="rect332" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="22.15"
+       y="7.1500001"
+       id="rect334" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="14.15"
+       y="5.1500001"
+       id="rect336" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="14.15"
+       y="8.1499996"
+       id="rect338" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="8.1499996"
+       y="6.1500001"
+       id="rect340" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="8.1499996"
+       y="9.1499996"
+       id="rect342" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="9.1499996"
+       y="7.1500001"
+       id="rect344" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="9.1499996"
+       y="9.1499996"
+       id="rect346" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="12.15"
+       y="7.1500001"
+       id="rect348" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="20.15"
+       y="7.1500001"
+       id="rect350" />
+    <rect
+       width="4.6999998"
+       height="0.69999999"
+       fill="#f6b506"
+       x="3.1500001"
+       y="8.1499996"
+       id="rect352" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="11.15"
+       y="8.1499996"
+       id="rect354" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="11.15"
+       y="11.15"
+       id="rect356" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="24.15"
+       y="8.1499996"
+       id="rect358" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="2.1500001"
+       y="9.1499996"
+       id="rect360" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="2.1500001"
+       y="11.15"
+       id="rect362" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="15.15"
+       y="9.1499996"
+       id="rect364" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="21.15"
+       y="9.1499996"
+       id="rect366" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="25.15"
+       y="9.1499996"
+       id="rect368" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="12.15"
+       y="10.15"
+       id="rect370" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="12.15"
+       y="13.15"
+       id="rect372" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="22.15"
+       y="10.15"
+       id="rect374" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="28.15"
+       y="10.15"
+       id="rect376" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="28.15"
+       y="12.15"
+       id="rect378" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="32.150002"
+       y="10.15"
+       id="rect380" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="32.150002"
+       y="12.15"
+       id="rect382" />
+    <rect
+       width="0.69999999"
+       height="9.6999998"
+       fill="#e02020"
+       x="19.15"
+       y="11.15"
+       id="rect384" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="19.15"
+       y="21.15"
+       id="rect386" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="23.15"
+       y="11.15"
+       id="rect388" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="23.15"
+       y="13.15"
+       id="rect390" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="26.15"
+       y="11.15"
+       id="rect392" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="5.1500001"
+       y="12.15"
+       id="rect394" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="8.1499996"
+       y="12.15"
+       id="rect396" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="21.15"
+       y="12.15"
+       id="rect398" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="21.15"
+       y="14.15"
+       id="rect400" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="29.15"
+       y="12.15"
+       id="rect402" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="0.15000001"
+       y="13.15"
+       id="rect404" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="20.15"
+       y="13.15"
+       id="rect406" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="20.15"
+       y="15.15"
+       id="rect408" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="1.15"
+       y="14.15"
+       id="rect410" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="5.1500001"
+       y="14.15"
+       id="rect412" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="13.15"
+       y="14.15"
+       id="rect414" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="16.15"
+       y="14.15"
+       id="rect416" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="26.15"
+       y="14.15"
+       id="rect418" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="26.15"
+       y="16.15"
+       id="rect420" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="14.15"
+       y="15.15"
+       id="rect422" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="18.15"
+       y="15.15"
+       id="rect424" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="18.15"
+       y="17.15"
+       id="rect426" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="24.15"
+       y="15.15"
+       id="rect428" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="30.15"
+       y="15.15"
+       id="rect430" />
+    <rect
+       width="0.69999999"
+       height="4.6999998"
+       fill="#e02020"
+       x="2.1500001"
+       y="16.15"
+       id="rect432" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="2.1500001"
+       y="21.15"
+       id="rect434" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="9.1499996"
+       y="16.15"
+       id="rect436" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="9.1499996"
+       y="18.15"
+       id="rect438" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="21.15"
+       y="16.15"
+       id="rect440" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="27.15"
+       y="16.15"
+       id="rect442" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="7.1500001"
+       y="17.15"
+       id="rect444" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="13.15"
+       y="17.15"
+       id="rect446" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="13.15"
+       y="20.15"
+       id="rect448" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="23.15"
+       y="17.15"
+       id="rect450" />
+    <rect
+       width="0.69999999"
+       height="3.7"
+       fill="#e02020"
+       x="29.15"
+       y="17.15"
+       id="rect452" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="29.15"
+       y="21.15"
+       id="rect454" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="5.1500001"
+       y="18.15"
+       id="rect456" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="3.1500001"
+       y="19.15"
+       id="rect458" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="7.1500001"
+       y="19.15"
+       id="rect460" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="7.1500001"
+       y="22.15"
+       id="rect462" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="16.15"
+       y="19.15"
+       id="rect464" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="16.15"
+       y="22.15"
+       id="rect466" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="21.15"
+       y="19.15"
+       id="rect468" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="27.15"
+       y="19.15"
+       id="rect470" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="32.150002"
+       y="19.15"
+       id="rect472" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="32.150002"
+       y="22.15"
+       id="rect474" />
+    <rect
+       width="0.69999999"
+       height="3.7"
+       fill="#e02020"
+       x="5.1500001"
+       y="20.15"
+       id="rect476" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="5.1500001"
+       y="24.15"
+       id="rect478" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="10.15"
+       y="20.15"
+       id="rect480" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="14.15"
+       y="20.15"
+       id="rect482" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="14.15"
+       y="23.15"
+       id="rect484" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="18.15"
+       y="20.15"
+       id="rect486" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="18.15"
+       y="23.15"
+       id="rect488" />
+    <rect
+       width="0.69999999"
+       height="3.7"
+       fill="#e02020"
+       x="22.15"
+       y="21.15"
+       id="rect490" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="22.15"
+       y="25.15"
+       id="rect492" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="27.15"
+       y="22.15"
+       id="rect494" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="19.15"
+       y="23.15"
+       id="rect496" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="23.15"
+       y="23.15"
+       id="rect498" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="0.15000001"
+       y="24.15"
+       id="rect500" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="6.1500001"
+       y="24.15"
+       id="rect502" />
+    <rect
+       width="0.69999999"
+       height="1.7"
+       fill="#e02020"
+       x="12.15"
+       y="24.15"
+       id="rect504" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="12.15"
+       y="26.15"
+       id="rect506" />
+    <rect
+       width="0.69999999"
+       height="4.6999998"
+       fill="#e02020"
+       x="24.15"
+       y="24.15"
+       id="rect508" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="24.15"
+       y="29.15"
+       id="rect510" />
+    <rect
+       width="3.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="25.15"
+       y="24.15"
+       id="rect512" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="31.15"
+       y="24.15"
+       id="rect514" />
+    <rect
+       width="0.69999999"
+       height="3.7"
+       fill="#e02020"
+       x="8.1499996"
+       y="25.15"
+       id="rect516" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="8.1499996"
+       y="29.15"
+       id="rect518" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="19.15"
+       y="25.15"
+       id="rect520" />
+    <rect
+       width="0.69999999"
+       height="3.7"
+       fill="#e02020"
+       x="28.15"
+       y="25.15"
+       id="rect522" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="28.15"
+       y="29.15"
+       id="rect524" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="15.15"
+       y="26.15"
+       id="rect526" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="29.15"
+       y="26.15"
+       id="rect528" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="21.15"
+       y="27.15"
+       id="rect530" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="30.15"
+       y="27.15"
+       id="rect532" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="30.15"
+       y="30.15"
+       id="rect534" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="25.15"
+       y="28.15"
+       id="rect536" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="9.1499996"
+       y="29.15"
+       id="rect538" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="9.1499996"
+       y="32.150002"
+       id="rect540" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="12.15"
+       y="29.15"
+       id="rect542" />
+    <rect
+       width="0.69999999"
+       height="2.7"
+       fill="#e02020"
+       x="17.15"
+       y="29.15"
+       id="rect544" />
+    <rect
+       width="0.69999999"
+       height="0.69999999"
+       fill="#e02020"
+       x="17.15"
+       y="32.150002"
+       id="rect546" />
+    <rect
+       width="2.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="20.15"
+       y="29.15"
+       id="rect548" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="26.15"
+       y="29.15"
+       id="rect550" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="13.15"
+       y="30.15"
+       id="rect552" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="10.15"
+       y="31.15"
+       id="rect554" />
+    <rect
+       width="1.7"
+       height="0.69999999"
+       fill="#f6b506"
+       x="18.15"
+       y="31.15"
+       id="rect556" />
+    <rect
+       width="4.6999998"
+       height="0.69999999"
+       fill="#f6b506"
+       x="21.15"
+       y="31.15"
+       id="rect558" />
+  </g>
+</svg>
