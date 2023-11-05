@@ -1,4 +1,123 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.119.0 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Thu, 12 Oct 2023 14:53:59 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>Spark on YARN：借助 YARN 的资源管理和计算调度，打造高效的 Spark 架构</title><link>https://matnoble.github.io/tech/spark/spark-on-yarn/</link><guid isPermaLink="true">https://matnoble.github.io/tech/spark/spark-on-yarn/</guid><pubDate>Fri, 01 Sep 2023 21:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>&lt;strong>摘要&lt;/strong>：本文介绍了 Spark on YARN 架构 的基本原理和特点。文章首先介绍了 Hadoop YARN 架构 的两个核心组件：资源管理和计算调度，然后介绍了 Spark 架构 的主要组成部分和功能。文章最后总结了 Spark on YARN 架构 的优势和应用场景。&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.120.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Sun, 05 Nov 2023 11:27:05 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>初见别克E5</title><link>https://matnoble.github.io/life/buick-e5-first-look/</link><guid isPermaLink="true">https://matnoble.github.io/life/buick-e5-first-look/</guid><pubDate>Sun, 05 Nov 2023 18:10:30 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/202311051802268.jpeg"
+title="人生中的第一台车——小五"
+alt="人生中的第一台车——小五"
+width="95%"
+>
+&lt;span class="caption">◎ 人生中的第一台车——小五&lt;/span>
+&lt;/span>
+&lt;p>工作两年多，终于下定了人生中的第一台车 —— 别克 E5&lt;/p>
+&lt;h2 id="为啥是它">为啥是它&lt;/h2>
+&lt;p>别克 E5 是上海通用集团别克的新能源纯电动车，是的，没错，是合资品牌的新能源汽车，出自和凯迪拉克的锐歌相同的纯电平台——奥特能。&lt;/p>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/202311051838570.png"
+title="奥特能纯电平台"
+alt="奥特能纯电平台"
+width="95%"
+>
+&lt;span class="caption">◎ 奥特能纯电平台&lt;/span>
+&lt;/span>
+&lt;h3 id="用车需求">用车需求&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>来深两年多，只是在坂田（关外）这别活动，像南山，福田（关内）等区域只去过两三次，所以，我的第一个用车需求就是：..扩展自己的活动范围..&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>进入社会后，工作真的很辛苦（996），所以，想买车犒劳下自己&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="选车标准">选车标准&lt;/h3>
+&lt;ul>
+&lt;li>新能源纯电动&lt;/li>
+&lt;li>三电（电池，电机，电控）优秀&lt;/li>
+&lt;li>家用 SUV&lt;/li>
+&lt;li>车机不能太拉跨&lt;/li>
+&lt;li>20 ~ 25w&lt;/li>
+&lt;/ul>
+&lt;h3 id="车辆对比">车辆对比&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>特斯拉 model Y
+上学时，曾一直将 model Y 视为梦中情车。优点很明显：&lt;/p>
+&lt;ol>
+&lt;li>作为国际电动车的鼻祖，一直引领着全球电动车的发展&lt;/li>
+&lt;li>操控简单，驾驶友好&lt;/li>
+&lt;li>外观内饰很有科技感&lt;/li>
+&lt;li>车机 OTA 更新让车主时常有新鲜感&lt;/li>
+&lt;/ol>
+&lt;p>..但是..，如今来看，现在的配置明显有些性价比低，而且也超了预算（提车后，还有花很多钱来装饰“毛坯”）PASS&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>小鹏 G6
+上市之初，试驾过，除了外观不得我心之外，做工用料也处处显示出廉价感（电池采用中创新航，内饰简单到不行）！虽然智驾很不错，但还是 PASS&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>智己 LS6
+未试驾。新上市，价格很给力，性价比很高。但是，对于前脸部分不太满意 PASS&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>问界 M5
+试驾过，但是自己没开。算是自家产品，虽然有内部优惠，但是，M7上市后，M5的价格瞬间不香了。PASS&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>别克 E5
+起初并不知道这台车，是B站刷车视频，偶然间看到的。&lt;/p>
+&lt;ol>
+&lt;li>续航扎实，反向虚表&lt;/li>
+&lt;li>看过区长的电池安全测试视频，电池安全系数高&lt;/li>
+&lt;li>中大型 SUV，空间大&lt;/li>
+&lt;li>底盘扎实&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="提车好开心">提车好开心&lt;/h2>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/202311051801611.jpeg"
+title="紫腚嬴"
+alt="紫腚嬴"
+width="95%"
+>
+&lt;span class="caption">◎ 紫腚嬴&lt;/span>
+&lt;/span>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/202311051804395.jpeg"
+title="驾驶舱"
+alt="驾驶舱"
+width="95%"
+>
+&lt;span class="caption">◎ 驾驶舱&lt;/span>
+&lt;/span>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/202311051805634.jpeg"
+title="带电动遮阳帘的天幕"
+alt="带电动遮阳帘的天幕"
+width="95%"
+>
+&lt;span class="caption">◎ 带电动遮阳帘的天幕&lt;/span>
+&lt;/span>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/202311051804344.jpeg"
+title="远处的小五"
+alt="远处的小五"
+width="95%"
+>
+&lt;span class="caption">◎ 远处的小五&lt;/span>
+&lt;/span>
+&lt;h2 id="使用感受">使用感受&lt;/h2>
+&lt;p>提车一天，练习了倒车入库，侧方位，在附近转了转。感受如下：&lt;br>
+&lt;strong>优点&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>360 影像很好用，新手小白也能一把入库&lt;/li>
+&lt;li>变道超车，加速线性，很有信心&lt;/li>
+&lt;li>车机流畅，HUD 很清楚&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>缺点&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>车机默认软件不能更改&lt;/li>
+&lt;li>蓝牙钥匙不灵敏，每次都需要掏出手机，也有可能手机的问题&lt;/li>
+&lt;/ol>
+&lt;p>总体来说，提新车还是很开心的，最近也要升职了，更开心了！等之后再慢慢添置车上用品，解锁更多功能。&lt;/p></description><category domain="https://matnoble.github.io/life/">life</category><category domain="https://matnoble.github.io/tags/%E5%88%AB%E5%85%8Be5/">别克E5</category></item><item><title>Spark on YARN：借助 YARN 的资源管理和计算调度，打造高效的 Spark 架构</title><link>https://matnoble.github.io/tech/spark/spark-on-yarn/</link><guid isPermaLink="true">https://matnoble.github.io/tech/spark/spark-on-yarn/</guid><pubDate>Fri, 01 Sep 2023 21:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>&lt;strong>摘要&lt;/strong>：本文介绍了 Spark on YARN 架构 的基本原理和特点。文章首先介绍了 Hadoop YARN 架构 的两个核心组件：资源管理和计算调度，然后介绍了 Spark 架构 的主要组成部分和功能。文章最后总结了 Spark on YARN 架构 的优势和应用场景。&lt;/p>
 &lt;h2 id="hadoop-yarn-架构-1">Hadoop YARN 架构 &lt;sup id="fnref:1">&lt;a href="https://matnoble.github.io/tech/spark/spark-on-yarn/#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/h2>
 &lt;p>YARN 本身是一个资源调度框架，负责对运行在内部的计算框架进行资源调度管理。其为分布式计算任务提供两个..独立..的进程：&lt;/p>
 &lt;ul>
@@ -3329,539 +3448,4 @@ width="400"
 #### 复杂度
 - 时间复杂度：
 - 空间复杂度：
---></description><category domain="https://matnoble.github.io/dsa/">dsa</category><category domain="https://matnoble.github.io/dsa/basic/">basic</category><category domain="https://matnoble.github.io/tags/leetcode%E9%A2%98%E8%A7%A3/">LeetCode题解</category><category domain="https://matnoble.github.io/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category></item><item><title>树</title><link>https://matnoble.github.io/dsa/basic/tree/</link><guid isPermaLink="true">https://matnoble.github.io/dsa/basic/tree/</guid><pubDate>Fri, 12 Feb 2021 00:19:30 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h1 id="目录">目录&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="./#%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98">每日一题&lt;/a>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#104-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6">104. 二叉树的最大深度&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#100-%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91">100. 相同的树&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#129-%E6%B1%82%E6%A0%B9%E5%88%B0%E5%8F%B6%E5%AD%90%E8%8A%82%E7%82%B9%E6%95%B0%E5%AD%97%E4%B9%8B%E5%92%8C">129. 求根到叶子节点数字之和&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#513-%E6%89%BE%E6%A0%91%E5%B7%A6%E4%B8%8B%E8%A7%92%E7%9A%84%E5%80%BC">513. 找树左下角的值&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#297-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96">297. 二叉树的序列化与反序列化&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#987-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%9E%82%E5%BA%8F%E9%81%8D%E5%8E%86">987. 二叉树的垂序遍历&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="./#%E6%89%A9%E5%B1%95">扩展&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="每日一题">每日一题&lt;/h2>
-&lt;h3 id="104-二叉树的最大深度">104. 二叉树的最大深度&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/">https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述">题目描述&lt;/h4>
-&lt;style type="text/css">.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}&lt;/style>
-&lt;div>&lt;svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">&lt;symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/>&lt;/symbol>&lt;symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>&lt;/symbol>&lt;/svg>&lt;/div>&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/tree/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给定一个二叉树，找出其最大深度。&lt;/p>
-&lt;p>二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。&lt;/p>
-&lt;p>说明: 叶子节点是指没有子节点的节点。&lt;/p>
-&lt;p>示例：
-给定二叉树 &lt;code>[3,9,20,null,null,15,7]&lt;/code>，&lt;/p>
-&lt;pre tabindex="0">&lt;code> 3
-/ \
-9 20
-/ \
-15 7
-&lt;/code>&lt;/pre>&lt;p>返回它的最大深度 3 。&lt;/p>&lt;/div>
-&lt;h4 id="思路">思路&lt;/h4>
-&lt;p>简单递归，终止条件: 到达叶节点 &lt;code>return 0&lt;/code>&lt;/p>
-&lt;h4 id="代码">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Definition for a binary tree node.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># class TreeNode:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># def __init__(self, val=0, left=None, right=None):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.val = val&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.left = left&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.right = right&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">maxDepth&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">maxDepth&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">maxDepth&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">max&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="100-相同的树">100. 相同的树&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/same-tree/">https://leetcode-cn.com/problems/same-tree/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-1">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/tree/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。&lt;/p>
-&lt;p>如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。&lt;/p>
-&lt;p>&lt;strong>示例 1：&lt;/strong>
-&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210213165916.png"/>
-&lt;strong>输入&lt;/strong>: p = [1,2,3], q = [1,2,3]&lt;br>
-&lt;strong>输出&lt;/strong> true&lt;/p>
-&lt;p>&lt;strong>示例 2：&lt;/strong>
-&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210213165948.png"/>
-&lt;strong>输入&lt;/strong>: p = [1,2], q = [1,null,2]&lt;br>
-&lt;strong>输出&lt;/strong>: false&lt;/p>&lt;/div>
-&lt;h4 id="思路-1">思路&lt;/h4>
-&lt;ul>
-&lt;li>运用递归&lt;/li>
-&lt;li>关注根节点 &lt;code>root&lt;/code>&lt;/li>
-&lt;li>然后向下递归 &lt;code>left&lt;/code> 和 &lt;code>right&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-1">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Definition for a binary tree node.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># class TreeNode:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># def __init__(self, val=0, left=None, right=None):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.val = val&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.left = left&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.right = right&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">isSameTree&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">p&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">bool&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="kc">True&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">elif&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="kc">False&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">p&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="kc">False&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">isSameTree&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">p&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">isSameTree&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">p&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-1">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="129-求根到叶子节点数字之和">129. 求根到叶子节点数字之和&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/">https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-2">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/tree/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给定一个二叉树，它的每个结点都存放一个 &lt;code>0-9&lt;/code> 的数字，每条从根到叶子节点的路径都代表一个数字。&lt;/p>
-&lt;p>例如，从根到叶子节点路径 &lt;code>1-&amp;gt;2-&amp;gt;3&lt;/code> 代表数字 &lt;code>123&lt;/code>。&lt;/p>
-&lt;p>计算从根到叶子节点生成的所有数字之和。&lt;/p>
-&lt;p>&lt;strong>说明&lt;/strong>: 叶子节点是指没有子节点的节点。&lt;/p>
-&lt;p>&lt;strong>示例 1:&lt;/strong>&lt;br>
-输入: &lt;code>[1,2,3]&lt;/code>&lt;/p>
-&lt;pre tabindex="0">&lt;code> 1
-/ \
-2 3
-&lt;/code>&lt;/pre>&lt;p>&lt;strong>输出:&lt;/strong> &lt;code>25&lt;/code>&lt;br>
-&lt;strong>解释:&lt;/strong>&lt;br>
-从根到叶子节点路径 &lt;code>1-&amp;gt;2&lt;/code> 代表数字 &lt;code>12&lt;/code>.&lt;br>
-从根到叶子节点路径 &lt;code>1-&amp;gt;3&lt;/code> 代表数字 &lt;code>13&lt;/code>.&lt;br>
-因此，数字总和 = &lt;code>12 + 13 = 25&lt;/code>.&lt;/p>&lt;/div>
-&lt;h4 id="思路-2">思路&lt;/h4>
-&lt;ul>
-&lt;li>DFS 深度优先搜索
-&lt;ul>
-&lt;li>递归&lt;/li>
-&lt;li>遇到 &lt;strong>叶节点&lt;/strong>，加入 &lt;code>self.res&lt;/code>&lt;/li>
-&lt;li>否则，进行数学进位运算&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>BFS 深度优先搜索
-&lt;ul>
-&lt;li>使用双端队列，&lt;code>queue.popleft()&lt;/code> 时间复杂度是 $O(1)$&lt;/li>
-&lt;li>遇到 &lt;strong>叶节点&lt;/strong>，加入 &lt;code>res&lt;/code>&lt;/li>
-&lt;li>否则，进行数学进位运算&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-2">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python DFS&lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">sumNumbers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">## DFS&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sum_&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">res&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">sum_&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sum_&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="mi">10&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sum_&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="mi">10&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;details>
-&lt;summary> Python BFS&lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">sumNumbers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">## BFS&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sum_&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">sum_&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sum_&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="mi">10&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sum_&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="mi">10&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-2">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$ # 最坏情况，二叉数退化为单链表&lt;/li>
-&lt;/ul>
-&lt;h3 id="513-找树左下角的值">513. 找树左下角的值&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/find-bottom-left-tree-value/">https://leetcode-cn.com/problems/find-bottom-left-tree-value/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-3">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/tree/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给定一个二叉树，在树的最后一行找到最左边的值。&lt;/p>
-&lt;p>&lt;strong>示例 1:&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>输入:
-2
-/ \
-1 3
-输出:
-1
-&lt;/code>&lt;/pre>&lt;p>&lt;strong>示例 2:&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>输入:
-1
-/ \
-2 3
-/ / \
-4 5 6
-/
-7
-输出:
-7
-&lt;/code>&lt;/pre>&lt;p>&lt;strong>注意:&lt;/strong> 您可以假设树（即给定的根节点）不为 &lt;strong>NULL&lt;/strong>。&lt;/p>&lt;/div>
-&lt;h4 id="思路-3">思路&lt;/h4>
-&lt;ul>
-&lt;li>DFS 深度优先搜索
-&lt;ul>
-&lt;li>借助递归&lt;/li>
-&lt;li>初始化 &lt;code>self.res = [root.val, 0]&lt;/code>&lt;/li>
-&lt;li>到达 &lt;code>叶子节点&lt;/code>：
-&lt;ul>
-&lt;li>若 &lt;code>self.res[1] &amp;lt; k&lt;/code>，更新 &lt;code>self.res = [node.val, k]&lt;/code>&lt;/li>
-&lt;li>否则，&lt;code>return&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>否则，向左或向右递归&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>BFS 0 广度优先搜索
-&lt;ul>
-&lt;li>对 &lt;a href="https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/">剑指 Offer 32 - III. 从上到下打印二叉树 III&lt;/a> 作小改动&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>BFS 1 广度优先搜索
-&lt;ul>
-&lt;li>借助双端队列&lt;/li>
-&lt;li>每层 &lt;code>由右向左&lt;/code> 遍历&lt;/li>
-&lt;li>最后一个 &lt;code>node&lt;/code> 即为所求&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-3">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python DFS&lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">findBottomLeftValue&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">## DFS&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">res&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 向左递归&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 向右递归&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">res&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;details>
-&lt;summary> Python BFS 0&lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">findBottomLeftValue&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">## BFS 0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[],&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">k&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">res&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">([])&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;details>
-&lt;summary> Python BFS 1&lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">findBottomLeftValue&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">## BFS 1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-3">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="297-二叉树的序列化与反序列化">297. 二叉树的序列化与反序列化&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree">https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-4">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/tree/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>序列化是将一个数据结构或者对象转换为连续的比特位的操作，进而可以将转换后的数据存储在一个文件或者内存中，同时也可以通过网络传输到另一个计算机环境，采取相反方式重构得到原数据。&lt;/p>
-&lt;p>请设计一个算法来实现二叉树的序列化与反序列化。这里不限定你的序列 / 反序列化算法执行逻辑，你只需要保证一个二叉树可以被序列化为一个字符串并且将这个字符串反序列化为原始的树结构。&lt;/p>
-&lt;p>&lt;strong>示例 1：&lt;/strong>
-&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210217155428.png"/>
-&lt;strong>输入&lt;/strong>：&lt;code>root = [1,2,3,null,null,4,5]&lt;/code>&lt;br>
-&lt;strong>输出&lt;/strong>：&lt;code>[1,2,3,null,null,4,5]&lt;/code>&lt;/p>
-&lt;p>&lt;strong>示例 2：&lt;/strong>
-&lt;strong>输入&lt;/strong>：&lt;code>root = []&lt;/code>&lt;br>
-&lt;strong>输出&lt;/strong>：&lt;code>[]&lt;/code>&lt;/p>&lt;/div>
-&lt;h4 id="思路-4">思路&lt;/h4>
-&lt;p>将 &lt;code>None&lt;/code> 补充为 &lt;code>X&lt;/code>&lt;/p>
-&lt;ul>
-&lt;li>DFS
-&lt;ul>
-&lt;li>序列化：处理根节点，将子树交给递归&lt;/li>
-&lt;li>反序列化：构建二叉树&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>BFS
-&lt;ul>
-&lt;li>序列化：常规双端队列&lt;/li>
-&lt;li>&lt;strong>反序列化&lt;/strong>：
-&lt;ul>
-&lt;li>&lt;code>data&lt;/code>: 序列化节点列表（包含&lt;code>X&lt;/code>）&lt;/li>
-&lt;li>&lt;code>queue&lt;/code>: 层序存储非空节点&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-4">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python DFS &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Definition for a binary tree node.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># class TreeNode(object):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># def __init__(self, x):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.val = x&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.left = None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.right = None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Codec&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">serialize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Encodes a tree to a single string.
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :type root: TreeNode
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :rtype: str
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="s1">&amp;#39;X&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s1">&amp;#39;,&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">serialize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s1">&amp;#39;,&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">serialize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">deserialize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Decodes your encoded data to tree.
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :type data: str
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :rtype: TreeNode
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">split&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;,&amp;#39;&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">root&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">buildTree&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">root&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">buildTree&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">val&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">val&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;X&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="kc">None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">buildTree&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">buildTree&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">node&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Your Codec object will be instantiated and called as such:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># codec = Codec()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># codec.deserialize(codec.serialize(root))&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;details>
-&lt;summary> Python BFS &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Definition for a binary tree node.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># class TreeNode(object):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># def __init__(self, x):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.val = x&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.left = None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.right = None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Codec&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">serialize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Encodes a tree to a single string.
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :type root: TreeNode
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :rtype: str
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="s1">&amp;#39;X,&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s1">&amp;#39;,&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">deserialize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Decodes your encoded data to tree.
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :type data: str
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :rtype: TreeNode
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="kc">None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">split&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;,&amp;#39;&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">root&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">())&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">val&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">val&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="s1">&amp;#39;X&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">val&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">val&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="s1">&amp;#39;X&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">root&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Your Codec object will be instantiated and called as such:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># codec = Codec()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># codec.deserialize(codec.serialize(root))&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-4">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="987-二叉树的垂序遍历">987. 二叉树的垂序遍历&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/">https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-5">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/tree/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给你二叉树的根结点 &lt;code>root&lt;/code> ，请你设计算法计算二叉树的&lt;strong>垂序遍历&lt;/strong>序列。&lt;/p>
-&lt;p>对位于 &lt;code>(row, col)&lt;/code> 的每个结点而言，其左右子结点分别位于 &lt;code>(row + 1, col - 1)&lt;/code> 和 &lt;code>(row + 1, col + 1)&lt;/code> 。树的根结点位于 &lt;code>(0, 0)&lt;/code>。&lt;/p>
-&lt;p>二叉树的&lt;strong>垂序遍历&lt;/strong>从最左边的列开始直到最右边的列结束，按列索引每一列上的所有结点，形成一个按出现位置从上到下排序的有序列表。如果同行同列上有多个结点，则按结点的值从小到大进行排序。&lt;/p>
-&lt;p>返回二叉树的&lt;strong>垂序遍历&lt;/strong>序列。&lt;/p>
-&lt;p>&lt;strong>示例:&lt;/strong>
-&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210218095446.png"/>&lt;/p>
-&lt;p>&lt;strong>输入:&lt;/strong> root = [1,2,3,4,6,5,7]&lt;br>
-&lt;strong>输出:&lt;/strong> [[4],[2],[1,5,6],[3],[7]]&lt;br>
-&lt;strong>解释：&lt;/strong>&lt;br>
-这个示例实际上与示例 2 完全相同，只是结点 5 和 6 在树中的位置发生了交换。&lt;br>
-因为 5 和 6 的位置仍然相同，所以答案保持不变，仍然按值从小到大排序。&lt;/p>
-&lt;p>&lt;strong>提示：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>树中结点数目总数在范围 &lt;code>[1, 1000]&lt;/code> 内&lt;/li>
-&lt;li>&lt;code>0 &amp;lt;= Node.val &amp;lt;= 1000&lt;/code>&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;h4 id="思路-5">思路&lt;/h4>
-&lt;ul>
-&lt;li>构建字典
-&lt;ul>
-&lt;li>&lt;code>key&lt;/code>: &lt;code>col&lt;/code>&lt;/li>
-&lt;li>&lt;code>value&lt;/code>: &lt;code>[row, node.val]&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>对字典两次排序输出
-&lt;ul>
-&lt;li>首先, 对 &lt;code>列标 col&lt;/code> 排序&lt;/li>
-&lt;li>然后, 对二维数组 &lt;code>[[row, node.val], ... ,[row*, node*.val]]&lt;/code> 的 &lt;code>row&lt;/code> 和 &lt;code>val&lt;/code> 依次排序&lt;/li>
-&lt;li>以上都用 &lt;code>sorted()&lt;/code> 实现&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>DFS 深度优先搜索
-&lt;ul>
-&lt;li>递归实现&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>BFS 广度优先搜索
-&lt;ul>
-&lt;li>双端列表实现&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-5">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python DFS &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Definition for a binary tree node.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># class TreeNode:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># def __init__(self, val=0, left=None, right=None):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.val = val&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.left = left&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.right = right&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">verticalTraversal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">vertical&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">defaultdict&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">list&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">row&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">col&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span> &lt;span class="ow">is&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="kc">None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="p">,&lt;/span>&lt;span class="n">row&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">col&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span> &lt;span class="p">,&lt;/span>&lt;span class="n">row&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">col&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">vertical&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">col&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="n">row&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">])&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">node_value&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">row_value&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">node_value&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">sorted&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">]&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">col_value&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">values&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">sorted&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vertical&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">items&lt;/span>&lt;span class="p">())&lt;/span> &lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;details>
-&lt;summary> Python BFS &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Definition for a binary tree node.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># class TreeNode:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># def __init__(self, val=0, left=None, right=None):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.val = val&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.left = left&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># self.right = right&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">verticalTraversal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">vertical&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">defaultdict&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">list&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">row&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">col&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">vertical&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">col&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="n">row&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">])&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">row&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">col&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">row&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">col&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">node_value&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">row_value&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">node_value&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">sorted&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">]&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">col_value&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">values&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">sorted&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vertical&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">items&lt;/span>&lt;span class="p">())&lt;/span> &lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-5">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;h2 id="扩展">扩展&lt;/h2>
-&lt;h3 id="剑指-offer">剑指 offer&lt;/h3>
-&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210217161519.png"/>
-&lt;p>链接在这里 &lt;a href="https://leetcode-cn.com/problemset/lcof/?topicSlugs=tree">🔗&lt;/a>&lt;/p>
-&lt;!--
-#### 题目描述
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/tree/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;/div>
-#### 思路
-#### 代码
-&lt;details>
-&lt;summary> Python &lt;/summary>
-```python
-```
-&lt;/details>
-#### 复杂度
-- 时间复杂度：
-- 空间复杂度：
---></description><category domain="https://matnoble.github.io/dsa/">dsa</category><category domain="https://matnoble.github.io/dsa/basic/">basic</category><category domain="https://matnoble.github.io/tags/leetcode%E9%A2%98%E8%A7%A3/">LeetCode题解</category><category domain="https://matnoble.github.io/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category><category domain="https://matnoble.github.io/tags/%E6%A0%91/">树</category></item></channel></rss>
+--></description><category domain="https://matnoble.github.io/dsa/">dsa</category><category domain="https://matnoble.github.io/dsa/basic/">basic</category><category domain="https://matnoble.github.io/tags/leetcode%E9%A2%98%E8%A7%A3/">LeetCode题解</category><category domain="https://matnoble.github.io/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category></item></channel></rss>
