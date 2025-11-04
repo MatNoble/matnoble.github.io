@@ -1,4 +1,247 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Tue, 04 Nov 2025 08:17:41 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>初见别克E5</title><link>https://matnoble.github.io/life/buick-e5-first-look/</link><guid isPermaLink="true">https://matnoble.github.io/life/buick-e5-first-look/</guid><pubDate>Sun, 05 Nov 2023 18:10:30 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Tue, 04 Nov 2025 08:25:08 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>高等数学知识图谱</title><link>https://matnoble.github.io/math/calculus/knowledge-graph/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/knowledge-graph/</guid><pubDate>Mon, 03 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>&lt;strong>第一部分：函数、极限与连续性 (第1章)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>核心概念：函数 (Function)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>定义&lt;/strong>: 集合间的映射关系，包含定义域、值域、对应法则。&lt;/li>
+&lt;li>&lt;strong>表示法&lt;/strong>: 解析法、图像法、表格法。&lt;/li>
+&lt;li>&lt;strong>基本性质&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>有界性&lt;/strong>: 函数值是否被限制在某个范围内。&lt;/li>
+&lt;li>&lt;strong>单调性&lt;/strong>: 递增或递减的趋势。&lt;/li>
+&lt;li>&lt;strong>奇偶性&lt;/strong>: 关于原点或y轴的对称性。&lt;/li>
+&lt;li>&lt;strong>周期性&lt;/strong>: 函数值是否按规律重复。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>特殊函数&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>分段函数&lt;/strong>: 在不同区间有不同表达式。&lt;/li>
+&lt;li>&lt;strong>反函数&lt;/strong>: 原函数的逆运算，图像关于 y=x 对称。&lt;/li>
+&lt;li>&lt;strong>复合函数&lt;/strong>: 函数的嵌套，如 &lt;code>f(g(x))&lt;/code>。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>初等函数&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>基本初等函数&lt;/strong>: 幂、指、对、三、反三。&lt;/li>
+&lt;li>&lt;strong>初等函数&lt;/strong>: 由基本初等函数经四则运算和复合运算构成。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>核心工具：极限 (Limit)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>数列极限&lt;/strong>: &lt;code>lim (n→∞) xn = a&lt;/code>
+&lt;ul>
+&lt;li>&lt;strong>定义&lt;/strong>: ε-N 语言，描述数列的长期趋势。&lt;/li>
+&lt;li>&lt;strong>性质&lt;/strong>: 唯一性、有界性、保号性、子列收敛性。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>函数极限&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>过程&lt;/strong>: &lt;code>x→∞&lt;/code> (自变量趋于无穷) 或 &lt;code>x→x₀&lt;/code> (自变量趋于定点)。&lt;/li>
+&lt;li>&lt;strong>定义&lt;/strong>: ε-X 语言 (x→∞) 或 ε-δ 语言 (x→x₀)。&lt;/li>
+&lt;li>&lt;strong>单侧极限&lt;/strong>: 左极限 (&lt;code>x→x₀⁻&lt;/code>) 与右极限 (&lt;code>x→x₀⁺&lt;/code>)。
+&lt;ul>
+&lt;li>&lt;strong>关系&lt;/strong>: 极限存在的充要条件是左右极限存在且相等。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>性质&lt;/strong>: 唯一性、局部有界性、局部保号性。&lt;/li>
+&lt;li>&lt;strong>海涅定理&lt;/strong>: 通过数列极限判断函数极限。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>极限运算法则&lt;/strong>:
+&lt;ul>
+&lt;li>四则运算法则 (和、差、积、商)。&lt;/li>
+&lt;li>复合函数极限法则。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>极限存在准则&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>夹逼准则 (三明治准则)&lt;/strong>: 用于求被“夹住”的函数的极限。&lt;/li>
+&lt;li>&lt;strong>单调有界准则&lt;/strong>: 单调有界的数列必有极限。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>两个重要极限&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;code>lim (x→0) sin(x)/x = 1&lt;/code>&lt;/li>
+&lt;li>&lt;code>lim (x→∞) (1 + 1/x)ˣ = e&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>核心性质：连续性 (Continuity)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>定义&lt;/strong>: &lt;code>lim (x→x₀) f(x) = f(x₀)&lt;/code> (极限值等于函数值)。&lt;/li>
+&lt;li>&lt;strong>间断点&lt;/strong>: 函数不连续的点。
+&lt;ul>
+&lt;li>&lt;strong>第一类&lt;/strong>: 可去间断点、跳跃间断点。&lt;/li>
+&lt;li>&lt;strong>第二类&lt;/strong>: 无穷间断点、振荡间断点。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>连续函数的性质&lt;/strong>:
+&lt;ul>
+&lt;li>连续函数经四则运算和复合后仍连续。&lt;/li>
+&lt;li>&lt;strong>初等函数在其定义域内连续&lt;/strong>。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>闭区间上连续函数的性质&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>有界性与最值定理&lt;/strong>: 必有最大值和最小值。&lt;/li>
+&lt;li>&lt;strong>介值定理&lt;/strong>: 能取到最大值和最小值之间的任何值。&lt;/li>
+&lt;li>&lt;strong>零点定理&lt;/strong>: 若两端点函数值异号，则区间内必有零点。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>第二部分：导数与微分 (第2章)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>核心概念：导数 (Derivative)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>定义&lt;/strong>: &lt;code>f'(x₀) = lim (Δx→0) Δy/Δx&lt;/code>，是函数增量与自变量增量之比的极限。&lt;/li>
+&lt;li>&lt;strong>本质&lt;/strong>: 描述函数在某一点的 &lt;strong>瞬时变化率&lt;/strong>。&lt;/li>
+&lt;li>&lt;strong>几何意义&lt;/strong>: 该点切线的 &lt;strong>斜率&lt;/strong>。&lt;/li>
+&lt;li>&lt;strong>物理意义&lt;/strong>: 瞬时速度、瞬时加速度等。&lt;/li>
+&lt;li>&lt;strong>可导性&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>可导必连续，连续不一定可导&lt;/strong> (例如 &lt;code>f(x)=|x|&lt;/code> 在x=0处)。&lt;/li>
+&lt;li>&lt;strong>充要条件&lt;/strong>: 左导数与右导数存在且相等。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>求导法则&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>基本导数公式&lt;/strong>: 常见函数 (幂、指、对、三、反三) 的导数。&lt;/li>
+&lt;li>&lt;strong>四则运算法则&lt;/strong>: &lt;code>(u±v)'&lt;/code>, &lt;code>(uv)'&lt;/code>, &lt;code>(u/v)'&lt;/code>。&lt;/li>
+&lt;li>&lt;strong>复合函数求导 (链式法则)&lt;/strong>: &lt;code>[f(g(x))]' = f'(g(x))·g'(x)&lt;/code>，即“剥洋葱法”。&lt;/li>
+&lt;li>&lt;strong>反函数求导&lt;/strong>: &lt;code>dx/dy = 1 / (dy/dx)&lt;/code>。&lt;/li>
+&lt;li>&lt;strong>隐函数求导&lt;/strong>: 方程两边同时对x求导（或取微分）。&lt;/li>
+&lt;li>&lt;strong>参数方程求导&lt;/strong>: &lt;code>dy/dx = (dy/dt) / (dx/dt)&lt;/code>。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>高阶导数&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>定义&lt;/strong>: 导数的导数，如二阶导数 &lt;code>f''(x)&lt;/code>。&lt;/li>
+&lt;li>&lt;strong>莱布尼茨公式&lt;/strong>: 用于求乘积的高阶导数。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>核心概念：微分 (Differential)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>定义&lt;/strong>: &lt;code>dy = f'(x)dx&lt;/code>，是函数增量 &lt;code>Δy&lt;/code> 的 &lt;strong>线性主部&lt;/strong>。&lt;/li>
+&lt;li>&lt;strong>思想&lt;/strong>: &lt;strong>以直代曲&lt;/strong>，在微小范围内用切线近似曲线。&lt;/li>
+&lt;li>&lt;strong>关系&lt;/strong>: &lt;code>dy&lt;/code> 与 &lt;code>Δy&lt;/code> 是等价无穷小 (当 &lt;code>f'(x)≠0&lt;/code> 时)。&lt;/li>
+&lt;li>&lt;strong>一阶微分形式不变性&lt;/strong>: &lt;code>dy = f'(u)du&lt;/code>，无论 &lt;code>u&lt;/code> 是自变量还是中间变量，这个形式都成立，是链式法则的本质。&lt;/li>
+&lt;li>&lt;strong>应用&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>近似计算&lt;/strong>: &lt;code>f(x₀+Δx) ≈ f(x₀) + f'(x₀)Δx&lt;/code>。&lt;/li>
+&lt;li>&lt;strong>误差估计&lt;/strong>: &lt;code>|Δy| ≈ |f'(x)| |Δx|&lt;/code>。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="高等数学-微分中值定理前-重难点解析">&lt;strong>高等数学 (微分中值定理前) 重难点解析&lt;/strong>&lt;/h3>
+&lt;h4 id="重难点一极限整个微积分的根基">&lt;strong>重难点一：极限——整个微积分的“根基”&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>难点所在&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>抽象的定义&lt;/strong>: &lt;code>ε-δ&lt;/code> (函数极限) 和 &lt;code>ε-N&lt;/code> (数列极限) 的语言非常抽象，是初学者的第一大门槛。它要求从“动态过程”转向“静态描述”。&lt;/li>
+&lt;li>&lt;strong>计算的技巧性&lt;/strong>: 极限计算，特别是 &lt;code>0/0&lt;/code> 型和 &lt;code>∞/∞&lt;/code> 型不定式，方法灵活多变，需要熟练掌握等价无穷小替换、两个重要极限、有理化等多种技巧。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>重要性&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>定义之源&lt;/strong>: 连续、导数、微分、积分等几乎所有微积分的核心概念都建立在极限之上。不理解极限，就无法从根本上理解微积分。&lt;/li>
+&lt;li>&lt;strong>计算工具&lt;/strong>: 它是解决各种数学问题，尤其是与变化率和累积相关的实际问题的基础计算工具。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>攻克要点&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>理解定义&lt;/strong>: 不必死记硬背 &lt;code>ε-δ&lt;/code> 语言，但要理解其核心思想：“只要 x 离 x₀ 足够近，f(x) 就能离 A 任意近”。&lt;/li>
+&lt;li>&lt;strong>掌握计算&lt;/strong>: 将重点放在&lt;strong>两个重要极限&lt;/strong>和&lt;strong>等价无穷小替换&lt;/strong>上，这是解决绝大多数极限计算问题的“杀手锏”。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="重难点二导数描述瞬间变化的语言">&lt;strong>重难点二：导数——描述“瞬间”变化的语言&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>难点所在&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>从平均到瞬间&lt;/strong>: 理解导数是“平均变化率的极限”，即瞬时变化率，是思维上的一个飞跃。&lt;/li>
+&lt;li>&lt;strong>可导与连续的关系&lt;/strong>: “可导必连续，连续不一定可导”是核心辨析点。&lt;code>f(x) = |x|&lt;/code> 在 x=0 处的“尖点”是理解这一关系的最佳例子。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>重要性&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>核心工具&lt;/strong>: 导数是研究函数性质（单调性、极值、凹凸性）和解决优化问题的最核心工具。&lt;/li>
+&lt;li>&lt;strong>几何与物理的桥梁&lt;/strong>: 它将函数的代数表达式与曲线的几何斜率、物体的瞬时速度等物理概念紧密联系起来。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>攻克要点&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>抓住本质&lt;/strong>: 牢记导数的定义式 &lt;code>f'(x₀) = lim (Δx→0) Δy/Δx&lt;/code> 及其几何意义（切线斜率）。&lt;/li>
+&lt;li>&lt;strong>熟练法则&lt;/strong>: &lt;strong>复合函数求导（链式法则）&lt;/strong> 是最重要的求导法则，必须通过大量练习达到“肌肉记忆”的程度。可以采用“剥洋葱法”，从外到内，逐层求导。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="重难点三微分以直代曲的近似思想">&lt;strong>重难点三：微分——“以直代曲”的近似思想&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>难点所在&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>微分 &lt;code>dy&lt;/code> 与增量 &lt;code>Δy&lt;/code> 的混淆&lt;/strong>: 很多学生将 &lt;code>dy = f'(x)dx&lt;/code> 仅仅看作导数的另一种写法，而忽略了它的本质。&lt;code>Δy&lt;/code> 是函数真实的、非线性的增量，而 &lt;code>dy&lt;/code> 是线性的、近似的增量。&lt;/li>
+&lt;li>&lt;strong>思想的转变&lt;/strong>: 从精确计算转向近似估算，理解其在误差分析和近似计算中的价值。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>重要性&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>近似的核心&lt;/strong>: “以直代曲”是现代科学和工程中处理复杂非线性问题的基本思想。微分是这种思想最简单的数学体现。&lt;/li>
+&lt;li>&lt;strong>理论的基石&lt;/strong>: “一阶微分形式不变性”是复合函数求导法则的本质，也为后续的积分换元法等提供了理论支持。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>攻克要点&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>理解几何&lt;/strong>: 牢记 &lt;code>Δy&lt;/code> 是曲线上函数值的真实变化，而 &lt;code>dy&lt;/code> 是切线上函数值的变化。当 &lt;code>Δx&lt;/code> 很小时，&lt;code>Δy ≈ dy&lt;/code>。&lt;/li>
+&lt;li>&lt;strong>掌握应用&lt;/strong>: 重点理解如何利用公式 &lt;code>f(x₀+Δx) ≈ f(x₀) + f'(x₀)Δx&lt;/code> 进行近似计算。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="重难点四闭区间上连续函数的性质">&lt;strong>重难点四：闭区间上连续函数的性质&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>难点所在&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>理论性强&lt;/strong>: 有界性与最值定理、介值定理（零点定理）主要用于理论证明，对逻辑推理能力要求较高。&lt;/li>
+&lt;li>&lt;strong>“存在性”而非“构造性”&lt;/strong>: 这些定理只告诉你“存在”一个点满足某个性质，但不告诉你这个点具体在哪，如何找到。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>重要性&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>理论的完备性&lt;/strong>: 它们是微积分理论体系不可或缺的部分，是后续许多高级定理（如罗尔定理、拉格朗日中值定理）的证明基础。&lt;/li>
+&lt;li>&lt;strong>方程求根&lt;/strong>: 零点定理是判断方程在某个区间内是否有解的强大理论依据。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>攻克要点&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>借助图形&lt;/strong>: 每个定理都有非常直观的几何解释。例如，零点定理就是“一条连续的曲线，如果一头在x轴下方，另一头在x轴上方，那么它必然会穿过x轴”。通过图形来理解和记忆定理内容。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description><category domain="https://matnoble.github.io/math/">math</category><category domain="https://matnoble.github.io/math/calculus/">Calculus</category><category domain="https://matnoble.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</category></item><item><title>初见别克E5</title><link>https://matnoble.github.io/life/buick-e5-first-look/</link><guid isPermaLink="true">https://matnoble.github.io/life/buick-e5-first-look/</guid><pubDate>Sun, 05 Nov 2023 18:10:30 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
 &lt;span class="caption-wrapper">
 &lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/202311051802268.jpeg"
 title="人生中的第一台车——小五"
@@ -3237,218 +3480,4 @@ width="400"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">topDown&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">depth&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="c1">## 自上而下&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">depth&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="nb">max&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">topDown&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">depth&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">topDown&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">depth&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">topDown&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">bottomUp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><category domain="https://matnoble.github.io/dsa/">dsa</category><category domain="https://matnoble.github.io/dsa/basic/">basic</category><category domain="https://matnoble.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</category><category domain="https://matnoble.github.io/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category><category domain="https://matnoble.github.io/tags/%E6%A0%91/">树</category></item><item><title>哈希表</title><link>https://matnoble.github.io/dsa/basic/hash-table/</link><guid isPermaLink="true">https://matnoble.github.io/dsa/basic/hash-table/</guid><pubDate>Thu, 18 Feb 2021 00:19:30 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h1 id="目录">目录&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="./#%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98">每日一题&lt;/a>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C">1. 两数之和&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#347-%E5%89%8D-k-%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0">347. 前 K 个高频元素&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#447-%E5%9B%9E%E6%97%8B%E9%95%96%E7%9A%84%E6%95%B0%E9%87%8F">447. 回旋镖的数量&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#3-%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2">3. 无重复字符的最长子串&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="每日一题">每日一题&lt;/h2>
-&lt;h3 id="1-两数之和">1. 两数之和&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/two-sum">https://leetcode-cn.com/problems/two-sum&lt;/a>&lt;/p>
-&lt;h4 id="题目描述">题目描述&lt;/h4>
-&lt;style type="text/css">.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}&lt;/style>
-&lt;div>&lt;svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">&lt;symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/>&lt;/symbol>&lt;symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>&lt;/symbol>&lt;/svg>&lt;/div>&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/hash-table/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给定一个整数数组 &lt;code>nums&lt;/code> 和一个整数目标值 &lt;code>target&lt;/code>，请你在该数组中找出 &lt;strong>和为目标值&lt;/strong> 的那 &lt;strong>两个&lt;/strong> 整数，并返回它们的数组下标。&lt;/p>
-&lt;p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。&lt;/p>
-&lt;p>你可以按任意顺序返回答案。&lt;/p>
-&lt;p>&lt;strong>示例:&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> nums = [2,7,11,15], target = 9&lt;br>
-&lt;strong>输出：&lt;/strong> [0,1]&lt;br>
-&lt;strong>解释：&lt;/strong> 因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。&lt;/p>&lt;/div>
-&lt;h4 id="思路">思路&lt;/h4>
-&lt;ul>
-&lt;li>用 &lt;strong>字典(哈希表)&lt;/strong> 存储每个数对应的索引及值. 哈希表实现快速查找 $O(1)$&lt;/li>
-&lt;li>当 &lt;code>target - 当前数&lt;/code> 在 &lt;strong>字典(哈希表)&lt;/strong> 中存在时，说明已存储的数和当前数相加可以得到目标值 &lt;code>target&lt;/code>&lt;/li>
-&lt;li>返回对应的索引 &lt;code>[hashmap[target - num], idx]&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">twoSum&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">hashMap&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">idx&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">num&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">enumerate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">target&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">num&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">hashMap&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">hashMap&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">num&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">idx&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">hashMap&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">idx&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="347-前-k-个高频元素">347. 前 K 个高频元素&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/top-k-frequent-elements">https://leetcode-cn.com/problems/top-k-frequent-elements&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-1">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/hash-table/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给定一个非空的整数数组，返回其中出现频率前 &lt;strong>k&lt;/strong> 高的元素。&lt;/p>
-&lt;p>&lt;strong>示例 1:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> nums = [1,1,1,2,2,3], k = 2&lt;br>
-&lt;strong>输出:&lt;/strong> [1,2]&lt;/p>
-&lt;p>&lt;strong>示例 2:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> nums = [1], k = 1&lt;br>
-&lt;strong>输出:&lt;/strong> [1]
- &lt;/p>
-&lt;ul>
-&lt;li>你可以假设给定的 k 总是合理的，且 1 ≤ k ≤ 数组中不相同的元素的个数。&lt;/li>
-&lt;li>你的算法的时间复杂度&lt;strong>必须&lt;/strong>优于 O(n log n) , n 是数组的大小。&lt;/li>
-&lt;li>题目数据保证答案唯一，换句话说，数组中前 k 个高频元素的集合是唯一的。&lt;/li>
-&lt;li>你可以按任意顺序返回答案。&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;h4 id="思路-1">思路&lt;/h4>
-&lt;h4 id="代码-1">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">topKFrequent&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">dict&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Counter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 计数&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">v&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">v&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">sorted&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">dict&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">items&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">key&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">lambda&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">])][&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">:]&lt;/span> &lt;span class="c1"># 排序返回&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-1">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(NlogN)$&lt;/li>
-&lt;li>空间复杂度：$O(N)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="447-回旋镖的数量">447. 回旋镖的数量&lt;/h3>
-&lt;h4 id="题目描述-2">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/hash-table/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给定平面上 n 对&lt;strong>互不相同&lt;/strong>的点 &lt;code>points&lt;/code>，其中 &lt;code>points[i] = [xi, yi]&lt;/code> 。&lt;strong>回旋镖&lt;/strong>是由点 &lt;code>(i, j, k)&lt;/code> 表示的元组 ，其中 &lt;code>i&lt;/code> 和 &lt;code>j&lt;/code> 之间的距离和 &lt;code>i&lt;/code> 和 &lt;code>k&lt;/code> 之间的距离相等（&lt;strong>需要考虑元组的顺序&lt;/strong>）。&lt;/p>
-&lt;p>返回平面上所有回旋镖的数量。&lt;/p>
-&lt;p>&lt;strong>示例 1：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> points = [[0,0],[1,0],[2,0]]&lt;br>
-&lt;strong>输出：&lt;/strong> 2&lt;br>
-&lt;strong>解释：&lt;/strong> 两个回旋镖为 [[1,0],[0,0],[2,0]] 和 [[1,0],[2,0],[0,0]]&lt;/p>
-&lt;p>&lt;strong>示例 2：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> points = [[1,1],[2,2],[3,3]]&lt;br>
-&lt;strong>输出：&lt;/strong> 2&lt;/p>
-&lt;p>&lt;strong>示例 3：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> points = [[1,1]]
-&lt;strong>输出：&lt;/strong> 0&lt;/p>
-&lt;p>&lt;strong>提示：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>n == points.length&lt;/li>
-&lt;li>$1 &amp;lt;= n &amp;lt;= 500$&lt;/li>
-&lt;li>points[i].length == 2&lt;/li>
-&lt;li>$-10^4 &amp;lt;= x_i, y_i &amp;lt;= 10^4$&lt;/li>
-&lt;li>所有点都&lt;strong>互不相同&lt;/strong>&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;h4 id="思路-2">思路&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>外层循环&lt;/strong>：&lt;/li>
-&lt;li>&lt;strong>内层循环&lt;/strong>：&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-2">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">collections&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Counter&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">numberOfBoomerangs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">points&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]])&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">dis&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">])&lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">])&lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">points&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dis_&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">b&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">points&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dis_&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">dis&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">dict&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Counter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">dis_&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">val&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">dict&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">():&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">val&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">val&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">count&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-2">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n^2)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="3-无重复字符的最长子串">3. 无重复字符的最长子串&lt;/h3>
-&lt;h4 id="题目描述-3">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/hash-table/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给定一个字符串，请你找出其中不含有重复字符的&lt;strong>最长子串&lt;/strong>的长度。&lt;/p>
-&lt;p>&lt;strong>示例 1:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> s = &amp;quot;abcabcbb&amp;quot;&lt;br>
-&lt;strong>输出:&lt;/strong> 3&lt;br>
-&lt;strong>解释:&lt;/strong> 因为无重复字符的最长子串是 &amp;quot;abc&amp;quot;，所以其长度为 3。&lt;/p>
-&lt;p>&lt;strong>示例 2:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> s = &amp;quot;bbbbb&amp;quot;&lt;br>
-&lt;strong>输出:&lt;/strong> 1&lt;br>
-&lt;strong>解释:&lt;/strong> 因为无重复字符的最长子串是 &amp;quot;b&amp;quot;，所以其长度为 1。&lt;/p>
-&lt;p>&lt;strong>示例 3:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> s = &amp;quot;pwwkew&amp;quot;&lt;br>
-&lt;strong>输出:&lt;/strong> 3&lt;br>
-&lt;strong>解释:&lt;/strong> 因为无重复字符的最长子串是 &amp;quot;wke&amp;quot;，所以其长度为 3。&lt;strong>请注意&lt;/strong>: 你的答案必须是 子串 的长度，&amp;quot;pwke&amp;quot; 是一个子序列，不是子串。&lt;/p>
-&lt;p>&lt;strong>示例 4:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> s = &amp;quot;&amp;quot;&lt;br>
-&lt;strong>输出:&lt;/strong> 0&lt;/p>
-&lt;p>&lt;strong>提示：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>0 &amp;lt;= s.length &amp;lt;= 5 * 104&lt;/li>
-&lt;li>s 由英文字母、数字、符号和空格组成&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;h4 id="思路-3">思路&lt;/h4>
-&lt;ul>
-&lt;li>滑动窗口 + 哈希表&lt;/li>
-&lt;li>哈希表：
-&lt;ul>
-&lt;li>&lt;code>key&lt;/code>: 列表值&lt;/li>
-&lt;li>&lt;code>value&lt;/code>: &lt;code>idx + 1&lt;/code> # 该处的索引值 + 1&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>滑动窗口:
-&lt;ul>
-&lt;li>满足条件，扩大窗口，右移右窗口&lt;/li>
-&lt;li>不满足条件，缩小窗口，左窗口右移&lt;/li>
-&lt;li>直到右窗口到达数组列表右边界&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>条件&lt;/strong> &lt;code>s[right] in hashMap and hashMap[s[right]] &amp;gt; left&lt;/code>
-&lt;ul>
-&lt;li>遍历值在哈希表中&lt;/li>
-&lt;li>哈希表中对应的 &lt;code>value&lt;/code> $&amp;gt;$ 当前左窗口 &lt;code>left&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>更新 &lt;code>res&lt;/code>&lt;br>
-在 &lt;code>left&lt;/code> 更新之前，计算 &lt;code>res = max(res, right-left)&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-3">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">lengthOfLongestSubstring&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">hashMap&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">right&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">hashMap&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">hashMap&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">max&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">hashMap&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">hashMap&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">right&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nb">max&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-3">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;!--
-#### 题目描述
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://matnoble.github.io/dsa/basic/hash-table/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;/div>
-#### 思路
-#### 代码
-&lt;details>
-&lt;summary> Python &lt;/summary>
-```python
-```
-&lt;/details>
-#### 复杂度
-- 时间复杂度：
-- 空间复杂度：
---></description><category domain="https://matnoble.github.io/dsa/">dsa</category><category domain="https://matnoble.github.io/dsa/basic/">basic</category><category domain="https://matnoble.github.io/tags/leetcode%E9%A2%98%E8%A7%A3/">LeetCode题解</category><category domain="https://matnoble.github.io/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><category domain="https://matnoble.github.io/dsa/">dsa</category><category domain="https://matnoble.github.io/dsa/basic/">basic</category><category domain="https://matnoble.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</category><category domain="https://matnoble.github.io/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category><category domain="https://matnoble.github.io/tags/%E6%A0%91/">树</category></item></channel></rss>
