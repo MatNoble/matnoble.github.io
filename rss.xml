@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Tue, 04 Nov 2025 11:57:23 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>高等数学知识图谱</title><link>https://matnoble.github.io/math/calculus/knowledge-graph/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/knowledge-graph/</guid><pubDate>Mon, 03 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>&lt;strong>第一部分：函数、极限与连续性 (第1章)&lt;/strong>&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Tue, 04 Nov 2025 12:17:50 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>高等数学知识图谱</title><link>https://matnoble.github.io/math/calculus/knowledge-graph/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/knowledge-graph/</guid><pubDate>Mon, 03 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg"
+title="微分学"
+alt="微分学"
+width="95%"
+>
+&lt;span class="caption">◎ 微分学&lt;/span>
+&lt;/span>
+&lt;h2 id="高等数学基础知识">&lt;strong>高等数学基础知识&lt;/strong>&lt;/h2>
+&lt;h3 id="第一部分函数极限与连续性-第1章">&lt;strong>第一部分：函数、极限与连续性 (第1章)&lt;/strong>&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>核心概念：函数 (Function)&lt;/strong>&lt;/p>
@@ -96,7 +106,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>第二部分：导数与微分 (第2章)&lt;/strong>&lt;/p>
+&lt;h3 id="第二部分导数与微分-第2章">&lt;strong>第二部分：导数与微分 (第2章)&lt;/strong>&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>核心概念：导数 (Derivative)&lt;/strong>&lt;/p>
@@ -146,8 +156,8 @@
 &lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h3 id="高等数学-微分中值定理前-重难点解析">&lt;strong>高等数学 (微分中值定理前) 重难点解析&lt;/strong>&lt;/h3>
-&lt;h4 id="重难点一极限整个微积分的根基">&lt;strong>重难点一：极限——整个微积分的“根基”&lt;/strong>&lt;/h4>
+&lt;h2 id="高等数学重难点解析">&lt;strong>高等数学重难点解析&lt;/strong>&lt;/h2>
+&lt;h3 id="重难点一极限整个微积分的根基">&lt;strong>重难点一：极限——整个微积分的“根基”&lt;/strong>&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>难点所在&lt;/strong>:&lt;/p>
@@ -171,7 +181,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h4 id="重难点二导数描述瞬间变化的语言">&lt;strong>重难点二：导数——描述“瞬间”变化的语言&lt;/strong>&lt;/h4>
+&lt;h3 id="重难点二导数描述瞬间变化的语言">&lt;strong>重难点二：导数——描述“瞬间”变化的语言&lt;/strong>&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>难点所在&lt;/strong>:&lt;/p>
@@ -195,7 +205,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h4 id="重难点三微分以直代曲的近似思想">&lt;strong>重难点三：微分——“以直代曲”的近似思想&lt;/strong>&lt;/h4>
+&lt;h3 id="重难点三微分以直代曲的近似思想">&lt;strong>重难点三：微分——“以直代曲”的近似思想&lt;/strong>&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>难点所在&lt;/strong>:&lt;/p>
@@ -219,7 +229,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h4 id="重难点四闭区间上连续函数的性质">&lt;strong>重难点四：闭区间上连续函数的性质&lt;/strong>&lt;/h4>
+&lt;h3 id="重难点四闭区间上连续函数的性质">&lt;strong>重难点四：闭区间上连续函数的性质&lt;/strong>&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>难点所在&lt;/strong>:&lt;/p>
