@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Thu, 06 Nov 2025 08:14:32 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>基本初等函数导数与微分：统一方法</title><link>https://matnoble.github.io/math/calculus/calculus-formula-hack/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/calculus-formula-hack/</guid><pubDate>Thu, 06 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h2 id="引言打破死记硬背">引言：打破“死记硬背”&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Thu, 06 Nov 2025 08:24:12 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>基本初等函数导数与微分：统一方法</title><link>https://matnoble.github.io/math/calculus/calculus-formula-hack/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/calculus-formula-hack/</guid><pubDate>Thu, 06 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h2 id="引言打破死记硬背">引言：打破“死记硬背”&lt;/h2>
 &lt;p>在学习高等数学时，许多学生在“导数”和“微分”两章会遇到第一个障碍：两套看似不同、实则紧密相连的公式。&lt;/p>
 &lt;p>传统的教学方式可能是罗列两张表格让学生分别记忆，这不符合启发式教学的理念。本文旨在从根本上厘清导数与微分的关系，帮助学生将记忆负担减半，真正理解其数学意义。&lt;/p>
 &lt;h2 id="核心关键mathrmdy--fx-mathrmdx">核心关键：$\mathrm{d}y = f'(x) \mathrm{d}x$&lt;/h2>
@@ -160,36 +160,34 @@
 &lt;p>&lt;strong>示例：&lt;/strong>&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;strong>求 $d(x^a)$：&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>求 $\mathrm{d}(x^a)$：&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>因为 $(x^a)' = a x^{a-1}$&lt;/li>
-&lt;li>所以 $d(x^a) = (a x^{a-1}) \mathrm{d}x$&lt;/li>
+&lt;li>所以 $\mathrm{d}(x^a) = (a x^{a-1}) \mathrm{d}x$&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>求 $d(a^x)$：&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>求 $\mathrm{d}(a^x)$：&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>因为 $(a^x)' = a^x \ln a$&lt;/li>
-&lt;li>所以 $d(a^x) = (a^x \ln a) \mathrm{d}x$&lt;/li>
+&lt;li>所以 $\mathrm{d}(a^x) = (a^x \ln a) \mathrm{d}x$&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>求 $d(\cos x)$：&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>求 $\mathrm{d}(\cos x)$：&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>因为 $(\cos x)' = -\sin x$&lt;/li>
-&lt;li>所以 $d(\cos x) = -\sin x \mathrm{d}x$&lt;/li>
+&lt;li>所以 $\mathrm{d}(\cos x) = -\sin x \mathrm{d}x$&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>求 $d(\arctan x)$：&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>求 $\mathrm{d}(\arctan x)$：&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>因为 $(\arctan x)' = \frac{1}{1+x^2}$&lt;/li>
-&lt;li>所以 $d(\arctan x) = \frac{1}{1+x^2} \mathrm{d}x$ (或 $\frac{\mathrm{d}x}{1+x^2}$)&lt;/li>
+&lt;li>所以 $\mathrm{d}(\arctan x) = \frac{1}{1+x^2} \mathrm{d}x$ (或 $\frac{\mathrm{d}x}{1+x^2}$)&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol>
-&lt;h2 id="结论">结论&lt;/h2>
-&lt;p>通过引导学生发现 $\mathrm{d}y = f'(x) \mathrm{d}x$ 这一核心联系，可以将两套公式的记忆简化为一套。这不仅减轻了学生的学习负担，更重要的是培养了他们从联系中发现规律、理解数学本质的能力，践行了“有的放矢”和“启发式”的教学理念。&lt;/p></description><category domain="https://matnoble.github.io/math/">math</category><category domain="https://matnoble.github.io/math/calculus/">Calculus</category><category domain="https://matnoble.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</category></item><item><title>高等数学知识图谱</title><link>https://matnoble.github.io/math/calculus/knowledge-graph/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/knowledge-graph/</guid><pubDate>Mon, 03 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
+&lt;/ol></description><category domain="https://matnoble.github.io/math/">math</category><category domain="https://matnoble.github.io/math/calculus/">Calculus</category><category domain="https://matnoble.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</category></item><item><title>高等数学知识图谱</title><link>https://matnoble.github.io/math/calculus/knowledge-graph/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/knowledge-graph/</guid><pubDate>Mon, 03 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
 &lt;span class="caption-wrapper">
 &lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg"
 title="微分学"
