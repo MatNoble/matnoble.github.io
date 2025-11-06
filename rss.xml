@@ -1,4 +1,195 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Tue, 04 Nov 2025 12:17:50 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>高等数学知识图谱</title><link>https://matnoble.github.io/math/calculus/knowledge-graph/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/knowledge-graph/</guid><pubDate>Mon, 03 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://matnoble.github.io/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Thu, 06 Nov 2025 08:14:32 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://matnoble.github.io/rss.xml"/><item><title>基本初等函数导数与微分：统一方法</title><link>https://matnoble.github.io/math/calculus/calculus-formula-hack/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/calculus-formula-hack/</guid><pubDate>Thu, 06 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h2 id="引言打破死记硬背">引言：打破“死记硬背”&lt;/h2>
+&lt;p>在学习高等数学时，许多学生在“导数”和“微分”两章会遇到第一个障碍：两套看似不同、实则紧密相连的公式。&lt;/p>
+&lt;p>传统的教学方式可能是罗列两张表格让学生分别记忆，这不符合启发式教学的理念。本文旨在从根本上厘清导数与微分的关系，帮助学生将记忆负担减半，真正理解其数学意义。&lt;/p>
+&lt;h2 id="核心关键mathrmdy--fx-mathrmdx">核心关键：$\mathrm{d}y = f'(x) \mathrm{d}x$&lt;/h2>
+&lt;p>我们必须首先让学生理解导数和微分的联系。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>导数 (Derivative)：&lt;/strong> $f'(x) = \frac{\mathrm{d}y}{\mathrm{d}x}$。其本质是一个&lt;strong>函数&lt;/strong>，代表函数 $y=f(x)$ 在点 $x$ 处的变化&lt;strong>率&lt;/strong>。&lt;/li>
+&lt;li>&lt;strong>微分 (Differential)：&lt;/strong> $\mathrm{d}y$。其本质是一个&lt;strong>改变量&lt;/strong>，代表当 $x$ 产生一个微小改动 $\mathrm{d}x$ 时，$y$ &lt;strong>沿着该点切线方向&lt;/strong>所产生的改变量。&lt;/li>
+&lt;/ul>
+&lt;p>从 $\frac{\mathrm{d}y}{\mathrm{d}x} = f'(x)$ 这个定义式出发，在形式上，我们可以将两边同乘以 $\mathrm{d}x$，得到：&lt;/p>
+&lt;p>$$\mathrm{d}y = f'(x) \mathrm{d}x$$&lt;/p>
+&lt;p>这个关系式是连接导数与微分的桥梁。它清晰地表明：&lt;strong>求一个函数的微分 $\mathrm{d}y$，等价于求它的导数 $f'(x)$，然后再乘以 $\mathrm{d}x$。&lt;/strong>&lt;/p>
+&lt;p>因此，学生&lt;strong>只需要记忆一套导数公式&lt;/strong>，微分公式即可自动推导。&lt;/p>
+&lt;hr>
+&lt;h2 id="第一部分基本初等函数导数公式-重点记忆">第一部分：基本初等函数导数公式 (重点记忆)&lt;/h2>
+&lt;p>以下我们按照函数类别，总结核心的导数公式，并提供启发式的记忆方法。&lt;/p>
+&lt;h3 id="1-常数与幂函数">1. 常数与幂函数&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">函数 $f(x)$&lt;/th>
+&lt;th style="text-align:left">导数 $f'(x)$&lt;/th>
+&lt;th style="text-align:left">记忆技巧&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">$C$ (常数)&lt;/td>
+&lt;td style="text-align:left">$0$&lt;/td>
+&lt;td style="text-align:left">常数函数图像是水平线，斜率为0&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$x^a$&lt;/td>
+&lt;td style="text-align:left">$a \cdot x^{a-1}$&lt;/td>
+&lt;td style="text-align:left">“指数降幂，系数提前”&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\sqrt{x} = x^{1/2}$&lt;/td>
+&lt;td style="text-align:left">$\frac{1}{2} x^{-1/2} = \frac{1}{2\sqrt{x}}$&lt;/td>
+&lt;td style="text-align:left">( $a=1/2$ 的特例)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\frac{1}{x} = x^{-1}$&lt;/td>
+&lt;td style="text-align:left">$-1 \cdot x^{-2} = -\frac{1}{x^2}$&lt;/td>
+&lt;td style="text-align:left">( $a=-1$ 的特例)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="2-指数与对数函数">2. 指数与对数函数&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">函数 $f(x)$&lt;/th>
+&lt;th style="text-align:left">导数 $f'(x)$&lt;/th>
+&lt;th style="text-align:left">记忆技巧&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">$e^x$&lt;/td>
+&lt;td style="text-align:left">$e^x$&lt;/td>
+&lt;td style="text-align:left">$e^x$ 是导数不变的特殊函数&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$a^x$&lt;/td>
+&lt;td style="text-align:left">$a^x \ln a$&lt;/td>
+&lt;td style="text-align:left">求解时 $a^x = (e^{\ln a})^x = e^{x \ln a}$，再用链式法则&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\ln x$&lt;/td>
+&lt;td style="text-align:left">$\frac{1}{x}$&lt;/td>
+&lt;td style="text-align:left">($e^x$ 的反函数)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\log_a x$&lt;/td>
+&lt;td style="text-align:left">$\frac{1}{x \ln a}$&lt;/td>
+&lt;td style="text-align:left">(使用换底公式 $\log_a x = \frac{\ln x}{\ln a}$ 导出)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="3-三角函数">3. 三角函数&lt;/h3>
+&lt;p>&lt;strong>核心规律：&lt;/strong> 凡是函数名以 &amp;quot;co-&amp;quot; 开头的函数（$\cos, \cot, \csc$），其导数必为&lt;strong>负值&lt;/strong>。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">函数 $f(x)$&lt;/th>
+&lt;th style="text-align:left">导数 $f'(x)$&lt;/th>
+&lt;th style="text-align:left">记忆技巧&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">$\sin x$&lt;/td>
+&lt;td style="text-align:left">$\cos x$&lt;/td>
+&lt;td style="text-align:left">(正弦 $\to$ 余弦)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\cos x$&lt;/td>
+&lt;td style="text-align:left">$-\sin x$&lt;/td>
+&lt;td style="text-align:left">( &lt;strong>Co-&lt;/strong> 规律：带负号)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\tan x$&lt;/td>
+&lt;td style="text-align:left">$\sec^2 x$&lt;/td>
+&lt;td style="text-align:left">( $\tan x = \sin x / \cos x$，用除法法则推导)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\cot x$&lt;/td>
+&lt;td style="text-align:left">$-\csc^2 x$&lt;/td>
+&lt;td style="text-align:left">( &lt;strong>Co-&lt;/strong> 规律：带负号)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\sec x$&lt;/td>
+&lt;td style="text-align:left">$\sec x \tan x$&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\csc x$&lt;/td>
+&lt;td style="text-align:left">$-\csc x \cot x$&lt;/td>
+&lt;td style="text-align:left">( &lt;strong>Co-&lt;/strong> 规律：带负号)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="4-反三角函数">4. 反三角函数&lt;/h3>
+&lt;p>&lt;strong>核心规律：&lt;/strong> &amp;quot;co-&amp;quot; 规律同样适用。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">函数 $f(x)$&lt;/th>
+&lt;th style="text-align:left">导数 $f'(x)$&lt;/th>
+&lt;th style="text-align:left">记忆技巧&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">$\arcsin x$&lt;/td>
+&lt;td style="text-align:left">$\frac{1}{\sqrt{1-x^2}}$&lt;/td>
+&lt;td style="text-align:left">(重点记忆)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\arccos x$&lt;/td>
+&lt;td style="text-align:left">$-\frac{1}{\sqrt{1-x^2}}$&lt;/td>
+&lt;td style="text-align:left">( &lt;strong>Co-&lt;/strong> 规律：差一个负号)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\arctan x$&lt;/td>
+&lt;td style="text-align:left">$\frac{1}{1+x^2}$&lt;/td>
+&lt;td style="text-align:left">(重点记忆，积分常用)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">$\text{arccot } x$&lt;/td>
+&lt;td style="text-align:left">$-\frac{1}{1+x^2}$&lt;/td>
+&lt;td style="text-align:left">( &lt;strong>Co-&lt;/strong> 规律：差一个负号)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="第二部分基本初等函数微分公式-自动推导">第二部分：基本初等函数微分公式 (自动推导)&lt;/h2>
+&lt;p>基于 $\mathrm{d}y = f'(x) \mathrm{d}x$ 的原则，我们无需“背诵”以下公式，只需“应用”第一部分的导数公式即可。&lt;/p>
+&lt;p>&lt;strong>示例：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>求 $d(x^a)$：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>因为 $(x^a)' = a x^{a-1}$&lt;/li>
+&lt;li>所以 $d(x^a) = (a x^{a-1}) \mathrm{d}x$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>求 $d(a^x)$：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>因为 $(a^x)' = a^x \ln a$&lt;/li>
+&lt;li>所以 $d(a^x) = (a^x \ln a) \mathrm{d}x$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>求 $d(\cos x)$：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>因为 $(\cos x)' = -\sin x$&lt;/li>
+&lt;li>所以 $d(\cos x) = -\sin x \mathrm{d}x$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>求 $d(\arctan x)$：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>因为 $(\arctan x)' = \frac{1}{1+x^2}$&lt;/li>
+&lt;li>所以 $d(\arctan x) = \frac{1}{1+x^2} \mathrm{d}x$ (或 $\frac{\mathrm{d}x}{1+x^2}$)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="结论">结论&lt;/h2>
+&lt;p>通过引导学生发现 $\mathrm{d}y = f'(x) \mathrm{d}x$ 这一核心联系，可以将两套公式的记忆简化为一套。这不仅减轻了学生的学习负担，更重要的是培养了他们从联系中发现规律、理解数学本质的能力，践行了“有的放矢”和“启发式”的教学理念。&lt;/p></description><category domain="https://matnoble.github.io/math/">math</category><category domain="https://matnoble.github.io/math/calculus/">Calculus</category><category domain="https://matnoble.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</category></item><item><title>高等数学知识图谱</title><link>https://matnoble.github.io/math/calculus/knowledge-graph/</link><guid isPermaLink="true">https://matnoble.github.io/math/calculus/knowledge-graph/</guid><pubDate>Mon, 03 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
 &lt;span class="caption-wrapper">
 &lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg"
 title="微分学"
@@ -123,7 +314,7 @@ width="95%"
 &lt;/li>
 &lt;li>&lt;strong>求导法则&lt;/strong>:
 &lt;ul>
-&lt;li>&lt;strong>基本导数公式&lt;/strong>: 常见函数 (幂、指、对、三、反三) 的导数。&lt;/li>
+&lt;li>&lt;strong>基本导数公式&lt;/strong>: &lt;a href="https://matnoble.github.io/math/calculus/calculus-formula-hack/">常见函数 (幂、指、对、三、反三) 的导数&lt;/a>。&lt;/li>
 &lt;li>&lt;strong>四则运算法则&lt;/strong>: &lt;code>(u±v)'&lt;/code>, &lt;code>(uv)'&lt;/code>, &lt;code>(u/v)'&lt;/code>。&lt;/li>
 &lt;li>&lt;strong>复合函数求导 (链式法则)&lt;/strong>: &lt;code>[f(g(x))]' = f'(g(x))·g'(x)&lt;/code>，即“剥洋葱法”。&lt;/li>
 &lt;li>&lt;strong>反函数求导&lt;/strong>: &lt;code>dx/dy = 1 / (dy/dx)&lt;/code>。&lt;/li>
@@ -3206,288 +3397,4 @@ $1 ≤ m ≤ n ≤$ 链表长度。&lt;/p>
 #### 复杂度
 - 时间复杂度：
 - 空间复杂度：
---></description><category domain="https://matnoble.github.io/dsa/">dsa</category><category domain="https://matnoble.github.io/dsa/basic/">basic</category><category domain="https://matnoble.github.io/tags/leetcode%E9%A2%98%E8%A7%A3/">LeetCode题解</category><category domain="https://matnoble.github.io/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category><category domain="https://matnoble.github.io/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">双指针</category></item><item><title>二叉树的遍历</title><link>https://matnoble.github.io/dsa/basic/tree-traversal/</link><guid isPermaLink="true">https://matnoble.github.io/dsa/basic/tree-traversal/</guid><pubDate>Thu, 18 Feb 2021 00:19:30 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
-&lt;span class="caption-wrapper">
-&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/Order.svg"
-title="二叉树的遍历"
-alt="二叉树的遍历"
-width="95%"
->
-&lt;span class="caption">◎ 二叉树的遍历&lt;/span>
-&lt;/span>
-&lt;h2 id="定义树">定义树&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">typing&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">List&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">collections&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Definition for a binary tree node.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">TreeNode&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="fm">__init__&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">val&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">left&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">None&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">None&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">val&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">left&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">right&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="dfs-深度优先搜索">DFS 深度优先搜索&lt;/h2>
-&lt;h3 id="前序遍历">前序遍历&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/binary-tree-preorder-traversal/">leetcode 144. 二叉树的前序遍历&lt;/a>&lt;/p>
-&lt;span class="caption-wrapper">
-&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/preOrder.svg"
-title="前序遍历"
-alt="前序遍历"
-width="400"
->
-&lt;span class="caption">◎ 前序遍历&lt;/span>
-&lt;/span>
-&lt;ul>
-&lt;li>定义树&lt;br>
-上图中的树可定义为:&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">6&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>递归
-&lt;ul>
-&lt;li>时间复杂度: $O(n)$&lt;/li>
-&lt;li>空间复杂度: $O(n)$ # 最差, 二叉树退化为单链表时&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">preorderTraversalRecursion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">preorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">## 根节点&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">preorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">## 左子树&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">preorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">## 右子树&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">preorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>非递归
-&lt;ul>
-&lt;li>借助 &lt;strong>堆&lt;/strong> &lt;code>先进后出&lt;/code> 特性, &lt;strong>先将右子树入栈, 再将左子树入栈&lt;/strong>&lt;/li>
-&lt;li>时间复杂度: $O(n)$&lt;/li>
-&lt;li>空间复杂度: $O(n)$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">preorderTraversal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">root&lt;/span> &lt;span class="ow">is&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">stack&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">stack&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">stack&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pop&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">## 将&amp;#34;根&amp;#34;节点加入到结果中&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1">## 先将右子树压入栈&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">stack&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1">## 后将左子树压入栈&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">stack&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>调用&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">mat&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Solution&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">前序输出：&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mat&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">preorderTraversal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="c1"># [1, 2, 3, 4, 5, 6]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mat&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">preorderTraversalRecursion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="c1"># [1, 2, 3, 4, 5, 6]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="中序遍历">中序遍历&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/binary-tree-inorder-traversal/">leetcode 94. 二叉树的中序遍历&lt;/a>&lt;/p>
-&lt;span class="caption-wrapper">
-&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/inOrder.svg"
-title="中序遍历"
-alt="中序遍历"
-width="400"
->
-&lt;span class="caption">◎ 中序遍历&lt;/span>
-&lt;/span>
-&lt;ul>
-&lt;li>定义树&lt;br>
-上图中的树可定义为:&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">6&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>递归
-&lt;ul>
-&lt;li>时间复杂度: $O(n)$&lt;/li>
-&lt;li>空间复杂度: $O(n)$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">inorderTraversalRecursion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">inorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">inorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">## 左子树&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">## 根节点&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">inorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">## 右子树&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">inorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>非递归&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">inorderTraversal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cur&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">stack&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">[],&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">stack&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">stack&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cur&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cur&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">stack&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pop&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cur&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>调用&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">中序输出：&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mat&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">inorderTraversal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="c1"># [1,2,3,4,5,6]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mat&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">inorderTraversalRecursion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="c1"># [1,2,3,4,5,6]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="后序遍历">后序遍历&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/binary-tree-postorder-traversal/">leetcode 145. 二叉树的后序遍历&lt;/a>&lt;/p>
-&lt;span class="caption-wrapper">
-&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/postOrder.svg"
-title="后序遍历"
-alt="后序遍历"
-width="400"
->
-&lt;span class="caption">◎ 后序遍历&lt;/span>
-&lt;/span>
-&lt;ul>
-&lt;li>递归&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">postorderTraversalRecursion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">postorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">postorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">postorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">## 后序&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">postorder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>非递归&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">postorderTraversal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">root&lt;/span> &lt;span class="ow">is&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">stack&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">)],&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">stack&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">flag&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">stack&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pop&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">flag&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="ow">not&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">stack&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">stack&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">stack&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr />
-&lt;h2 id="bfs-广度优先搜索">BFS 广度优先搜索&lt;/h2>
-&lt;h3 id="层序遍历">层序遍历&lt;/h3>
-&lt;span class="caption-wrapper">
-&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images/levelOrder.svg"
-title="层序遍历"
-alt="层序遍历"
-width="400"
->
-&lt;span class="caption">◎ 层序遍历&lt;/span>
-&lt;/span>
-&lt;h4 id="正序">正序&lt;/h4>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/binary-tree-level-order-traversal/">leetcode 102. 二叉树的层序遍历&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">levelTraversalLeft&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kn">from&lt;/span> &lt;span class="nn">collections&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">deque&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[],&lt;/span> &lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">n&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">level&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">queue&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">level&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">level&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="逆序">逆序&lt;/h4>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">levelTraversalRight&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[],&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">n&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">level&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">queue&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">level&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">level&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">levelTraversal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[],&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">n&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">level&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">queue&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">level&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">appendleft&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">list&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">level&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="锯齿">锯齿&lt;/h4>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/">剑指 offer 剑指 Offer 32 - III. 从上到下打印二叉树 III&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">levelOrder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kn">from&lt;/span> &lt;span class="nn">collections&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">deque&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">k&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">[],&lt;/span> &lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">n&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">level&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">queue&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">k&lt;/span> &lt;span class="o">*=&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">k&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1">## 左 --&amp;gt; 右&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">level&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1">## 右 --&amp;gt; 左&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">level&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">appendleft&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">node&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">list&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">level&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="树的深度">树的深度&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">maxDepth&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TreeNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">bottomUp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="c1">## 自下而上&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="nb">max&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">bottomUp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">bottomUp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">topDown&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">depth&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="c1">## 自上而下&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">depth&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">root&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="nb">max&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">topDown&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">depth&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">topDown&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">depth&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">topDown&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">bottomUp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><category domain="https://matnoble.github.io/dsa/">dsa</category><category domain="https://matnoble.github.io/dsa/basic/">basic</category><category domain="https://matnoble.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</category><category domain="https://matnoble.github.io/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category><category domain="https://matnoble.github.io/tags/%E6%A0%91/">树</category></item></channel></rss>
+--></description><category domain="https://matnoble.github.io/dsa/">dsa</category><category domain="https://matnoble.github.io/dsa/basic/">basic</category><category domain="https://matnoble.github.io/tags/leetcode%E9%A2%98%E8%A7%A3/">LeetCode题解</category><category domain="https://matnoble.github.io/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category><category domain="https://matnoble.github.io/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">双指针</category></item></channel></rss>
