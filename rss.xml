@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Sat, 29 Nov 2025 14:44:25 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>线性方程组专题(1)：别再只盯着“交点”看了！</title><link>https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</link><guid isPermaLink="true">https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</guid><pubDate>Sat, 29 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>&lt;strong>摘要&lt;/strong>：
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Sat, 29 Nov 2025 15:01:21 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>线性方程组专题(1)：别再只盯着“交点”看了！</title><link>https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</link><guid isPermaLink="true">https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</guid><pubDate>Sat, 29 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>&lt;strong>摘要&lt;/strong>：
 为什么 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 难住了 90%的初学者？因为你还在用高中的“几何直觉”硬套大学的“线性思维”。今天，我们拆掉思维里的墙，从“行”走到“列”，带你领略线性代数真正的威力。&lt;/p>
 &lt;hr>
 &lt;h2 id="0-一个被忽视的常识">0. 一个被忽视的“常识”&lt;/h2>
@@ -8,7 +8,7 @@ $$ \mathbf{A}\boldsymbol{x} = \boldsymbol{b} $$
 &lt;p>对于这个方程，你一定不陌生。回想一下高中，当我们面对一个二元一次方程组：&lt;/p>
 &lt;p>$$
 \begin{cases}
-x + y = 2 \
+x + y = 2 \\
 x - y = 0
 \end{cases}
 $$&lt;/p>
@@ -36,13 +36,13 @@ $$&lt;/p>
 &lt;h2 id="2-颠覆认知的列图像">2. 颠覆认知的“列图像”&lt;/h2>
 &lt;p>现在，让我们施展魔法，把方程组 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 拆开来看。&lt;/p>
 &lt;p>$$
-\begin{bmatrix} 1 &amp;amp; 1 \ 1 &amp;amp; -1 \end{bmatrix} \begin{bmatrix} x \ y \end{bmatrix} = \begin{bmatrix} 2 \ 0 \end{bmatrix}
+\begin{bmatrix} 1 &amp;amp; 1 \\ 1 &amp;amp; -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}
 $$&lt;/p>
 &lt;p>我们不再横着看（行），而是竖着看（列）。
-我们将矩阵 $\mathbf{A}$ 拆分为两个列向量：$\boldsymbol{c}_1 = \begin{bmatrix} 1 \ 1 \end{bmatrix}$ 和 $\boldsymbol{c}_2 = \begin{bmatrix} 1 \ -1 \end{bmatrix}$。&lt;/p>
+我们将矩阵 $\mathbf{A}$ 拆分为两个列向量：$\boldsymbol{c}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$ 和 $\boldsymbol{c}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$。&lt;/p>
 &lt;p>此时，方程组奇迹般地变成了一个&lt;strong>向量的线性组合&lt;/strong>问题：&lt;/p>
 &lt;p>$$
-x \begin{bmatrix} 1 \ 1 \end{bmatrix} + y \begin{bmatrix} 1 \ -1 \end{bmatrix} = \begin{bmatrix} 2 \ 0 \end{bmatrix}
+x \begin{bmatrix} 1 \\ 1 \end{bmatrix} + y \begin{bmatrix} 1 \\ -1 \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}
 $$&lt;/p>
 &lt;h3 id="这里的几何意义完全变了">这里的几何意义完全变了！&lt;/h3>
 &lt;p>现在，问题不再是“寻找交点”，而是变成了：&lt;/p>
@@ -57,11 +57,11 @@ $$&lt;/p>
 &lt;h2 id="3-为什么要费劲学列图像">3. 为什么要费劲学“列图像”？&lt;/h2>
 &lt;p>你可能会说：“原来的方法也能算出答案啊，为什么要折腾？”&lt;/p>
 &lt;p>问得好。但在更高维度的世界里，“列图像”才是王道。它引出了线性代数中最重要的概念之一：&lt;strong>列空间 (Column Space)&lt;/strong>。&lt;/p>
-&lt;p>试想，如果 $\boldsymbol{b}$ 变了，变成了 $\begin{bmatrix} 3 \ 5 \end{bmatrix}$，或者其他任何向量。
+&lt;p>试想，如果 $\boldsymbol{b}$ 变了，变成了 $\begin{bmatrix} 3 \\ 5 \end{bmatrix}$，或者其他任何向量。
 我们真正关心的是：&lt;strong>这两个列向量，到底能拼出多少种可能性？&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>它们能铺满整个二维平面吗？（在这个例子里，能！）&lt;/li>
-&lt;li>如果 $\boldsymbol{c}_1$ 和 $\boldsymbol{c}_2$ 共线了（比如 $\boldsymbol{c}_2$ 也是 $\begin{bmatrix} 1 \ 1 \end{bmatrix}$），它们还能铺满平面吗？（不能，只能铺满一条线！）&lt;/li>
+&lt;li>如果 $\boldsymbol{c}_1$ 和 $\boldsymbol{c}_2$ 共线了（比如 $\boldsymbol{c}_2$ 也是 $\begin{bmatrix} 1 \\ 1 \end{bmatrix}$），它们还能铺满平面吗？（不能，只能铺满一条线！）&lt;/li>
 &lt;/ul>
 &lt;p>这就是&lt;strong>线性相关性&lt;/strong>的几何直观。&lt;/p>
 &lt;ul>
@@ -85,7 +85,7 @@ $$&lt;/p>
 &lt;p>&lt;strong>下一期预告&lt;/strong>：&lt;a href="https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/">线性方程组专题(2)：解的形状——为什么&amp;quot;齐次&amp;quot;那么重要？&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>&lt;strong>互动思考&lt;/strong>：
-你能画出 $x \begin{bmatrix} 1 \ 0 \end{bmatrix} + y \begin{bmatrix} 0 \ 1 \end{bmatrix} = \begin{bmatrix} 3 \ 4 \end{bmatrix}$ 的列图像吗？在评论区告诉我你的理解！&lt;/p></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/linear-algebra/">Linear-Algebra</category><category domain="https://blog.matnoble.top/series/mla/">线代拾遗</category><category domain="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/">线性方程组</category></item><item><title>别怕，泰勒公式是纸老虎：从“以直代曲”到“指哪打哪”</title><link>https://blog.matnoble.top/math/calculus/taylor-formula/</link><guid isPermaLink="true">https://blog.matnoble.top/math/calculus/taylor-formula/</guid><pubDate>Tue, 11 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;blockquote>
+你能画出 $x \begin{bmatrix} 1 \\ 0 \end{bmatrix} + y \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$ 的列图像吗？在评论区告诉我你的理解！&lt;/p></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/linear-algebra/">Linear-Algebra</category><category domain="https://blog.matnoble.top/series/mla/">线代拾遗</category><category domain="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/">线性方程组</category></item><item><title>别怕，泰勒公式是纸老虎：从“以直代曲”到“指哪打哪”</title><link>https://blog.matnoble.top/math/calculus/taylor-formula/</link><guid isPermaLink="true">https://blog.matnoble.top/math/calculus/taylor-formula/</guid><pubDate>Tue, 11 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;blockquote>
 &lt;p>“如果给我一个支点，我就能撬动整个地球。” ——阿基米德&lt;/p>
 &lt;/blockquote>
 &lt;p>在高等数学的世界里，泰勒公式就是那个无所不能的“支点”。&lt;/p>
