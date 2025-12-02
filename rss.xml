@@ -1,4 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Sat, 29 Nov 2025 16:46:55 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>线性方程组专题(1)：别再只盯着“交点”看了！</title><link>https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</link><guid isPermaLink="true">https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</guid><pubDate>Sat, 29 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>&lt;strong>摘要&lt;/strong>：
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Tue, 02 Dec 2025 14:27:48 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>线性方程组专题(2)：解的形状——为什么“齐次”那么重要？</title><link>https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/</link><guid isPermaLink="true">https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/</guid><pubDate>Tue, 02 Dec 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>&lt;strong>摘要&lt;/strong>：
+你是否背过“通解 = 特解 + 齐次通解”这个公式？但你真的理解它背后的几何图景吗？今天，我们深入“零空间”，揭开线性方程组解集的真实面纱。&lt;/p>
+&lt;hr>
+&lt;h2 id="0-一个奇怪的公式">0. 一个奇怪的公式&lt;/h2>
+&lt;blockquote>
+&lt;p>前情回顾:在&lt;a href="https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/">上一期&lt;/a>中,我们学习了如何从&amp;quot;列图像&amp;quot;的角度理解线性方程组,把 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 看作向量的线性组合问题。&lt;/p>
+&lt;/blockquote>
+&lt;p>在解非齐次线性方程组 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 时，老师总会让我们先解对应的齐次方程组 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$。
+最后给出的通解公式是：
+$$ \boldsymbol{x} = \boldsymbol{x}_p + \boldsymbol{x}_h $$&lt;/p>
+&lt;ul>
+&lt;li>$\boldsymbol{x}_p$ 是 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 的一个&lt;strong>特解 (Particular Solution)&lt;/strong>。&lt;/li>
+&lt;li>$\boldsymbol{x}_h$ 是 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$ 的&lt;strong>齐次通解 (Homogeneous Solution)&lt;/strong>。&lt;/li>
+&lt;/ul>
+&lt;p>很多同学对此感到困惑：&lt;strong>我明明求的是 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 的解，为什么要费劲去求 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$？那个 $0$ 到底有什么魔力？&lt;/strong>&lt;/p>
+&lt;p>今天，我们就用几何的视角，把这个公式“画”出来。&lt;/p>
+&lt;h2 id="1-齐次方程寻找零空间">1. 齐次方程：寻找“零空间”&lt;/h2>
+&lt;p>首先，我们来看看 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$。
+$$ \begin{bmatrix} 1 &amp;amp; 2 \\ 2 &amp;amp; 4 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} $$
+显然，$(0,0)$ 肯定是一个解。除此之外呢？
+你会发现，所有满足 $x + 2y = 0$ 的向量都是解，比如 $(-2, 1), (-4, 2)$ 等等。&lt;/p>
+&lt;p>这些解构成了一条通过原点的直线。
+在数学上，我们给它起了一个很酷的名字：&lt;strong>核空间 (Kernel)&lt;/strong> 或 &lt;strong>零空间 (Null Space)&lt;/strong>。&lt;/p>
+&lt;h3 id="为什么它很重要">为什么它很重要？&lt;/h3>
+&lt;p>因为&lt;strong>零空间是一个“子空间” (Subspace)&lt;/strong>。
+这意味着它具有完美的代数性质：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>封闭性&lt;/strong>：你在零空间里怎么加、怎么乘，结果还在零空间里。&lt;/li>
+&lt;li>&lt;strong>过原点&lt;/strong>：它一定包含零向量。&lt;/li>
+&lt;/ul>
+&lt;p>你可以把它想象成一个&lt;strong>过原点的平坦结构&lt;/strong>（直线、平面、或高维平面）。&lt;/p>
+&lt;h2 id="2-非齐次方程平移的艺术">2. 非齐次方程：平移的艺术&lt;/h2>
+&lt;p>现在，我们回到 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$。
+$$ \begin{bmatrix} 1 &amp;amp; 2 \\ 2 &amp;amp; 4 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 3 \\ 6 \end{bmatrix} $$
+我们很容易找到一个特解，比如 $\boldsymbol{x}_p = (1, 1)$。
+那么，其他的解在哪里呢？&lt;/p>
+&lt;p>神奇的事情发生了：&lt;strong>所有的解，其实就是把那个“零空间”整体平移了一下！&lt;/strong>&lt;/p>
+&lt;p>想象一下：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>零空间&lt;/strong>是一条过原点的直线 $L_0$。&lt;/li>
+&lt;li>&lt;strong>特解&lt;/strong> $\boldsymbol{x}_p$ 是一个向量，把原点“推”到了 $(1,1)$ 的位置。&lt;/li>
+&lt;li>&lt;strong>解集&lt;/strong> 就是被推开后的那条直线 $L$。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251129203500417.png" alt="解的结构：平移">
+&lt;em>(图注：齐次解（蓝色虚线）过原点，非齐次解（红色实线）是它的平移)&lt;/em>&lt;/p>
+&lt;p>这就是公式 $\boldsymbol{x} = \boldsymbol{x}_p + \boldsymbol{x}_h$ 的几何含义：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>非齐次解集 = 特解向量 + 零空间&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="3-仿射空间失去原点的悲伤">3. 仿射空间：失去“原点”的悲伤&lt;/h2>
+&lt;p>这里有一个非常重要的概念陷阱。
+虽然非齐次方程的解集看起来也是一条直线（或平面），但它&lt;strong>不是&lt;/strong>线性子空间。&lt;/p>
+&lt;p>为什么？
+因为它&lt;strong>不过原点&lt;/strong>！
+在数学上，我们称之为&lt;strong>仿射空间 (Affine Space)&lt;/strong>。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>子空间 (Subspace)&lt;/strong>：必须过原点，结构完美，像是一个“家”。&lt;/li>
+&lt;li>&lt;strong>仿射空间 (Affine Space)&lt;/strong>：是被平移后的子空间，虽然形状一样，但失去了“零点”这个根基。&lt;/li>
+&lt;/ul>
+&lt;p>这就像：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>齐次解&lt;/strong>是“过起点的跑道”。&lt;/li>
+&lt;li>&lt;strong>非齐次解&lt;/strong>是“起跑线前移了 10 米的跑道”。&lt;/li>
+&lt;/ul>
+&lt;h2 id="4-总结">4. 总结&lt;/h2>
+&lt;p>为什么我们要先解 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$？
+因为 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$ 刻画了解集的&lt;strong>形状&lt;/strong>（是直线？平面？还是点？）。
+而 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 只是决定了解集的&lt;strong>位置&lt;/strong>（平移到了哪里）。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>$\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$ (齐次)&lt;/strong>：决定了&lt;strong>方向&lt;/strong>和&lt;strong>维度&lt;/strong>（Kernel）。&lt;/li>
+&lt;li>&lt;strong>$\boldsymbol{b}$ (非齐次项)&lt;/strong>：决定了&lt;strong>位移&lt;/strong>。&lt;/li>
+&lt;/ul>
+&lt;p>当你理解了这一点，那个枯燥的通解公式 $\boldsymbol{x} = \boldsymbol{x}_p + \boldsymbol{x}_h$，是不是瞬间变得生动起来了？它描述的不是一串数字，而是一次空间的&lt;strong>平移变换&lt;/strong>。&lt;/p>
+&lt;p>下一期，我们将站得更高，把矩阵看作一台&lt;strong>机器&lt;/strong>，从&lt;strong>线性变换&lt;/strong>的角度，彻底打通 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 的任督二脉。&lt;/p>
+&lt;p>&lt;strong>下一期预告&lt;/strong>：&lt;a href="https://blog.matnoble.top/math/linear-algebra/matrix-transformation-big-picture/">线性方程组专题(3)：上帝视角——矩阵是一台&amp;quot;降维打击&amp;quot;的机器&lt;/a>&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>互动思考&lt;/strong>：
+如果 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$ 只有零解（零空间只有原点），那么 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 的解会是什么样子的？（提示：形状是什么？位置在哪里？）&lt;/p></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/linear-algebra/">Linear-Algebra</category><category domain="https://blog.matnoble.top/series/mla/">线代拾遗</category><category domain="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/">线性方程组</category></item><item><title>线性方程组专题(1)：别再只盯着“交点”看了！</title><link>https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</link><guid isPermaLink="true">https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</guid><pubDate>Sat, 29 Nov 2025 00:00:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>&lt;strong>摘要&lt;/strong>：
 为什么 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 难住了 90%的初学者？因为你还在用高中的“几何直觉”硬套大学的“线性思维”。今天，我们拆掉思维里的墙，从“行”走到“列”，带你领略线性代数真正的威力。&lt;/p>
 &lt;hr>
 &lt;h2 id="0-一个被忽视的常识">0. 一个被忽视的“常识”&lt;/h2>
@@ -3080,156 +3157,4 @@ $0 &amp;lt;=$ &lt;code>s.length&lt;/code> $&amp;lt;= 5 * 10^4$&lt;br>
 #### 复杂度
 - 时间复杂度：
 - 空间复杂度：
---></description><category domain="https://blog.matnoble.top/dsa/">dsa</category><category domain="https://blog.matnoble.top/dsa/topics/">topics</category><category domain="https://blog.matnoble.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">双指针</category><category domain="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category></item><item><title>反转链表</title><link>https://blog.matnoble.top/dsa/basic/reverse-linked-list/</link><guid isPermaLink="true">https://blog.matnoble.top/dsa/basic/reverse-linked-list/</guid><pubDate>Sat, 27 Feb 2021 00:19:30 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h2 id="目录">目录&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="./#206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8">206. 反转链表&lt;/a>&lt;/li>
-&lt;li>&lt;a href="./#92-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8-ii">92. 反转链表 II&lt;/a>&lt;/li>
-&lt;li>&lt;a href="./#25-k-%E4%B8%AA%E4%B8%80%E7%BB%84%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8">&lt;strong>25. K 个一组翻转链表&lt;/strong>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="206-反转链表">206. 反转链表&lt;/h2>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list/">https://leetcode-cn.com/problems/reverse-linked-list/&lt;/a>&lt;/p>
-&lt;h3 id="题目描述">题目描述&lt;/h3>
-&lt;style type="text/css">.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}&lt;/style>
-&lt;div>&lt;svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">&lt;symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/>&lt;/symbol>&lt;symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>&lt;/symbol>&lt;/svg>&lt;/div>&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/basic/reverse-linked-list/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>反转一个单链表。&lt;/p>
-&lt;p>&lt;strong>示例:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> &lt;code>1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL&lt;/code>&lt;br>
-&lt;strong>输出:&lt;/strong> &lt;code>5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL&lt;/code>&lt;/p>
-&lt;p>&lt;strong>进阶:&lt;/strong>&lt;br>
-你可以 ..迭代.. 或 ..递归.. 地反转链表。你能否用两种方法解决这道题？&lt;/p>&lt;/div>
-&lt;h3 id="代码">代码&lt;/h3>
-&lt;ul>
-&lt;li>迭代&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">reverseList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ListNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">ListNode&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> 迭代
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> pre --&amp;gt; cur --&amp;gt; cur.next
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> pre &amp;lt;-- cur --&amp;gt; cur.next
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> T: O(n)
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> S: O(1)
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cur&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">pre&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>递归&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">reverseList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ListNode&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">ListNode&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> 递归
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> head --&amp;gt; head.next ...
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> head &amp;lt;-- head.next ...
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> None &amp;lt;-- head
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> T: O(n)
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> S: O(n)
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">head&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">head&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">newHead&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">reverseList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">newHead&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="复杂度">复杂度&lt;/h3>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(1)$(迭代) $O(n)$(递归)&lt;/li>
-&lt;/ul>
-&lt;hr />
-&lt;h2 id="92-反转链表-ii">92. 反转链表 II&lt;/h2>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/reverse-linked-list-ii/">https://leetcode-cn.com/problems/reverse-linked-list-ii/&lt;/a>&lt;/p>
-&lt;h3 id="题目描述-1">题目描述&lt;/h3>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/basic/reverse-linked-list/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>反转从位置 $m$ 到 $n$ 的链表。请使用一趟扫描完成反转。&lt;/p>
-&lt;p>&lt;strong>说明:&lt;/strong>&lt;br>
-$1 ≤ m ≤ n ≤$ 链表长度。&lt;/p>
-&lt;p>&lt;strong>示例:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> &lt;code>1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL, m = 2, n = 4&lt;/code>&lt;br>
-&lt;strong>输出:&lt;/strong> &lt;code>1-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;5-&amp;gt;NULL&lt;/code>&lt;/p>&lt;/div>
-&lt;h3 id="代码-1">代码&lt;/h3>
-&lt;ul>
-&lt;li>迭代&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">reverseBetween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">m&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">head&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">n1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cur&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">m1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">m2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 拼接&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">n1&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">n1&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">m1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">n2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">m2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">head&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">n1&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="n">m1&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>递归&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">reverseN&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">n&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">head&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">newHead&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">reverseN&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">newHead&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">reverseBetween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">m&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">head&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">reverse&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">m&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">reverseN&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">reverse&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">head&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">reverse&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="复杂度-1">复杂度&lt;/h3>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(1)$(迭代) $O(n)$&lt;/li>
-&lt;/ul>
-&lt;hr />
-&lt;h2 id="25-k-个一组翻转链表">25. K 个一组翻转链表&lt;/h2>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/reverse-nodes-in-k-group/">https://leetcode-cn.com/problems/reverse-nodes-in-k-group/&lt;/a>&lt;/p>
-&lt;h3 id="题目描述-2">题目描述&lt;/h3>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/basic/reverse-linked-list/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给你一个链表，每 $k$ 个节点一组进行翻转，请你返回翻转后的链表。&lt;/p>
-&lt;p>$k$ 是一个正整数，它的值小于或等于链表的长度。&lt;/p>
-&lt;p>如果节点总数不是 $k$ 的整数倍，那么请将最后剩余的节点保持原有顺序。&lt;/p>
-&lt;p>&lt;strong>进阶：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>你可以设计一个只使用常数额外空间的算法来解决此问题吗？&lt;/li>
-&lt;li>&lt;strong>你不能只是单纯的改变节点内部的值&lt;/strong>，而是需要实际进行节点交换。&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>示例&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> &lt;code>head = [1,2,3,4,5], k = 2&lt;/code>&lt;br>
-&lt;strong>输出&lt;/strong>：&lt;code>[2,1,4,3,5]&lt;/code>&lt;/p>&lt;/div>
-&lt;h3 id="代码-2">代码&lt;/h3>
-&lt;ul>
-&lt;li>递归&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">reverseKGroup&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ListNode&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">ListNode&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">reverse&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nxt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">a&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">cur&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">nxt&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">pre&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pre&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cur&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cur&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nxt&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">pre&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="kc">None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">head&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">head&lt;/span> &lt;span class="c1"># 计数返回&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">b&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">newHead&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">reverse&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">a&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">next&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">reverseKGroup&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">newHead&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="复杂度-2">复杂度&lt;/h3>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul></description><category domain="https://blog.matnoble.top/dsa/">dsa</category><category domain="https://blog.matnoble.top/dsa/basic/">basic</category><category domain="https://blog.matnoble.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</category><category domain="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category><category domain="https://blog.matnoble.top/tags/%E9%93%BE%E8%A1%A8/">链表</category></item></channel></rss>
+--></description><category domain="https://blog.matnoble.top/dsa/">dsa</category><category domain="https://blog.matnoble.top/dsa/topics/">topics</category><category domain="https://blog.matnoble.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">双指针</category><category domain="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/">编程刷题</category></item></channel></rss>
