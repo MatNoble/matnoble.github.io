@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><title type="text">MatNoble</title><subtitle type="html">分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</subtitle><updated>2025-12-02T14:27:48+00:00</updated><id>https://blog.matnoble.top/</id><link rel="alternate" type="text/html" href="https://blog.matnoble.top/"/><link rel="self" type="application/atom+xml" href="https://blog.matnoble.top/atom.xml"/><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><generator uri="https://gohugo.io/" version="0.115.3">Hugo</generator><entry><title type="text">线性方程组专题(2)：解的形状——为什么“齐次”那么重要？</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/"/><id>https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2025-12-02T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">揭秘线性方程组通解公式背后的几何直观。为什么非齐次解是齐次解的平移？带你理解零空间（Kernel）、特解与仿射空间的深刻联系。</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><title type="text">MatNoble</title><subtitle type="html">分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</subtitle><updated>2025-12-04T15:48:33+00:00</updated><id>https://blog.matnoble.top/</id><link rel="alternate" type="text/html" href="https://blog.matnoble.top/"/><link rel="self" type="application/atom+xml" href="https://blog.matnoble.top/atom.xml"/><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><generator uri="https://gohugo.io/" version="0.115.3">Hugo</generator><entry><title type="text">线性方程组专题(3)：上帝视角——矩阵是一台“降维打击”的机器</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/linear-algebra/matrix-transformation-big-picture/"/><id>https://blog.matnoble.top/math/linear-algebra/matrix-transformation-big-picture/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2025-12-04T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">从线性变换的高度俯瞰矩阵。详解矩阵作为空间映射机器的本质，探讨核空间、像空间、秩-零化度定理以及斯特朗教授的四个基本子空间图景。</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：
+如果说“列图像”是搭积木，“解的结构”是空间平移，那么今天我们要站在上帝视角，把矩阵看作一台精密的“空间变换机器”。这将是你理解线性代数最关键的一次思维升华。&lt;/p>
+&lt;hr>
+&lt;h2 id="0-矩阵的真面目">0. 矩阵的真面目&lt;/h2>
+&lt;blockquote>
+&lt;p>系列回顾：&lt;a href="https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/">专题(1) 行与列图像&lt;/a> | &lt;a href="https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/">专题(2) 解的结构&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>在之前的文章里，我们把矩阵 $\mathbf{A}$ 看作是一组方程的系数（行视角），或者是一组积木的集合（列视角）。
+但现代数学家更喜欢把它看作一个&lt;strong>函数&lt;/strong>，或者说一个&lt;strong>映射 (Mapping)&lt;/strong>。&lt;/p>
+&lt;p>$$ T(\boldsymbol{x}) = \mathbf{A}\boldsymbol{x} $$&lt;/p>
+&lt;p>把 $\mathbf{A}$ 想象成一台机器：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>输入&lt;/strong>：一个向量 $\boldsymbol{x}$（来自 $\mathbb{R}^n$ 空间）。&lt;/li>
+&lt;li>&lt;strong>处理&lt;/strong>：经过矩阵 $\mathbf{A}$ 的乘法运算。&lt;/li>
+&lt;li>&lt;strong>输出&lt;/strong>：一个新的向量 $\boldsymbol{b}$（进入 $\mathbb{R}^m$ 空间）。&lt;/li>
+&lt;/ul>
+&lt;p>这不仅仅是数字的计算，而是&lt;strong>空间的变换&lt;/strong>。&lt;/p>
+&lt;ul>
+&lt;li>它可以把一个正方形拉伸成平行四边形。&lt;/li>
+&lt;li>它可以把整个空间旋转、镜像。&lt;/li>
+&lt;li>它甚至可以把高维空间“压扁”成低维空间。&lt;/li>
+&lt;/ul>
+&lt;h2 id="1-核空间被吃掉的维度">1. 核空间：被“吃掉”的维度&lt;/h2>
+&lt;p>还记得我们在&lt;a href="https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/">上一期&lt;/a>讲的&lt;strong>核空间 (Kernel)&lt;/strong> 吗？也就是 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$ 的解集。
+在“机器”的视角下，它的含义变得有点可怕：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>核空间里的所有向量，在经过机器 $\mathbf{A}$ 处理后，都变成了 $\boldsymbol{0}$。&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;p>换句话说，这些向量所代表的信息，被这台机器&lt;strong>毁灭&lt;/strong>了，&lt;strong>压缩&lt;/strong>了，&lt;strong>降维&lt;/strong>了。&lt;/p>
+&lt;ul>
+&lt;li>如果 $\text{Ker}(\mathbf{A})$ 只有零向量：说明机器保留了所有信息，没有“压扁”任何维度。变换是可逆的。&lt;/li>
+&lt;li>如果 $\text{Ker}(\mathbf{A})$ 是一条直线或平面：说明机器把整个空间沿着这个方向“拍扁”了。&lt;/li>
+&lt;/ul>
+&lt;p>这就是为什么方阵如果行列式为 0（奇异），它就不可逆。因为它把一部分空间“压”没了，你再也回不去了。&lt;/p>
+&lt;h2 id="2-像空间机器的能力边界">2. 像空间：机器的“能力边界”&lt;/h2>
+&lt;p>机器输出的所有可能的向量 $\boldsymbol{b}$ 的集合，构成了另一个空间。
+我们称之为&lt;strong>像空间 (Image Space)&lt;/strong>，其实它就是我们&lt;a href="https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/">第一期&lt;/a>讲的&lt;strong>列空间 (Column Space)&lt;/strong>。&lt;/p>
+&lt;p>$$ \text{Im}(\mathbf{A}) = C(\mathbf{A}) $$&lt;/p>
+&lt;p>这代表了这台机器的&lt;strong>能力边界&lt;/strong>。&lt;/p>
+&lt;ul>
+&lt;li>无论你怎么调整输入 $\boldsymbol{x}$，输出 $\boldsymbol{b}$ 永远跑不出这个空间。&lt;/li>
+&lt;li>如果 $\boldsymbol{b}$ 在像空间里，方程有解。&lt;/li>
+&lt;li>如果 $\boldsymbol{b}$ 在像空间外，方程无解（机器造不出这个产品）。&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-秩-零化度定理能量守恒">3. 秩-零化度定理：能量守恒&lt;/h2>
+&lt;p>在线性代数中，有一个堪称“能量守恒定律”的伟大定理：&lt;strong>秩-零化度定理 (Rank-Nullity Theorem)&lt;/strong>。&lt;/p>
+&lt;p>$$ n = \text{rank}(\mathbf{A}) + \text{nullity}(\mathbf{A}) $$&lt;/p>
+&lt;ul>
+&lt;li>$n$：输入的总维度（原本的自由度）。&lt;/li>
+&lt;li>$\text{rank}(\mathbf{A})$：像空间的维度（输出的有效维度）。&lt;/li>
+&lt;li>$\text{nullity}(\mathbf{A})$：核空间的维度（被压扁的维度）。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>直观理解：&lt;/strong>
+你原本有 $n$ 维的信息。经过机器 $\mathbf{A}$ 处理后：
+一部分维度保留了下来，变成了&lt;strong>秩 (Rank)&lt;/strong>；
+另一部分维度被压缩成了 0，变成了&lt;strong>零化度 (Nullity)&lt;/strong>。
+它们加起来，必须等于原本的总维度 $n$。&lt;/p>
+&lt;h2 id="4-终极图景四个基本子空间">4. 终极图景：四个基本子空间&lt;/h2>
+&lt;p>至此，我们终于拼完了线性代数的完整拼图。
+对于任意矩阵 $\mathbf{A}$，宇宙中存在四个神圣的子空间：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>列空间 (Column Space)&lt;/strong>：机器能造出的所有产品。&lt;/li>
+&lt;li>&lt;strong>零空间 (Null Space)&lt;/strong>：被机器毁灭的所有原料。&lt;/li>
+&lt;li>&lt;strong>行空间 (Row Space)&lt;/strong>：机器真正利用的有效原料（与零空间正交）。&lt;/li>
+&lt;li>&lt;strong>左零空间 (Left Null Space)&lt;/strong>：机器造不出的产品所在的“死角”。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251129203500415.png" alt="四个基本子空间">
+&lt;em>(图注：Strang 教授经典的“四个子空间”图示，展示了矩阵变换的完整几何图景)&lt;/em>&lt;/p>
+&lt;p>当你能闭上眼睛，在脑海中看到这四个空间如何正交、互补、映射时，恭喜你，你已经掌握了线性代数的心脏。&lt;/p>
+&lt;h2 id="5-图解核心为什么行空间指向列空间">5. 图解核心：为什么行空间指向列空间？&lt;/h2>
+&lt;p>你可能注意到了图中那个连接“行空间”和“列空间”的箭头。这其实揭示了矩阵变换最精妙的性质。&lt;/p>
+&lt;p>对于任意向量 $\boldsymbol{x}$，我们都可以把它分解为两部分：$\boldsymbol{x} = \boldsymbol{x}_r + \boldsymbol{x}_n$。&lt;/p>
+&lt;ul>
+&lt;li>$\boldsymbol{x}_n$ 属于&lt;strong>零空间&lt;/strong>（会被矩阵变成 $\boldsymbol{0}$）。&lt;/li>
+&lt;li>$\boldsymbol{x}_r$ 属于&lt;strong>行空间&lt;/strong>（与零空间垂直）。&lt;/li>
+&lt;/ul>
+&lt;p>当我们进行矩阵乘法时：
+$$ \mathbf{A}\boldsymbol{x} = \mathbf{A}(\boldsymbol{x}_r + \boldsymbol{x}_n) = \mathbf{A}\boldsymbol{x}_r + \mathbf{0} = \mathbf{A}\boldsymbol{x}_r $$&lt;/p>
+&lt;p>这意味着：&lt;strong>输出向量 $\boldsymbol{b}$ 完全是由 $\boldsymbol{x}$ 中的行空间分量 $\boldsymbol{x}_r$ 决定的！&lt;/strong>&lt;/p>
+&lt;p>更重要的是，在这个限制下，矩阵 $\mathbf{A}$ 变成了一个**一一对应（可逆）**的映射：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>行空间里的每一个向量，都完美地对应着列空间里的一个向量。&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;p>这就是为什么我们说矩阵 $\mathbf{A}$ 是连接这两个空间的桥梁。&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>结语&lt;/strong>：
+从 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 出发，我们一路走过了：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>行图像&lt;/strong>的超平面交集；&lt;/li>
+&lt;li>&lt;strong>列图像&lt;/strong>的向量积木；&lt;/li>
+&lt;li>&lt;strong>解结构&lt;/strong>的空间平移；&lt;/li>
+&lt;li>&lt;strong>线性变换&lt;/strong>的降维打击。&lt;/li>
+&lt;/ul>
+&lt;p>希望这三篇文章，能帮你把那些枯燥的公式，变成脑海中生动的几何动画。线性代数不难，它只是需要一点想象力。&lt;/p></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/linear-algebra/" term="Linear-Algebra" label="Linear-Algebra"/><category scheme="https://blog.matnoble.top/series/mla/" term="线代拾遗" label="线代拾遗"/><category scheme="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" term="线性方程组" label="线性方程组"/></entry><entry><title type="text">线性方程组专题(2)：解的形状——为什么“齐次”那么重要？</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/"/><id>https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2025-12-02T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">揭秘线性方程组通解公式背后的几何直观。为什么非齐次解是齐次解的平移？带你理解零空间（Kernel）、特解与仿射空间的深刻联系。</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：
 你是否背过“通解 = 特解 + 齐次通解”这个公式？但你真的理解它背后的几何图景吗？今天，我们深入“零空间”，揭开线性方程组解集的真实面纱。&lt;/p>
 &lt;hr>
 &lt;h2 id="0-一个奇怪的公式">0. 一个奇怪的公式&lt;/h2>
@@ -2734,427 +2827,4 @@ width="95%"
 #### 复杂度
 - 时间复杂度：
 - 空间复杂度：
---></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/topics/" term="topics" label="topics"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">滑动窗口</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/topics/sliding-window/"/><id>https://blog.matnoble.top/dsa/topics/sliding-window/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-03-01T00:19:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">目录 每日一题 1456. 定长子串中元音的最大数目 837. 新21点 438. 找到字符串中所有字母异位词 76. 最小覆……</summary><content type="html">&lt;h1 id="目录">目录&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="./#%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98">每日一题&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#1456-%E5%AE%9A%E9%95%BF%E5%AD%90%E4%B8%B2%E4%B8%AD%E5%85%83%E9%9F%B3%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B0%E7%9B%AE">1456. 定长子串中元音的最大数目&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#837-%E6%96%B021%E7%82%B9">837. 新21点&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#438-%E6%89%BE%E5%88%B0%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%89%80%E6%9C%89%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D">438. 找到字符串中所有字母异位词&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#76-%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%97%E4%B8%B2">76. 最小覆盖字串&lt;/a>&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> &lt;a href="">Number of Operations to Decrement Target to Zero&lt;/a>&lt;/li>
-&lt;li>&lt;a href="./#%E6%8E%A8%E8%8D%90%E9%A2%98%E7%9B%AE">推荐&lt;/a>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#239-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC">239. 滑动窗口最大值&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#3-%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%97%E4%B8%B2">3. 无重复字符的最长字串&lt;/a>&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> &lt;a href="./#438-%E6%89%BE%E5%88%B0%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%89%80%E6%9C%89%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D">438. 找到字符串中所有字母异位词&lt;/a>&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> &lt;a href="./#567-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97">567. 字符串的排列&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="1456-定长子串中元音的最大数目">1456. 定长子串中元音的最大数目&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/">https://leetcode-cn.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述">题目描述&lt;/h4>
-&lt;style type="text/css">.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}&lt;/style>
-&lt;div>&lt;svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">&lt;symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/>&lt;/symbol>&lt;symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>&lt;/symbol>&lt;/svg>&lt;/div>&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/sliding-window/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给你字符串 &lt;code>s&lt;/code> 和整数 &lt;code>k&lt;/code> 。&lt;/p>
-&lt;p>请返回字符串 &lt;code>s&lt;/code> 中长度为 &lt;code>k&lt;/code> 的单个子字符串中可能包含的最大元音字母数。&lt;/p>
-&lt;p>英文中的 &lt;strong>元音字母&lt;/strong> 为（&lt;code>a&lt;/code>, &lt;code>e&lt;/code>, &lt;code>i&lt;/code>, &lt;code>o&lt;/code>, &lt;code>u&lt;/code>）。&lt;/p>
-&lt;p>&lt;strong>示例 1：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> s = &amp;quot;abciiidef&amp;quot;, k = 3&lt;br>
-&lt;strong>输出：&lt;/strong> 3&lt;br>
-&lt;strong>解释：&lt;/strong> 子字符串 &amp;quot;iii&amp;quot; 包含 3 个元音字母。&lt;/p>
-&lt;p>&lt;strong>示例 2：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> s = &amp;quot;aeiou&amp;quot;, k = 2&lt;br>
-&lt;strong>输出：&lt;/strong> 2&lt;br>
-&lt;strong>解释：&lt;/strong> 任意长度为 2 的子字符串都包含 2 个元音字母。&lt;/p>
-&lt;p>&lt;strong>示例 3：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> s = &amp;quot;leetcode&amp;quot;, k = 3&lt;br>
-&lt;strong>输出：&lt;/strong> 2&lt;br>
-&lt;strong>解释：&lt;/strong> &amp;quot;lee&amp;quot;、&amp;quot;eet&amp;quot; 和 &amp;quot;ode&amp;quot; 都包含 2 个元音字母。&lt;/p>
-&lt;p>&lt;strong>示例 4：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> s = &amp;quot;rhythms&amp;quot;, k = 4&lt;br>
-&lt;strong>输出：&lt;/strong> 0
-&lt;strong>解释：&lt;/strong> 字符串 s 中不含任何元音字母。&lt;/p>
-&lt;p>&lt;strong>示例 5：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> s = &amp;quot;tryhard&amp;quot;, k = 4&lt;br>
-&lt;strong>输出：&lt;/strong> 1&lt;/p>
-&lt;p>&lt;strong>提示：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>$1 &amp;lt;= s.length &amp;lt;= 10^5$&lt;/li>
-&lt;li>&lt;code>s&lt;/code> 由小写英文字母组成&lt;/li>
-&lt;li>$1 &amp;lt;= k &amp;lt;= s.length$&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;h4 id="思路">思路&lt;/h4>
-&lt;ul>
-&lt;li>滑动固定长度窗口&lt;/li>
-&lt;li>用 &lt;code>count&lt;/code> 记录窗口内元音字母个数&lt;/li>
-&lt;li>返回 &lt;code>res&lt;/code> 为 &lt;code>count&lt;/code> 的最大值&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">maxVowels&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">table&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="s1">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;e&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;i&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;o&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;u&amp;#39;&lt;/span>&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[:&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">table&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">count&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">count&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">table&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">count&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">table&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">count&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">res&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">break&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">elif&lt;/span> &lt;span class="n">res&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">count&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(1)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="837-新21点">837. 新21点&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/new-21-game/">https://leetcode-cn.com/problems/new-21-game/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-1">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/sliding-window/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>爱丽丝参与一个大致基于纸牌游戏 &lt;strong>“21点”&lt;/strong> 规则的游戏，描述如下：&lt;/p>
-&lt;p>爱丽丝以 &lt;code>0&lt;/code> 分开始，并在她的得分少于 &lt;code>K&lt;/code> 分时抽取数字。 抽取时，她从 &lt;code>[1, W]&lt;/code> 的范围中随机获得一个整数作为分数进行累计，其中 &lt;code>W&lt;/code> 是整数。 每次抽取都是独立的，其结果具有相同的概率。&lt;/p>
-&lt;p>当爱丽丝获得不少于 &lt;code>K&lt;/code> 分时，她就停止抽取数字。 爱丽丝的分数不超过 &lt;code>N&lt;/code> 的概率是多少？&lt;/p>
-&lt;p>&lt;strong>示例 1：&lt;/strong>&lt;br>
-输入：N = 10, K = 1, W = 10&lt;br>
-输出：1.00000&lt;br>
-说明：爱丽丝得到一张卡，然后停止。&lt;/p>
-&lt;p>&lt;strong>示例 2：&lt;/strong>&lt;br>
-输入：N = 6, K = 1, W = 10&lt;br>
-输出：0.60000&lt;br>
-说明：爱丽丝得到一张卡，然后停止。
-在 W = 10 的 6 种可能下，她的得分不超过 N = 6 分。&lt;/p>
-&lt;p>&lt;strong>示例 3：&lt;/strong>&lt;br>
-输入：N = 21, K = 17, W = 10&lt;br>
-输出：0.73278&lt;/p>
-&lt;p>&lt;strong>提示：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>$0 &amp;lt;= K &amp;lt;= N &amp;lt;= 10000$&lt;/li>
-&lt;li>$1 &amp;lt;= W &amp;lt;= 10000$
-如果答案与正确答案的误差不超过 $10^-5$，则该答案将被视为正确答案通过。
-此问题的判断限制时间已经减少。&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;h4 id="思路-1">思路&lt;/h4>
-&lt;ul>
-&lt;li>当游戏停止时，爱丽丝手中可能的..分数..区间为：$[0, K+W-1]$&lt;/li>
-&lt;li>创建长度为 &lt;code>K+W&lt;/code> 的 &lt;code>dp&lt;/code> 数组，初始化为 &lt;code>0&lt;/code>。其中，&lt;code>dp[i]&lt;/code> 表示游戏结束时，得分为 &lt;code>i&lt;/code> 时获胜的概率。&lt;/li>
-&lt;li>当 &lt;code>i &amp;gt;= K &lt;/code> 时，概率是可以确定的：
-&lt;ul>
-&lt;li>&lt;code>dp[K:N+1] = [1] * (N-K+1)&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>当 &lt;code>i &amp;lt; K&lt;/code> 时
-&lt;ul>
-&lt;li>计算 &lt;code>dp[K-1]&lt;/code>
-再抽一次一定可以停止，所以取这 &lt;code>W&lt;/code> 个数的..期望..
-$$
-dp[K-1] = \frac{1}{W} (dp[K] + dp[K+1] + \cdots + dp[K+W-1])
-$$&lt;/li>
-&lt;li>计算 &lt;code>dp[K-2]&lt;/code>
-&lt;ul>
-&lt;li>若抽取 $1$ 则达到..状态..&lt;code>dp[K-1]&lt;/code>
-$$
-p_1 = \frac{1}{W} dp[K-1]
-$$&lt;/li>
-&lt;li>若抽取到 $[2, W]$ 中的值，停止游戏
-$$
-p_2 = \frac{1}{W} (dp[K] + dp[K+1] + \cdots + dp[K+W-2])
-$$
-综上
-\begin{align*}
-dp[K-2] &amp;amp;= p_1 + p_2 \\
-&amp;amp;= \frac{1}{W} (dp[K-1] + dp[K+1] + \cdots + dp[K+W-2])
-\end{align*}&lt;/li>
-&lt;li>递推下去，得到
-$$
-dp[i] = \frac{1}{W} \sum_{c=1}^{W}dp[i+c]
-$$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>最终返回 &lt;code>dp[0]&lt;/code>, 即得分为 $0$ 时, 也即未作出选择时，最终获胜的概率&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-1">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">new21Game&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">K&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">W&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">float&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dp&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">K&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">W&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 概率确定&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dp&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">K&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">K&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sum_&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">K&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 递推计算概率&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">K&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dp&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sum_&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">W&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sum_&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">dp&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">dp&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">W&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">])&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">dp&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-1">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(K+W)$&lt;/li>
-&lt;li>空间复杂度：$O(K+W)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="438-找到字符串中所有字母异位词">438. 找到字符串中所有字母异位词&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/">https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/&lt;/a>&lt;/p>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/sliding-window/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给定一个字符串 &lt;code>s&lt;/code> 和一个非空字符串 &lt;code>p&lt;/code>，找到 &lt;code>s&lt;/code> 中所有是 &lt;code>p&lt;/code> 的字母异位词的子串，返回这些子串的起始索引。&lt;/p>
-&lt;p>字符串只包含小写英文字母，并且字符串 &lt;code>s&lt;/code> 和 &lt;code>p&lt;/code> 的长度都不超过 &lt;code>20100&lt;/code>。&lt;/p>
-&lt;p>&lt;strong>说明：&lt;/strong>&lt;br>
-字母异位词指字母相同，但排列不同的字符串。&lt;br>
-不考虑答案输出的顺序。&lt;/p>
-&lt;p>&lt;strong>示例 1:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> &lt;code>s: &amp;quot;cbaebabacd&amp;quot; p: &amp;quot;abc&amp;quot;&lt;/code>&lt;br>
-&lt;strong>输出:&lt;/strong> &lt;code>[0, 6]&lt;/code>&lt;br>
-&lt;strong>解释:&lt;/strong>&lt;br>
-起始索引等于 &lt;code>0&lt;/code> 的子串是 &lt;code>&amp;quot;cba&amp;quot;&lt;/code>, 它是 &lt;code>&amp;quot;abc&amp;quot;&lt;/code> 的字母异位词。&lt;br>
-起始索引等于 &lt;code>6&lt;/code> 的子串是 &lt;code>&amp;quot;bac&amp;quot;&lt;/code>, 它是 &lt;code>&amp;quot;abc&amp;quot;&lt;/code> 的字母异位词。&lt;/p>
-&lt;p>&lt;strong>示例 2:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> &lt;code>s: &amp;quot;abab&amp;quot; p: &amp;quot;ab&amp;quot;&lt;/code>&lt;br>
-&lt;strong>输出:&lt;/strong> &lt;code>[0, 1, 2]&lt;/code>&lt;/p>
-&lt;p>&lt;strong>解释:&lt;/strong>&lt;br>
-起始索引等于 &lt;code>0&lt;/code> 的子串是 &lt;code>&amp;quot;ab&amp;quot;&lt;/code>, 它是 &lt;code>&amp;quot;ab&amp;quot;&lt;/code> 的字母异位词。&lt;br>
-起始索引等于 &lt;code>1&lt;/code> 的子串是 &lt;code>&amp;quot;ba&amp;quot;&lt;/code>, 它是 &lt;code>&amp;quot;ab&amp;quot;&lt;/code> 的字母异位词。&lt;br>
-起始索引等于 &lt;code>2&lt;/code> 的子串是 &lt;code>&amp;quot;ab&amp;quot;&lt;/code>, 它是 &lt;code>&amp;quot;ab&amp;quot;&lt;/code> 的字母异位词。&lt;/p>&lt;/div>
-&lt;h4 id="思路-2">思路&lt;/h4>
-&lt;ul>
-&lt;li>固定窗口大小 &lt;code>len(p)&lt;/code>&lt;/li>
-&lt;li>创建..计数表.. &lt;code>window&lt;/code> 和 &lt;code>need&lt;/code>&lt;/li>
-&lt;li>判断左窗口元素 &lt;code>s[i]&lt;/code> 和右窗口元素 &lt;code>s[i+n]&lt;/code> 是否属于 &lt;code>need&lt;/code> 计数表，更新计数表 &lt;code>window&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-2">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">findAnagrams&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">p&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kn">from&lt;/span> &lt;span class="nn">collections&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">defaultdict&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Counter&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">p&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">window&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">need&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">defaultdict&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">Counter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">p&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">c&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[:&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">c&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">window&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">window&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">window&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">window&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">window&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-2">复杂度&lt;/h4>
-&lt;p>$n$ 为 &lt;code>s&lt;/code> 和 &lt;code>p&lt;/code> 长度之和，$m$ 为 &lt;code>p&lt;/code> 中不重复元素数量&lt;/p>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(m)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="76-最小覆盖字串">76. 最小覆盖字串&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/minimum-window-substring/">https://leetcode-cn.com/problems/minimum-window-substring/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-2">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/sliding-window/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给你一个字符串 &lt;code>s&lt;/code> 、一个字符串 &lt;code>t&lt;/code> 。返回 &lt;code>s&lt;/code> 中涵盖 &lt;code>t&lt;/code> 所有字符的最小子串。如果 &lt;code>s&lt;/code> 中不存在涵盖 &lt;code>t&lt;/code> 所有字符的子串，则返回空字符串 &lt;code>&amp;quot;&amp;quot;&lt;/code> 。&lt;/p>
-&lt;p>&lt;strong>注意：&lt;/strong> 如果 &lt;code>s&lt;/code> 中存在这样的子串，我们保证它是唯一的答案。&lt;/p>
-&lt;p>&lt;strong>示例 1：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> s = &amp;quot;ADOBECODEBANC&amp;quot;, t = &amp;quot;ABC&amp;quot;&lt;br>
-&lt;strong>输出：&lt;/strong> &amp;quot;BANC&amp;quot;&lt;/p>
-&lt;p>&lt;strong>示例 2：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> s = &amp;quot;a&amp;quot;, t = &amp;quot;a&amp;quot;&lt;br>
-&lt;strong>输出：&lt;/strong> &amp;quot;a&amp;quot;&lt;/p>
-&lt;p>&lt;strong>提示：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>$1 &amp;lt;= s.length, ~t.length &amp;lt;= 10^5$&lt;/li>
-&lt;li>s 和 t 由英文字母组成&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>进阶：&lt;/strong> 你能设计一个在 o(n) 时间内解决此问题的算法吗？&lt;/p>&lt;/div>
-&lt;h4 id="思路-3">思路&lt;/h4>
-&lt;ul>
-&lt;li>增加 &lt;code>valid&lt;/code> 值来..缩放..滑动窗口&lt;/li>
-&lt;li>使用..滑动窗口..遍历之前，做一些时间复杂度小于 $O(n)$ 的判断，可有可无，极端情况可不用滑动遍历返回结果&lt;/li>
-&lt;li>经典的滑动窗口操作：
-&lt;ul>
-&lt;li>&lt;code>valid &amp;lt; len(t)&lt;/code>: &lt;code>right&lt;/code> 指针右移&lt;/li>
-&lt;li>&lt;code>valid == len(t)&lt;/code>: 更新..结果.., &lt;code>left&lt;/code> 右移&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-3">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">minWindow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">t&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ns&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 确定有解&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">ns&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">nt&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 计数检验&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dictS&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">need&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Counter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Counter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">key&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">value&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">items&lt;/span>&lt;span class="p">():&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">dictS&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">key&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">value&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># s 与 t 元素一样&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">ns&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">nt&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">s&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 滑动窗口&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">window&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">defaultdict&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">lambda&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 初始化空字典&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">valid&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">length&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ns&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">right&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">ns&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 移动右边界&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">temp&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 判断&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">temp&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">window&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">window&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="n">valid&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">right&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="c1"># 右边界右移&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 缩小左边界&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">valid&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">nt&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 判断 + 记录&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">right&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">left&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">length&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">start&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">length&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">left&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">length&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">start&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">start&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">length&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="c1"># 提前结束&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">temp&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">temp&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">window&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">need&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="n">valid&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">window&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">start&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">start&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">length&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-3">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(1)$&lt;/li>
-&lt;/ul>
-&lt;hr />
-&lt;h3 id="239-滑动窗口最大值">239. 滑动窗口最大值&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/sliding-window-maximum/">https://leetcode-cn.com/problems/sliding-window-maximum/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-3">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/sliding-window/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给你一个整数数组 &lt;code>nums&lt;/code>，有一个大小为 &lt;code>k&lt;/code> 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 &lt;code>k&lt;/code> 个数字。滑动窗口每次只向右移动一位。&lt;/p>
-&lt;p>返回滑动窗口中的最大值。&lt;/p>
-&lt;p>&lt;strong>示例：&lt;/strong>&lt;br>
-输入：nums = [1,3,-1,-3,5,3,6,7], k = 3&lt;br>
-输出：[3,3,5,5,6,7]&lt;br>
-解释：&lt;/p>
-&lt;pre tabindex="0">&lt;code> 滑动窗口的位置 最大值
---------------- -----
-[1 3 -1] -3 5 3 6 7 3
-1 [3 -1 -3] 5 3 6 7 3
-1 3 [-1 -3 5] 3 6 7 5
-1 3 -1 [-3 5 3] 6 7 5
-1 3 -1 -3 [5 3 6] 7 6
-1 3 -1 -3 5 [3 6 7] 7
-&lt;/code>&lt;/pre>&lt;p>&lt;strong>提示：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>1 &amp;lt;= nums.length &amp;lt;= 105&lt;/li>
-&lt;li>-104 &amp;lt;= nums[i] &amp;lt;= 104&lt;/li>
-&lt;li>1 &amp;lt;= k &amp;lt;= nums.length&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;h4 id="思路-4">思路&lt;/h4>
-&lt;ul>
-&lt;li>借助&lt;strong>双端队列&lt;/strong>。&lt;code>popleft()&lt;/code> 时间复杂度为 $O(1)$&lt;/li>
-&lt;li>&lt;strong>初始化窗口&lt;/strong>: 将数组的前 &lt;code>k&lt;/code> 个数依次加入到双端队列 &lt;code>d&lt;/code> 中，每次加入前，判断队尾元素与 &lt;code>num&lt;/code> 比较，保持队列 &lt;code>d&lt;/code> 是..递减..的&lt;/li>
-&lt;li>&lt;strong>滑动窗口&lt;/strong>: 遍历 &lt;code>nums[k:]&lt;/code>， 每次更新 &lt;code>res&lt;/code>
-&lt;ul>
-&lt;li>每次遍历需要判断队列最大值(即队首元素)是否窗口滑动时被“滑”出了，若&lt;strong>是&lt;/strong>，则需要 &lt;code>popleft()&lt;/code>&lt;/li>
-&lt;li>之后，和初始化窗口中做的一样，保持队列是..递减..的&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-4">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">maxSlidingWindow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 双端队列&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">d&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">collections&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">deque&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 初始化窗口&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">num&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[:&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">d&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">d&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">num&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">d&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pop&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">d&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">d&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 滑动窗口&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">)):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">d&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="n">d&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">popleft&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">d&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">d&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="n">d&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pop&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">d&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">])&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">d&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">])&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-4">复杂度&lt;/h4>
-&lt;p>&lt;em>n 为数组长度, k 为窗口大小&lt;/em>&lt;/p>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(k)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="3-无重复字符的最长字串">3. 无重复字符的最长字串&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters">https://leetcode-cn.com/problems/longest-substring-without-repeating-characters&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-4">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/sliding-window/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>给定一个字符串，请你找出其中不含有重复字符的 &lt;code>最长子串&lt;/code> 的长度。&lt;/p>
-&lt;p>示例 1:&lt;br>
-输入: s = &amp;quot;abcabcbb&amp;quot;&lt;br>
-输出: 3&lt;br>
-解释: 因为无重复字符的最长子串是 &amp;quot;abc&amp;quot;，所以其长度为 3。&lt;/p>
-&lt;p>示例 2:&lt;br>
-输入: s = &amp;quot;bbbbb&amp;quot;&lt;br>
-输出: 1&lt;br>
-解释: 因为无重复字符的最长子串是 &amp;quot;b&amp;quot;，所以其长度为 1。&lt;/p>
-&lt;p>示例 3:&lt;br>
-输入: s = &amp;quot;pwwkew&amp;quot;&lt;br>
-输出: 3&lt;br>
-解释: 因为无重复字符的最长子串是 &amp;quot;wke&amp;quot;，所以其长度为 3。&lt;br>
-&lt;strong>请注意&lt;/strong> 你的答案必须是 &lt;code>子串&lt;/code> 的长度，&amp;quot;pwke&amp;quot; 是一个子序列，不是子串。&lt;/p>
-&lt;p>示例 4:&lt;br>
-输入: s = &amp;quot;&amp;quot;&lt;br>
-输出: 0&lt;/p>
-&lt;p>提示：&lt;br>
-$0 &amp;lt;=$ &lt;code>s.length&lt;/code> $&amp;lt;= 5 * 10^4$&lt;br>
-&lt;code>s&lt;/code> 由英文字母、数字、符号和空格组成&lt;/p>&lt;/div>
-&lt;h4 id="思路-5">思路&lt;/h4>
-&lt;h4 id="代码-5">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">lengthOfLongestSubstring&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">hashMap&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">right&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">hashMap&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">max&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">max&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">hashMap&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]])&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">hashMap&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">right&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">max&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">s&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;abcabcbb&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># s = &amp;#34;bbbbb&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># s = &amp;#34;pwwkew&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># s = &amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># s = &amp;#34; &amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># s = &amp;#34;ab&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># s = &amp;#34;abba&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">mat&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Solution&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">mat&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">lengthOfLongestSubstring&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-5">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="567-字符串的排列">567. 字符串的排列&lt;/h3>
-&lt;!-- 模板
-#### 题目描述
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/sliding-window/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;/div>
-#### 思路
-#### 代码
-&lt;details>
-&lt;summary> Python &lt;/summary>
-```python
-```
-&lt;/details>
-#### 复杂度
-- 时间复杂度：
-- 空间复杂度：
---></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/topics/" term="topics" label="topics"/><category scheme="https://blog.matnoble.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" term="双指针" label="双指针"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry></feed>
+--></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/topics/" term="topics" label="topics"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry></feed>
