@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><title type="text">MatNoble</title><subtitle type="html">分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</subtitle><updated>2025-12-04T15:48:33+00:00</updated><id>https://blog.matnoble.top/</id><link rel="alternate" type="text/html" href="https://blog.matnoble.top/"/><link rel="self" type="application/atom+xml" href="https://blog.matnoble.top/atom.xml"/><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><generator uri="https://gohugo.io/" version="0.115.3">Hugo</generator><entry><title type="text">线性方程组专题(3)：上帝视角——矩阵是一台“降维打击”的机器</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/linear-algebra/matrix-transformation-big-picture/"/><id>https://blog.matnoble.top/math/linear-algebra/matrix-transformation-big-picture/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2025-12-04T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">从线性变换的高度俯瞰矩阵。详解矩阵作为空间映射机器的本质，探讨核空间、像空间、秩-零化度定理以及斯特朗教授的四个基本子空间图景。</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><title type="text">MatNoble</title><subtitle type="html">分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</subtitle><updated>2025-12-05T08:12:07+00:00</updated><id>https://blog.matnoble.top/</id><link rel="alternate" type="text/html" href="https://blog.matnoble.top/"/><link rel="self" type="application/atom+xml" href="https://blog.matnoble.top/atom.xml"/><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><generator uri="https://gohugo.io/" version="0.115.3">Hugo</generator><entry><title type="text">MatMemorize：基于间隔重复算法的大学数学记忆辅助工具</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/app/memorize/"/><id>https://blog.matnoble.top/tech/app/memorize/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2025-12-05T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">MatMemorize 是一款专为大学生设计的数学记忆辅助工具，结合艾宾浩斯遗忘曲线与间隔重复算法，帮助高效掌握微积分、线性代数等核心公式。</summary><content type="html">&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251205153655965.png" alt="MatMemorize Banner">&lt;/p>
+&lt;h2 id="-缘起为什么开发-matmemorize">💡 缘起：为什么开发 MatMemorize？&lt;/h2>
+&lt;p>在深入学习高等数学的过程中，我发现很多同学（包括我自己）面临的最大挑战往往不是&lt;strong>理解&lt;/strong>概念，而是&lt;strong>长期的记忆保持&lt;/strong>。&lt;/p>
+&lt;p>微积分的导数公式、线性代数的矩阵性质、概率论的分布特征……这些数学知识点繁多且相互关联。一旦基础公式遗忘，后续的学习就会举步维艰，甚至产生挫败感。&lt;/p>
+&lt;p>为了解决这个问题，我开发了 &lt;strong>MatMemorize&lt;/strong> —— 一个专注于大学数学的辅助记忆工具。它不是一本枯燥的电子书，而是一个能“读懂”你记忆状态的智能助手。&lt;/p>
+&lt;h2 id="-核心理念科学对抗遗忘">🛠 核心理念：科学对抗遗忘&lt;/h2>
+&lt;p>MatMemorize 的核心理念是 &lt;strong>“科学记忆”&lt;/strong>。&lt;/p>
+&lt;p>它摒弃了传统的“死记硬背”，引入了类似 Anki 的 &lt;strong>间隔重复 (Spaced Repetition)&lt;/strong> 机制。系统会根据你对每个知识点的掌握程度（熟悉、模糊、遗忘），结合 &lt;strong>艾宾浩斯遗忘曲线&lt;/strong>，自动安排下一次复习的时间。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>熟悉&lt;/strong>：延长复习间隔，避免无效重复。&lt;/li>
+&lt;li>&lt;strong>遗忘&lt;/strong>：缩短复习间隔，及时巩固薄弱环节。&lt;/li>
+&lt;/ul>
+&lt;h2 id="-主要特性">✨ 主要特性&lt;/h2>
+&lt;h3 id="1--智能复习算法">1. 🧠 智能复习算法&lt;/h3>
+&lt;p>不再盲目刷题。系统会动态计算每个知识点的“记忆强度”，在你即将遗忘的临界点精准提醒，用最少的时间达到最好的记忆效果。&lt;/p>
+&lt;h3 id="2--结构化知识图谱">2. 📚 结构化知识图谱&lt;/h3>
+&lt;p>内置精心整理的大学数学核心知识库，覆盖：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>微积分&lt;/strong>：极限、导数、积分、级数等。&lt;/li>
+&lt;li>&lt;strong>线性代数&lt;/strong>：行列式、矩阵、向量空间等。&lt;/li>
+&lt;li>&lt;strong>概率论&lt;/strong>：随机变量、分布函数、大数定律等。
+所有公式均采用 LaTeX 完美渲染，提供教科书般的阅读体验。&lt;/li>
+&lt;/ul>
+&lt;h3 id="3--可视化学习追踪">3. 📊 可视化学习追踪&lt;/h3>
+&lt;p>提供详细的数据仪表盘 (Dashboard)，你可以实时查看：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>学习热力图&lt;/strong>：记录每天的奋斗足迹。&lt;/li>
+&lt;li>&lt;strong>记忆强度分布&lt;/strong>：直观了解知识掌握情况。&lt;/li>
+&lt;li>&lt;strong>坚持天数&lt;/strong>：激励自己保持学习习惯。&lt;/li>
+&lt;/ul>
+&lt;h3 id="4--现代化技术栈">4. ⚡️ 现代化技术栈&lt;/h3>
+&lt;p>MatMemorize 不仅是一个学习工具，也是一次现代 Web 技术的实践：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>React 19 + TypeScript&lt;/strong>：构建高性能、类型安全的交互界面。&lt;/li>
+&lt;li>&lt;strong>PWA (Progressive Web App)&lt;/strong>：支持安装到桌面或手机，体验接近原生应用，并支持离线访问核心内容。&lt;/li>
+&lt;li>&lt;strong>响应式设计&lt;/strong>：无论是在电脑大屏还是手机小屏，都能获得最佳的阅读体验。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251205153655963.png" alt="Mobile App Mockup">&lt;/p>
+&lt;h2 id="-使用指南">� 使用指南&lt;/h2>
+&lt;p>只需三步，开启高效记忆之旅：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>选择主题&lt;/strong>：在首页浏览或搜索你想要复习的数学章节（如“不定积分公式”）。&lt;/li>
+&lt;li>&lt;strong>开始复习&lt;/strong>：查看知识卡片，尝试回忆内容，然后点击显示答案。&lt;/li>
+&lt;li>&lt;strong>反馈状态&lt;/strong>：根据你的回忆情况，选择“忘记”、“模糊”或“熟悉”。系统会自动安排下次复习时间。&lt;/li>
+&lt;/ol>
+&lt;h2 id="-未来路线图-roadmap">🗺 未来路线图 (Roadmap)&lt;/h2>
+&lt;p>MatMemorize 还在持续进化中，未来计划加入：&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;strong>自定义卡片&lt;/strong>：支持用户创建自己的知识库。&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;strong>社区共享&lt;/strong>：分享和下载其他学霸整理的卡片组。&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;strong>深色模式&lt;/strong>：更好的夜间学习体验。&lt;/li>
+&lt;/ul>
+&lt;h2 id="-立即体验">🚀 立即体验&lt;/h2>
+&lt;p>MatMemorize 现已完全免费上线。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>在线访问&lt;/strong>：&lt;a href="https://memorize.matnoble.top">https://memorize.matnoble.top&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家试用并提出宝贵意见！如果你觉得它对你的数学学习有帮助，请分享给身边的同学。&lt;/p>
+&lt;p>让我们一起，用技术战胜遗忘。&lt;/p></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/app/" term="app" label="app"/><category scheme="https://blog.matnoble.top/tags/matmemorize/" term="MatMemorize" label="MatMemorize"/><category scheme="https://blog.matnoble.top/tags/%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0/" term="数学学习" label="数学学习"/><category scheme="https://blog.matnoble.top/tags/%E9%97%B4%E9%9A%94%E9%87%8D%E5%A4%8D/" term="间隔重复" label="间隔重复"/><category scheme="https://blog.matnoble.top/tags/react/" term="React" label="React"/><category scheme="https://blog.matnoble.top/tags/pwa/" term="PWA" label="PWA"/></entry><entry><title type="text">线性方程组专题(3)：上帝视角——矩阵是一台“降维打击”的机器</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/linear-algebra/matrix-transformation-big-picture/"/><id>https://blog.matnoble.top/math/linear-algebra/matrix-transformation-big-picture/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2025-12-04T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">从线性变换的高度俯瞰矩阵。详解矩阵作为空间映射机器的本质，探讨核空间、像空间、秩-零化度定理以及斯特朗教授的四个基本子空间图景。</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：
 如果说“列图像”是搭积木，“解的结构”是空间平移，那么今天我们要站在上帝视角，把矩阵看作一台精密的“空间变换机器”。这将是你理解线性代数最关键的一次思维升华。&lt;/p>
 &lt;hr>
 &lt;h2 id="0-矩阵的真面目">0. 矩阵的真面目&lt;/h2>
@@ -91,7 +149,7 @@ $$ \mathbf{A}\boldsymbol{x} = \mathbf{A}(\boldsymbol{x}_r + \boldsymbol{x}_n) = 
 &lt;li>&lt;strong>解结构&lt;/strong>的空间平移；&lt;/li>
 &lt;li>&lt;strong>线性变换&lt;/strong>的降维打击。&lt;/li>
 &lt;/ul>
-&lt;p>希望这三篇文章，能帮你把那些枯燥的公式，变成脑海中生动的几何动画。线性代数不难，它只是需要一点想象力。&lt;/p></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/linear-algebra/" term="Linear-Algebra" label="Linear-Algebra"/><category scheme="https://blog.matnoble.top/series/mla/" term="线代拾遗" label="线代拾遗"/><category scheme="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" term="线性方程组" label="线性方程组"/></entry><entry><title type="text">线性方程组专题(2)：解的形状——为什么“齐次”那么重要？</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/"/><id>https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2025-12-02T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">揭秘线性方程组通解公式背后的几何直观。为什么非齐次解是齐次解的平移？带你理解零空间（Kernel）、特解与仿射空间的深刻联系。</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：
+&lt;p>希望这三篇文章，能帮你把那些枯燥的公式，变成脑海中生动的几何动画。线性代数不难，它只是需要一点想象力。&lt;/p></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/linear-algebra/" term="Linear-Algebra" label="Linear-Algebra"/><category scheme="https://blog.matnoble.top/series/mla/" term="线代拾遗" label="线代拾遗"/><category scheme="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" term="线性方程组" label="线性方程组"/></entry><entry><title type="text">线性方程组专题(2)：解的形状——为什么“齐次”那么重要？</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/"/><id>https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2025-12-02T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">揭秘线性方程组通解公式背后的几何直观。为什么非齐次解是齐次解的平移？带你理解零空间（Kernel）、特解与仿射空间的深刻联系。</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：
 你是否背过“通解 = 特解 + 齐次通解”这个公式？但你真的理解它背后的几何图景吗？今天，我们深入“零空间”，揭开线性方程组解集的真实面纱。&lt;/p>
 &lt;hr>
 &lt;h2 id="0-一个奇怪的公式">0. 一个奇怪的公式&lt;/h2>
@@ -168,7 +226,7 @@ $$ \begin{bmatrix} 1 &amp;amp; 2 \\ 2 &amp;amp; 4 \end{bmatrix} \begin{bmatrix} 
 &lt;p>&lt;strong>下一期预告&lt;/strong>：&lt;a href="https://blog.matnoble.top/math/linear-algebra/matrix-transformation-big-picture/">线性方程组专题(3)：上帝视角——矩阵是一台&amp;quot;降维打击&amp;quot;的机器&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>&lt;strong>互动思考&lt;/strong>：
-如果 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$ 只有零解（零空间只有原点），那么 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 的解会是什么样子的？（提示：形状是什么？位置在哪里？）&lt;/p></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/linear-algebra/" term="Linear-Algebra" label="Linear-Algebra"/><category scheme="https://blog.matnoble.top/series/mla/" term="线代拾遗" label="线代拾遗"/><category scheme="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" term="线性方程组" label="线性方程组"/></entry><entry><title type="text">线性方程组专题(1)：别再只盯着“交点”看了！</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/"/><id>https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2025-11-29T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">深入浅出解析线性方程组的行图像与列图像。为什么说列图像是理解线性代数的关键？从向量线性组合的角度重新认识 Ax=b。</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：
+如果 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$ 只有零解（零空间只有原点），那么 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 的解会是什么样子的？（提示：形状是什么？位置在哪里？）&lt;/p></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/linear-algebra/" term="Linear-Algebra" label="Linear-Algebra"/><category scheme="https://blog.matnoble.top/series/mla/" term="线代拾遗" label="线代拾遗"/><category scheme="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" term="线性方程组" label="线性方程组"/></entry><entry><title type="text">线性方程组专题(1)：别再只盯着“交点”看了！</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/"/><id>https://blog.matnoble.top/math/linear-algebra/row-vs-column-picture/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2025-11-29T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">深入浅出解析线性方程组的行图像与列图像。为什么说列图像是理解线性代数的关键？从向量线性组合的角度重新认识 Ax=b。</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：
 为什么 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 难住了 90%的初学者？因为你还在用高中的“几何直觉”硬套大学的“线性思维”。今天，我们拆掉思维里的墙，从“行”走到“列”，带你领略线性代数真正的威力。&lt;/p>
 &lt;hr>
 &lt;h2 id="0-一个被忽视的常识">0. 一个被忽视的“常识”&lt;/h2>
@@ -255,7 +313,7 @@ $$&lt;/p>
 &lt;p>&lt;strong>下一期预告&lt;/strong>：&lt;a href="https://blog.matnoble.top/math/linear-algebra/structure-of-solutions/">线性方程组专题(2)：解的形状——为什么&amp;quot;齐次&amp;quot;那么重要？&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>&lt;strong>互动思考&lt;/strong>：
-你能画出 $x \begin{bmatrix} 1 \\ 0 \end{bmatrix} + y \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$ 的列图像吗？在评论区告诉我你的理解！&lt;/p></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/linear-algebra/" term="Linear-Algebra" label="Linear-Algebra"/><category scheme="https://blog.matnoble.top/series/mla/" term="线代拾遗" label="线代拾遗"/><category scheme="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" term="线性方程组" label="线性方程组"/></entry><entry><title type="text">别怕，泰勒公式是纸老虎：从“以直代曲”到“指哪打哪”</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/calculus/taylor-formula/"/><id>https://blog.matnoble.top/math/calculus/taylor-formula/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2025-11-11T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">“如果给我一个支点，我就能撬动整个地球。” ——阿基米德 在高等数学的世界里，泰勒公式就……</summary><content type="html">&lt;blockquote>
+你能画出 $x \begin{bmatrix} 1 \\ 0 \end{bmatrix} + y \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$ 的列图像吗？在评论区告诉我你的理解！&lt;/p></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/linear-algebra/" term="Linear-Algebra" label="Linear-Algebra"/><category scheme="https://blog.matnoble.top/series/mla/" term="线代拾遗" label="线代拾遗"/><category scheme="https://blog.matnoble.top/tags/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" term="线性方程组" label="线性方程组"/></entry><entry><title type="text">别怕，泰勒公式是纸老虎：从“以直代曲”到“指哪打哪”</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/calculus/taylor-formula/"/><id>https://blog.matnoble.top/math/calculus/taylor-formula/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2025-11-11T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">“如果给我一个支点，我就能撬动整个地球。” ——阿基米德 在高等数学的世界里，泰勒公式就……</summary><content type="html">&lt;blockquote>
 &lt;p>“如果给我一个支点，我就能撬动整个地球。” ——阿基米德&lt;/p>
 &lt;/blockquote>
 &lt;p>在高等数学的世界里，泰勒公式就是那个无所不能的“支点”。&lt;/p>
@@ -391,7 +449,7 @@ $$&lt;/p>
 &lt;p>泰勒公式不是一堵墙，而是一座桥，它连接了简单与复杂，已知与未知。它不仅仅是一个计算工具，更是一种深刻的数学思想：&lt;strong>任何复杂的事物，在局部上都可以通过简单元素的组合来理解和逼近。&lt;/strong>&lt;/p>
 &lt;p>希望从现在开始，泰勒公式能成为你手中那个撬动高等数学难题的“支点”。&lt;/p>
 &lt;hr>
-&lt;p>&lt;em>如果你喜欢这篇文章，欢迎点赞、在看、转发，让更多人看到！&lt;/em>&lt;/p></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/calculus/" term="Calculus" label="Calculus"/><category scheme="https://blog.matnoble.top/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" term="微积分" label="微积分"/></entry><entry><title type="text">基本初等函数导数与微分：统一方法</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/calculus/calculus-formula-hack/"/><id>https://blog.matnoble.top/math/calculus/calculus-formula-hack/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2025-11-06T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">Calculus Hack: The 'Buy One, Get One Free' Rule</summary><content type="html">&lt;h2 id="引言打破死记硬背">引言：打破“死记硬背”&lt;/h2>
+&lt;p>&lt;em>如果你喜欢这篇文章，欢迎点赞、在看、转发，让更多人看到！&lt;/em>&lt;/p></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/calculus/" term="Calculus" label="Calculus"/><category scheme="https://blog.matnoble.top/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" term="微积分" label="微积分"/></entry><entry><title type="text">基本初等函数导数与微分：统一方法</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/calculus/calculus-formula-hack/"/><id>https://blog.matnoble.top/math/calculus/calculus-formula-hack/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2025-11-06T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">Calculus Hack: The 'Buy One, Get One Free' Rule</summary><content type="html">&lt;h2 id="引言打破死记硬背">引言：打破“死记硬背”&lt;/h2>
 &lt;p>在学习高等数学时，许多学生在“导数”和“微分”两章会遇到第一个障碍：两套看似不同、实则紧密相连的公式。&lt;/p>
 &lt;p>传统的教学方式可能是罗列两张表格让学生分别记忆，这不符合启发式教学的理念。本文旨在从根本上厘清导数与微分的关系，帮助学生将记忆负担减半，真正理解其数学意义。&lt;/p>
 &lt;h2 id="核心关键mathrmdy--fx-mathrmdx">核心关键：$\mathrm{d}y = f'(x) \mathrm{d}x$&lt;/h2>
@@ -580,7 +638,7 @@ $$&lt;/p>
 &lt;li>所以 $\mathrm{d}(\arctan x) = \frac{1}{1+x^2} \mathrm{d}x$ (或 $\frac{\mathrm{d}x}{1+x^2}$)&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/calculus/" term="Calculus" label="Calculus"/><category scheme="https://blog.matnoble.top/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" term="微积分" label="微积分"/></entry><entry><title type="text">高等数学知识图谱</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/calculus/knowledge-graph/"/><id>https://blog.matnoble.top/math/calculus/knowledge-graph/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2025-11-03T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">Advanced Mathematics Knowledge Graph</summary><content type="html">
+&lt;/ol></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/calculus/" term="Calculus" label="Calculus"/><category scheme="https://blog.matnoble.top/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" term="微积分" label="微积分"/></entry><entry><title type="text">高等数学知识图谱</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/math/calculus/knowledge-graph/"/><id>https://blog.matnoble.top/math/calculus/knowledge-graph/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2025-11-03T00:00:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">Advanced Mathematics Knowledge Graph</summary><content type="html">
 &lt;span class="caption-wrapper">
 &lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg"
 title="微分学"
@@ -833,7 +891,7 @@ width="95%"
 &lt;li>&lt;strong>借助图形&lt;/strong>: 每个定理都有非常直观的几何解释。例如，零点定理就是“一条连续的曲线，如果一头在x轴下方，另一头在x轴上方，那么它必然会穿过x轴”。通过图形来理解和记忆定理内容。&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/calculus/" term="Calculus" label="Calculus"/><category scheme="https://blog.matnoble.top/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" term="微积分" label="微积分"/></entry><entry><title type="text">Spark on YARN：借助 YARN 的资源管理和计算调度，打造高效的 Spark 架构</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/spark/spark-on-yarn/"/><id>https://blog.matnoble.top/tech/spark/spark-on-yarn/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2023-09-01T21:30:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">&lt;p>&lt;strong>摘要&lt;/strong>：本文介绍了 Spark on YARN 架构 的基本原理和特点。文章首先介绍了 Hadoop YARN 架构 的两个核心组件：资源管理和计算调度，然后介绍了 Spark 架构 的主要组成部分和功能。文章最后总结了 Spark on YARN 架构 的优势和应用场景。&lt;/p>……</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：本文介绍了 Spark on YARN 架构 的基本原理和特点。文章首先介绍了 Hadoop YARN 架构 的两个核心组件：资源管理和计算调度，然后介绍了 Spark 架构 的主要组成部分和功能。文章最后总结了 Spark on YARN 架构 的优势和应用场景。&lt;/p>
+&lt;/ul></content><category scheme="https://blog.matnoble.top/math/" term="math" label="math"/><category scheme="https://blog.matnoble.top/math/calculus/" term="Calculus" label="Calculus"/><category scheme="https://blog.matnoble.top/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" term="微积分" label="微积分"/></entry><entry><title type="text">Spark on YARN：借助 YARN 的资源管理和计算调度，打造高效的 Spark 架构</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/spark/spark-on-yarn/"/><id>https://blog.matnoble.top/tech/spark/spark-on-yarn/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2023-09-01T21:30:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">&lt;p>&lt;strong>摘要&lt;/strong>：本文介绍了 Spark on YARN 架构 的基本原理和特点。文章首先介绍了 Hadoop YARN 架构 的两个核心组件：资源管理和计算调度，然后介绍了 Spark 架构 的主要组成部分和功能。文章最后总结了 Spark on YARN 架构 的优势和应用场景。&lt;/p>……</summary><content type="html">&lt;p>&lt;strong>摘要&lt;/strong>：本文介绍了 Spark on YARN 架构 的基本原理和特点。文章首先介绍了 Hadoop YARN 架构 的两个核心组件：资源管理和计算调度，然后介绍了 Spark 架构 的主要组成部分和功能。文章最后总结了 Spark on YARN 架构 的优势和应用场景。&lt;/p>
 &lt;h2 id="hadoop-yarn-架构-1">Hadoop YARN 架构 &lt;sup id="fnref:1">&lt;a href="https://blog.matnoble.top/tech/spark/spark-on-yarn/#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/h2>
 &lt;p>YARN 本身是一个资源调度框架，负责对运行在内部的计算框架进行资源调度管理。其为分布式计算任务提供两个..独立..的进程：&lt;/p>
 &lt;ul>
@@ -928,7 +986,7 @@ width="95%"
 &lt;p>&lt;a href="https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/YARN.html">Hadoop YARN&lt;/a>&amp;#160;&lt;a href="https://blog.matnoble.top/tech/spark/spark-on-yarn/#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/spark/" term="spark" label="spark"/><category scheme="https://blog.matnoble.top/tags/spark/" term="Spark" label="Spark"/></entry><entry><title type="text">Spark RDD 中的数学统计函数</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/spark/rdd-math-func/"/><id>https://blog.matnoble.top/tech/spark/rdd-math-func/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2023-08-27T22:30:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">分布式系统中求和，计数，求均值</summary><content type="html">&lt;p>&lt;a href="https://blog.matnoble.top/tech/spark/rdd/">RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构&lt;/a>，是适合做..分布式..计算的。那如何在分布式系统中，对数据
+&lt;/div></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/spark/" term="spark" label="spark"/><category scheme="https://blog.matnoble.top/tags/spark/" term="Spark" label="Spark"/></entry><entry><title type="text">Spark RDD 中的数学统计函数</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/spark/rdd-math-func/"/><id>https://blog.matnoble.top/tech/spark/rdd-math-func/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2023-08-27T22:30:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">分布式系统中求和，计数，求均值</summary><content type="html">&lt;p>&lt;a href="https://blog.matnoble.top/tech/spark/rdd/">RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构&lt;/a>，是适合做..分布式..计算的。那如何在分布式系统中，对数据
 &lt;mark>求和，计数，求均值&lt;/mark>
 呢？&lt;/p>
 &lt;p>现在有数字 $1$ ~ $9$ 分布在 4 个分区中&lt;/p>
@@ -1006,7 +1064,7 @@ width="95%"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="n">avg&lt;/span> &lt;span class="k">=&lt;/span> &lt;span class="n">sum&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">count&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;em>上例中初始值为二元组，第一个值表示求和，第二个值表示计数&lt;/em>&lt;/p>
 &lt;h2 id="源代码">源代码&lt;/h2>
-&lt;script type="application/javascript" src="https://gist.github.com/MatNoble/dadb92d28f8baed03150530e63e29b59.js">&lt;/script></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/spark/" term="spark" label="spark"/><category scheme="https://blog.matnoble.top/tags/spark/" term="Spark" label="Spark"/></entry><entry><title type="text">MapReduce 模型</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/spark/mapreduce/"/><id>https://blog.matnoble.top/tech/spark/mapreduce/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2023-08-26T00:50:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">分而治之, 将大困难分解成小困难</summary><content type="html">
+&lt;script type="application/javascript" src="https://gist.github.com/MatNoble/dadb92d28f8baed03150530e63e29b59.js">&lt;/script></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/spark/" term="spark" label="spark"/><category scheme="https://blog.matnoble.top/tags/spark/" term="Spark" label="Spark"/></entry><entry><title type="text">MapReduce 模型</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/spark/mapreduce/"/><id>https://blog.matnoble.top/tech/spark/mapreduce/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2023-08-26T00:50:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">分而治之, 将大困难分解成小困难</summary><content type="html">
 &lt;blockquote>
 &lt;p>MapReduce is a framework for processing parallelizable problems across large datasets using a large number of computers (nodes), collectively referred to as a cluster.&lt;/p>
 &lt;footer>
@@ -1092,7 +1150,7 @@ width="95%"
 &lt;td>zeroValue：初始值&lt;br>seqOp：分区内聚合&lt;br>combOp: 分区间聚合&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/spark/" term="spark" label="spark"/><category scheme="https://blog.matnoble.top/tags/spark/" term="Spark" label="Spark"/></entry><entry><title type="text">图解Spark RDD的五大特性</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/spark/rdd/"/><id>https://blog.matnoble.top/tech/spark/rdd/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2023-08-24T00:21:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">&lt;p>RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构，它是一个..不可变的分布式..数据集合，可以在集群中进行..并行处理..。&lt;/p>……</summary><content type="html">&lt;p>RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构，它是一个..不可变的分布式..数据集合，可以在集群中进行..并行处理..。&lt;/p>
+&lt;/table></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/spark/" term="spark" label="spark"/><category scheme="https://blog.matnoble.top/tags/spark/" term="Spark" label="Spark"/></entry><entry><title type="text">图解Spark RDD的五大特性</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/spark/rdd/"/><id>https://blog.matnoble.top/tech/spark/rdd/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2023-08-24T00:21:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">&lt;p>RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构，它是一个..不可变的分布式..数据集合，可以在集群中进行..并行处理..。&lt;/p>……</summary><content type="html">&lt;p>RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构，它是一个..不可变的分布式..数据集合，可以在集群中进行..并行处理..。&lt;/p>
 &lt;p>在 Spark 的源码中，RDD 被描述为：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-scala" data-lang="scala">&lt;span class="line">&lt;span class="cl"> &lt;span class="o">*&lt;/span> &lt;span class="nc">Internally&lt;/span>&lt;span class="o">,&lt;/span> &lt;span class="n">each&lt;/span> &lt;span class="nc">RDD&lt;/span> &lt;span class="n">is&lt;/span> &lt;span class="n">characterized&lt;/span> &lt;span class="n">by&lt;/span> &lt;span class="n">five&lt;/span> &lt;span class="n">main&lt;/span> &lt;span class="n">properties&lt;/span>&lt;span class="k">:&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">*&lt;/span>
@@ -1147,7 +1205,7 @@ width="95%"
 &lt;h2 id="特性五可选数据本地行">特性五：（可选）数据本地行&lt;/h2>
 &lt;blockquote>
 &lt;p>RDD 进行数据分区时，会尽量靠近数据所在节点，增加本地读取，减少网络读取，提上计算性能&lt;/p>
-&lt;/blockquote></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/spark/" term="spark" label="spark"/><category scheme="https://blog.matnoble.top/tags/spark/" term="Spark" label="Spark"/></entry><entry><title type="text">开发环境配置大全</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/programming/dev-env/"/><id>https://blog.matnoble.top/tech/programming/dev-env/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2023-07-23T00:17:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">zsh &amp;amp; oh my zsh Ubuntu 安装 Zsh ，配置最强终端 Git Git 实用命令汇总 Java 下载地址：华为云👍，..环境变量.……</summary><content type="html">&lt;h2 id="zsh--oh-my-zsh">zsh &amp;amp; oh my zsh&lt;/h2>
+&lt;/blockquote></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/spark/" term="spark" label="spark"/><category scheme="https://blog.matnoble.top/tags/spark/" term="Spark" label="Spark"/></entry><entry><title type="text">开发环境配置大全</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/programming/dev-env/"/><id>https://blog.matnoble.top/tech/programming/dev-env/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2023-07-23T00:17:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">zsh &amp;amp; oh my zsh Ubuntu 安装 Zsh ，配置最强终端 Git Git 实用命令汇总 Java 下载地址：华为云👍，..环境变量.……</summary><content type="html">&lt;h2 id="zsh--oh-my-zsh">zsh &amp;amp; oh my zsh&lt;/h2>
 &lt;p>&lt;a href="https://blog.matnoble.top/tech/ubuntu/install-zsh/">Ubuntu 安装 Zsh ，配置最强终端&lt;/a>&lt;/p>
 &lt;h2 id="git">Git&lt;/h2>
 &lt;p>&lt;a href="https://blog.matnoble.top/tech/programming/git/">Git 实用命令汇总&lt;/a>&lt;/p>
@@ -1166,7 +1224,7 @@ width="95%"
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">M2_HOME&lt;/span>&lt;span class="o">=&lt;/span>安装目录
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">PATH&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">M2_HOME&lt;/span>&lt;span class="si">}&lt;/span>/bin:&lt;span class="nv">$PATH&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="python">Python&lt;/h2>
-&lt;p>&lt;a href="https://blog.matnoble.top/tech/ubuntu/configure-python-environment-in-ubuntu/">在 Ubuntu 中配置 Python 环境&lt;/a>&lt;/p></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/programming/" term="programming" label="programming"/><category scheme="https://blog.matnoble.top/tags/%E5%BC%80%E5%8F%91/" term="开发" label="开发"/></entry><entry><title type="text">Window 快捷键及 DOS 命令</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/programming/dos/"/><id>https://blog.matnoble.top/tech/programming/dos/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-10-18T00:18:32+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">基本 Windows 快捷键 运行：Win + R 文件管理器：Win + E 任务管理器：Ctrl + Shift + Esc 基本 DOS……</summary><content type="html">&lt;h2 id="基本-windows-快捷键">基本 Windows 快捷键&lt;/h2>
+&lt;p>&lt;a href="https://blog.matnoble.top/tech/ubuntu/configure-python-environment-in-ubuntu/">在 Ubuntu 中配置 Python 环境&lt;/a>&lt;/p></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/programming/" term="programming" label="programming"/><category scheme="https://blog.matnoble.top/tags/%E5%BC%80%E5%8F%91/" term="开发" label="开发"/></entry><entry><title type="text">Window 快捷键及 DOS 命令</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/programming/dos/"/><id>https://blog.matnoble.top/tech/programming/dos/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2021-10-18T00:18:32+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">基本 Windows 快捷键 运行：Win + R 文件管理器：Win + E 任务管理器：Ctrl + Shift + Esc 基本 DOS……</summary><content type="html">&lt;h2 id="基本-windows-快捷键">基本 Windows 快捷键&lt;/h2>
 &lt;ul>
 &lt;li>运行：&lt;code>Win + R&lt;/code>&lt;/li>
 &lt;li>文件管理器：&lt;code>Win + E&lt;/code>&lt;/li>
@@ -1209,7 +1267,7 @@ width="95%"
 &lt;li>&lt;code>ping www.baidu.com&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/programming/" term="programming" label="programming"/></entry><entry><title type="text">LeetCode 买卖股票问题</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/top/stock/"/><id>https://blog.matnoble.top/dsa/top/stock/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-03-20T00:19:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">121. 买卖股票的最佳时机 思路 代码 复杂度 122. 买卖股票的最佳时机 II 思路 代码 复杂度 123. 买卖股票的最……</summary><content type="html">&lt;!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=3 orderedList=false} -->
+&lt;/ul></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/programming/" term="programming" label="programming"/></entry><entry><title type="text">LeetCode 买卖股票问题</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/top/stock/"/><id>https://blog.matnoble.top/dsa/top/stock/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2021-03-20T00:19:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">121. 买卖股票的最佳时机 思路 代码 复杂度 122. 买卖股票的最佳时机 II 思路 代码 复杂度 123. 买卖股票的最……</summary><content type="html">&lt;!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=3 orderedList=false} -->
 &lt;!-- code_chunk_output -->
 &lt;ul>
 &lt;li>&lt;a href="https://blog.matnoble.top/dsa/top/stock/#121-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA">121. 买卖股票的最佳时机&lt;/a>
@@ -1339,7 +1397,7 @@ width="95%"
 #### 复杂度
 - 时间复杂度：
 - 空间复杂度：
---></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/top/" term="top" label="top"/><category scheme="https://blog.matnoble.top/tags/%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%A2%98/" term="高频算法题" label="高频算法题"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">子集，组合，全排列</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/topics/backtrack/"/><id>https://blog.matnoble.top/dsa/topics/backtrack/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-03-13T00:11:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">目录 78. 子集 77. 组合 46. 全排列 78. 子集 https://leetcode-cn.com/problems/subsets/ 题目描述 Note 给你一个整数数组 nums，数组中的元素 互不……</summary><content type="html">&lt;h1 id="目录">目录&lt;/h1>
+--></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/top/" term="top" label="top"/><category scheme="https://blog.matnoble.top/tags/%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%A2%98/" term="高频算法题" label="高频算法题"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">子集，组合，全排列</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/topics/backtrack/"/><id>https://blog.matnoble.top/dsa/topics/backtrack/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2021-03-13T00:11:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">目录 78. 子集 77. 组合 46. 全排列 78. 子集 https://leetcode-cn.com/problems/subsets/ 题目描述 Note 给你一个整数数组 nums，数组中的元素 互不……</summary><content type="html">&lt;h1 id="目录">目录&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="./#78-%E5%AD%90%E9%9B%86">78. 子集&lt;/a>&lt;/li>
 &lt;li>&lt;a href="./#77-%E7%BB%84%E5%90%88">77. 组合&lt;/a>&lt;/li>
@@ -1513,7 +1571,7 @@ width="95%"
 &lt;ul>
 &lt;li>时间复杂度：$n*n!$&lt;/li>
 &lt;li>空间复杂度：$n*n!$&lt;/li>
-&lt;/ul></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/topics/" term="topics" label="topics"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">Python collections 类</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/programming/python/collections/"/><id>https://blog.matnoble.top/tech/programming/python/collections/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-03-13T00:10:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">这个模块实现了特定目标的容器，以提供 Python 标准内建容器 dict, list, set, 和 tuple 的替代选择。 Python 官方文档 collections……</summary><content type="html">
+&lt;/ul></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/topics/" term="topics" label="topics"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">Python collections 类</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/tech/programming/python/collections/"/><id>https://blog.matnoble.top/tech/programming/python/collections/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2021-03-13T00:10:00+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">这个模块实现了特定目标的容器，以提供 Python 标准内建容器 dict, list, set, 和 tuple 的替代选择。 Python 官方文档 collections……</summary><content type="html">
 &lt;blockquote>
 &lt;p>这个模块实现了特定目标的容器，以提供 Python 标准内建容器 &lt;code>dict&lt;/code>, &lt;code>list&lt;/code>, &lt;code>set&lt;/code>, 和 &lt;code>tuple&lt;/code> 的替代选择。&lt;/p>
 &lt;footer>
@@ -1640,7 +1698,7 @@ width="95%"
 &lt;!--
 https://www.jianshu.com/p/26df28b3bfc8
 https://nfwcap.github.io/2019/03/05/%E5%85%B3%E4%BA%8EPython-collections-defaultdict-%E4%B8%8Edict%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E5%8C%BA%E5%88%AB/
---></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/programming/" term="programming" label="programming"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/" term="编程之道" label="编程之道"/></entry><entry><title type="text">动态规划 -- 基础问题</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/topics/dp-basic/"/><id>https://blog.matnoble.top/dsa/topics/dp-basic/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-03-12T00:19:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">动态规划问题的一般形式就是..求最值..，求解动态规划的核心问题是..穷举..。 动态……</summary><content type="html">&lt;p>动态规划问题的一般形式就是..求最值..，求解动态规划的核心问题是..穷举..。&lt;/p>
+--></content><category scheme="https://blog.matnoble.top/tech/" term="tech" label="tech"/><category scheme="https://blog.matnoble.top/tech/programming/" term="programming" label="programming"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/" term="编程之道" label="编程之道"/></entry><entry><title type="text">动态规划 -- 基础问题</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/topics/dp-basic/"/><id>https://blog.matnoble.top/dsa/topics/dp-basic/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2021-03-12T00:19:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">动态规划问题的一般形式就是..求最值..，求解动态规划的核心问题是..穷举..。 动态……</summary><content type="html">&lt;p>动态规划问题的一般形式就是..求最值..，求解动态规划的核心问题是..穷举..。&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>动态规划问题一定会具备 &lt;strong>最优子结构&lt;/strong> ，才能通过子问题的最值得到原问题的最值。&lt;/p>
@@ -1851,7 +1909,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">coinChange&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">coins&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">amount&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ：3&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="程序实现">程序实现&lt;/h2>
-&lt;p>&lt;a href="https://colab.research.google.com/drive/1gAKqXeyGgktdiouAz6AITT_O3INjVqGu?usp=sharing">&lt;img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">&lt;/a>&lt;/p></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/topics/" term="topics" label="topics"/><category scheme="https://blog.matnoble.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" term="动态规划" label="动态规划"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">判断括号合法性</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/top/valid-parentheses/"/><id>https://blog.matnoble.top/dsa/top/valid-parentheses/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-03-05T00:20:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">目录 只处理一种括号 678. 有效的括号字符串(华为面试) 20. 有效的括号 只处理一种括号 题目描述 Note……</summary><content type="html">&lt;h2 id="目录">目录&lt;/h2>
+&lt;p>&lt;a href="https://colab.research.google.com/drive/1gAKqXeyGgktdiouAz6AITT_O3INjVqGu?usp=sharing">&lt;img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">&lt;/a>&lt;/p></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/topics/" term="topics" label="topics"/><category scheme="https://blog.matnoble.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" term="动态规划" label="动态规划"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">判断括号合法性</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/top/valid-parentheses/"/><id>https://blog.matnoble.top/dsa/top/valid-parentheses/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2021-03-05T00:20:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">目录 只处理一种括号 678. 有效的括号字符串(华为面试) 20. 有效的括号 只处理一种括号 题目描述 Note……</summary><content type="html">&lt;h2 id="目录">目录&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="./#%E5%8F%AA%E5%A4%84%E7%90%86%E4%B8%80%E7%A7%8D%E6%8B%AC%E5%8F%B7">只处理一种括号&lt;/a>&lt;/li>
 &lt;li>&lt;a href="./#678-%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8D%8E%E4%B8%BA%E9%9D%A2%E8%AF%95">678. 有效的括号字符串(华为面试)&lt;/a>&lt;/li>
@@ -2045,7 +2103,7 @@ $$&lt;/p>
 #### 复杂度
 - 时间复杂度：
 - 空间复杂度：
---></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/top/" term="top" label="top"/><category scheme="https://blog.matnoble.top/tags/%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%A2%98/" term="高频算法题" label="高频算法题"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">栈与队列</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/basic/stack-and-queue/"/><id>https://blog.matnoble.top/dsa/basic/stack-and-queue/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-03-05T00:19:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">91 天学算法</summary><content type="html">&lt;h2 id="栈-stack">栈 Stack&lt;/h2>
+--></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/top/" term="top" label="top"/><category scheme="https://blog.matnoble.top/tags/%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%A2%98/" term="高频算法题" label="高频算法题"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">栈与队列</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/basic/stack-and-queue/"/><id>https://blog.matnoble.top/dsa/basic/stack-and-queue/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2021-03-05T00:19:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">91 天学算法</summary><content type="html">&lt;h2 id="栈-stack">栈 Stack&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/Data_stack.svg"/>
 &lt;p>&lt;strong>栈&lt;/strong> 具有 &lt;code>先进后出&lt;/code> 特性。有如下几个操作：&lt;/p>
 &lt;ul>
@@ -2244,7 +2302,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> Returns whether the stack is empty.
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="nb">bool&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">A&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/basic/" term="basic" label="basic"/><category scheme="https://blog.matnoble.top/tags/leetcode%E9%A2%98%E8%A7%A3/" term="LeetCode题解" label="LeetCode题解"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">最长递增子序列</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/top/lis/"/><id>https://blog.matnoble.top/dsa/top/lis/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-03-04T00:19:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">目录 674. 最长连续递增序列 300. 最长递增子序列 354. 俄罗斯套娃信封问题 674. 最长连续递增序列 https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/ 题目描……</summary><content type="html">&lt;h2 id="目录">目录&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/basic/" term="basic" label="basic"/><category scheme="https://blog.matnoble.top/tags/leetcode%E9%A2%98%E8%A7%A3/" term="LeetCode题解" label="LeetCode题解"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">最长递增子序列</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/top/lis/"/><id>https://blog.matnoble.top/dsa/top/lis/</id><updated>2025-12-05T16:11:45+08:00</updated><published>2021-03-04T00:19:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">目录 674. 最长连续递增序列 300. 最长递增子序列 354. 俄罗斯套娃信封问题 674. 最长连续递增序列 https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/ 题目描……</summary><content type="html">&lt;h2 id="目录">目录&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="./#674-%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E9%80%92%E5%A2%9E%E5%BA%8F%E5%88%97">674. 最长连续递增序列&lt;/a>&lt;/li>
 &lt;li>&lt;a href="./#300-%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97">300. 最长递增子序列&lt;/a>&lt;/li>
@@ -2458,373 +2516,4 @@ width="95%"
 #### 复杂度
 - 时间复杂度：
 - 空间复杂度：
---></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/top/" term="top" label="top"/><category scheme="https://blog.matnoble.top/tags/%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%A2%98/" term="高频算法题" label="高频算法题"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry><entry><title type="text">二分法</title><link rel="alternate" type="text/html" href="https://blog.matnoble.top/dsa/topics/binary-search/"/><id>https://blog.matnoble.top/dsa/topics/binary-search/</id><updated>2025-12-02T22:27:30+08:00</updated><published>2021-03-01T00:20:30+08:00</published><author><name>MatNoble</name><uri>https://blog.matnoble.top/</uri><email>hustmatnoble@gmail.com</email></author><rights>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</rights><summary type="html">目录 二分模板 模板 1 模板 2 模板 3 每日一题 69. x 的平方根 278. 第一个错误的版本 Triple Inversion Minimum-Light-Radius Kth-Pair-Distance 778. 水位上……</summary><content type="html">&lt;h1 id="目录">目录&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="./#%E4%BA%8C%E5%88%86%E6%A8%A1%E6%9D%BF">二分模板&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="./#%E6%A8%A1%E6%9D%BF-1">模板 1&lt;/a>&lt;/li>
-&lt;li>&lt;a href="./#%E6%A8%A1%E6%9D%BF-2">模板 2&lt;/a>&lt;/li>
-&lt;li>&lt;a href="./#%E6%A8%A1%E6%9D%BF-3">模板 3&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="./#%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98">每日一题&lt;/a>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#69-x-%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9">69. x 的平方根&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#278-%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%9A%84%E7%89%88%E6%9C%AC">278. 第一个错误的版本&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#triple-inversion">Triple Inversion&lt;/a>&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> &lt;a href="./#minimum-light-radius">Minimum-Light-Radius&lt;/a>&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> &lt;a href="">Kth-Pair-Distance&lt;/a>&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> &lt;a href="./#778-%E6%B0%B4%E4%BD%8D%E4%B8%8A%E5%8D%87%E7%9A%84%E6%B3%B3%E6%B1%A0%E4%B8%AD%E6%B8%B8%E6%B3%B3">778. 水位上升的泳池中游泳&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="./#%E6%8E%A8%E8%8D%90%E9%A2%98%E7%9B%AE">推荐题目&lt;/a>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#33-%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84">33. 搜索旋转排序数组&lt;/a>&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;a href="./#81-%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84-ii">81. 搜索旋转排序数组 II&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="二分模板">二分模板&lt;/h2>
-&lt;p>&lt;strong>两大基本原则&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>每次都要&lt;strong>缩减搜索区域&lt;/strong>&lt;/li>
-&lt;li>每次缩减&lt;strong>不能排除潜在答案&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;a href="https://colab.research.google.com/drive/1UyuRUzcDGW_tsT7GCRNRdO8pu6I718pY?usp=sharing">Google Colab&lt;/a>&lt;/p>
-&lt;h3 id="模板-1">模板 1&lt;/h3>
-&lt;p>&lt;strong>找一个准确值&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>循环条件：&lt;code>l &amp;lt;= r&lt;/code>&lt;/li>
-&lt;li>缩减搜索空间：&lt;code>l = mid + 1, r = mid - 1&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">binarySearch&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">r&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">l&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">//&lt;/span>&lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="c1"># 返回索引&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">elif&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="模板-2">模板 2&lt;/h3>
-&lt;p>&lt;strong>找一个模糊值&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>循环条件：&lt;code>l &amp;lt; r&lt;/code>&lt;/li>
-&lt;li>缩减搜索空间：&lt;code>l = mid, r = mid - 1&lt;/code> 或者 &lt;code>l = mid + 1, r = mid&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">fuzzy_search_small&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">r&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">//&lt;/span>&lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">fuzzy_search_big&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">r&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">l&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">//&lt;/span> &lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="模板-3">模板 3&lt;/h3>
-&lt;p>&lt;strong>万用型&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>循环条件：&lt;code>l &amp;lt; r - 1&lt;/code>&lt;/li>
-&lt;li>缩减搜索空间：&lt;code>l = mid, r = mid&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">fuzzy_search&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">r&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">//&lt;/span>&lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="c1"># 返回索引&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">elif&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">tmp&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mf">2.0&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mf">2.0&lt;/span> &lt;span class="c1"># 中间值&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">tmp&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">elif&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">tmp&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="每日一题">每日一题&lt;/h2>
-&lt;h3 id="69-x-的平方根">69. x 的平方根&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/sqrtx/">https://leetcode-cn.com/problems/sqrtx/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述">题目描述&lt;/h4>
-&lt;style type="text/css">.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}&lt;/style>
-&lt;div>&lt;svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">&lt;symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/>&lt;/symbol>&lt;symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/>&lt;/symbol>&lt;symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">&lt;path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>&lt;/symbol>&lt;/svg>&lt;/div>&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/binary-search/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>实现  &lt;code>int sqrt(int x)&lt;/code>  函数。&lt;/p>
-&lt;p>计算并返回  &lt;code>x&lt;/code>  的平方根，其中  &lt;code>x&lt;/code> 是非负整数。&lt;/p>
-&lt;p>由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去。&lt;/p>
-&lt;p>&lt;strong>示例 1:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> 4&lt;br>
-&lt;strong>输出:&lt;/strong> 2&lt;/p>
-&lt;p>&lt;strong>示例 2:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> 8&lt;br>
-&lt;strong>输出:&lt;/strong> 2&lt;br>
-&lt;strong>说明:&lt;/strong> 8 的平方根是 2.82842..., 由于返回类型是整数，小数部分将被舍去。&lt;/p>&lt;/div>
-&lt;h4 id="思路">思路&lt;/h4>
-&lt;ul>
-&lt;li>解 $\sqrt{n} \leq \frac{n}{2}$:
-&lt;ul>
-&lt;li>$n = 0$, &lt;code>return 0&lt;/code>&lt;/li>
-&lt;li>$1 \leq n \leq 3$, &lt;code>return 1&lt;/code>&lt;/li>
-&lt;li>$n \geq 4$, 满足 $\sqrt{n} \leq \frac{n}{2}$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>在 $\left[1, n//2\right]$ 内二分&lt;/li>
-&lt;li>利于..除法..判断: &lt;code>mid &amp;gt; x/mid&lt;/code>, 避免溢出&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">mySqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">//&lt;/span> &lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">//&lt;/span> &lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">i&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(logX)$&lt;/li>
-&lt;li>空间复杂度：$O(1)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="278-第一个错误的版本">278. 第一个错误的版本&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/first-bad-version/">https://leetcode-cn.com/problems/first-bad-version/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-1">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/binary-search/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>你是产品经理，目前正在带领一个团队开发新的产品。不幸的是，你的产品的最新版本没有通过质量检测。由于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错的。&lt;/p>
-&lt;p>假设你有 &lt;code>n&lt;/code> 个版本 &lt;code>[1, 2, ..., n]&lt;/code>，你想找出导致之后所有版本出错的第一个错误的版本。&lt;/p>
-&lt;p>你可以通过调用  &lt;code>bool isBadVersion(version)&lt;/code>  接口来判断版本号 &lt;code>version&lt;/code> 是否在单元测试中出错。实现一个函数来查找第一个错误的版本。你应该尽量减少对调用 &lt;code>API&lt;/code> 的次数。&lt;/p>
-&lt;p>&lt;strong>示例:&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>给定 n = 5，并且 version = 4 是第一个错误的版本。
-调用 isBadVersion(3) -&amp;gt; false
-调用 isBadVersion(5) -&amp;gt; true
-调用 isBadVersion(4) -&amp;gt; true
-所以，4 是第一个错误的版本。 
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;h4 id="思路-1">思路&lt;/h4>
-&lt;ul>
-&lt;li>简单二分思路&lt;/li>
-&lt;li>相当于二元递增数组 &lt;code>[0, 0, 0, 1, 1]&lt;/code>&lt;/li>
-&lt;li>找到第一个 &lt;code>1&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-1">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># The isBadVersion API is already defined for you.&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># @param version, an integer&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># @return an integer&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># def isBadVersion(version):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">firstBadVersion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :type n: int
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :rtype: int
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">//&lt;/span> &lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">isBadVersion&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">i&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-1">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(logN)$&lt;/li>
-&lt;li>空间复杂度：$O(1)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="triple-inversion">Triple Inversion&lt;/h3>
-&lt;p>&lt;a href="https://binarysearch.com/problems/Triple-Inversion">https://binarysearch.com/problems/Triple-Inversion&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-2">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/binary-search/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>Given a list of integers nums, return the number of pairs &lt;code>i &amp;lt; j&lt;/code> such that &lt;code>nums[i] &amp;gt; nums[j] * 3&lt;/code>.&lt;/p>
-&lt;p>&lt;strong>Constraints&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>n ≤ 100,000&lt;/code> where &lt;code>n&lt;/code> is the length of &lt;code>nums&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Example&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Input&lt;br>
-&lt;code>nums = [7, 1, 2]&lt;/code>&lt;/li>
-&lt;li>Output&lt;br>
-&lt;code>2&lt;/code>&lt;/li>
-&lt;li>Explanation&lt;br>
-&lt;code>We have the pairs (7, 1) and (7, 2)&lt;/code>&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;h4 id="思路-2">思路&lt;/h4>
-&lt;ul>
-&lt;li>构造递增数组 &lt;code>d&lt;/code>&lt;/li>
-&lt;li>借助 &lt;a href="https://docs.python.org/zh-cn/3.9/library/bisect.html">bisect&lt;/a> 模块，边插入边排序&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-2">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">solve&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">d&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">num&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">idx&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">bisect&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">bisect_right&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">d&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 返回最右侧索引&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">res&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">d&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">idx&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">bisect&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">insort&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">d&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">num&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-2">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(n^2)$&lt;/li>
-&lt;li>空间复杂度：$O(n)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="minimum-light-radius">Minimum-Light-Radius&lt;/h3>
-&lt;p>&lt;a href="https://binarysearch.com/problems/Minimum-Light-Radius">https://binarysearch.com/problems/Minimum-Light-Radius&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-3">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/binary-search/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;/div>
-&lt;h4 id="思路-3">思路&lt;/h4>
-&lt;h4 id="代码-3">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-3">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：&lt;/li>
-&lt;li>空间复杂度：&lt;/li>
-&lt;/ul>
-&lt;h2 id="推荐题目">推荐题目&lt;/h2>
-&lt;h3 id="33-搜索旋转排序数组">33. 搜索旋转排序数组&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/search-in-rotated-sorted-array/">https://leetcode-cn.com/problems/search-in-rotated-sorted-array/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-4">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/binary-search/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>整数数组 &lt;code>nums&lt;/code> 按升序排列，数组中的值 &lt;strong>互不相同&lt;/strong> 。&lt;/p>
-&lt;p>在传递给函数之前，&lt;code>nums&lt;/code> 在预先未知的某个下标 &lt;code>k（0 &amp;lt;= k &amp;lt; nums.length）&lt;/code>上进行了 &lt;strong>旋转&lt;/strong>，使数组变为 &lt;code>[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]&lt;/code>（下标 &lt;strong>从 0 开始&lt;/strong> 计数）。例如， $[0,1,2,4,5,6,7]$ 在下标 $3$ 处经旋转后可能变为  $[4,5,6,7,0,1,2]$&lt;/p>
-&lt;p>给你 &lt;strong>旋转后&lt;/strong> 的数组 &lt;code>nums&lt;/code> 和一个整数 &lt;code>target&lt;/code> ，如果 &lt;code>nums&lt;/code> 中存在这个目标值 &lt;code>target&lt;/code>，则返回它的索引，否则返回  $-1$&lt;/p>
-&lt;p>&lt;strong>示例 1：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> $nums = [4,5,6,7,0,1,2], \ target = 0$&lt;br>
-&lt;strong>输出：&lt;/strong> $4$&lt;/p>
-&lt;p>&lt;strong>示例  2：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> $nums = [4,5,6,7,0,1,2], \ target = 3$&lt;br>
-&lt;strong>输出：&lt;/strong> $-1$&lt;/p>
-&lt;p>&lt;strong>示例 3：&lt;/strong>&lt;br>
-&lt;strong>输入：&lt;/strong> $nums = [1],\ target = 0$&lt;br>
-&lt;strong>输出：&lt;/strong> $-1$&lt;/p>
-&lt;p>&lt;strong>提示：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>$1 \leq nums.length \leq 5000$&lt;/li>
-&lt;li>$-10^4 \leq nums[i] \leq 10^4$&lt;/li>
-&lt;li>&lt;code>nums&lt;/code> 中的每个值都 &lt;strong>独一无二&lt;/strong>&lt;/li>
-&lt;li>&lt;code>nums&lt;/code> 肯定会在某个点上旋转&lt;/li>
-&lt;li>$-10^4 \leq target \leq 10^4$&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;h4 id="思路-4">思路&lt;/h4>
-&lt;ul>
-&lt;li>二分法，&lt;strong>每次必须缩小区间，不能去掉可能解&lt;/strong>&lt;/li>
-&lt;li>&lt;code>nums[left] &amp;lt;= nums[mid]&lt;/code> $\Longrightarrow$ 左侧为有序序列
-&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210301201056.png"/>&lt;/li>
-&lt;li>&lt;code>nums[left] &amp;gt; nums[mid]&lt;/code> $\Longrightarrow$ 右侧为有序序列
-&lt;img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210301201339.png"/>&lt;/li>
-&lt;/ul>
-&lt;h4 id="代码-4">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">search&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">left&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">left&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">//&lt;/span>&lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">mid&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="c1"># 左侧为有序序列&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1"># 右侧为有序序列&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-4">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(logN)$&lt;/li>
-&lt;li>空间复杂度：$O(1)$&lt;/li>
-&lt;/ul>
-&lt;h3 id="81-搜索旋转排序数组-ii">81. 搜索旋转排序数组 II&lt;/h3>
-&lt;p>&lt;a href="https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/">https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/&lt;/a>&lt;/p>
-&lt;h4 id="题目描述-5">题目描述&lt;/h4>
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/binary-search/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;p>假设按照升序排序的数组在预先未知的某个点上进行了旋转。&lt;/p>
-&lt;p>( 例如，数组  $[0,0,1,2,2,5,6]$  可能变为  $[2,5,6,0,0,1,2]$ )。&lt;/p>
-&lt;p>编写一个函数来判断给定的目标值是否存在于数组中。若存在返回  &lt;code>true&lt;/code>，否则返回  &lt;code>false&lt;/code>。&lt;/p>
-&lt;p>&lt;strong>示例  1:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> nums = [2,5,6,0,0,1,2], target = 0&lt;br>
-&lt;strong>输出:&lt;/strong> &lt;code>true&lt;/code>&lt;/p>
-&lt;p>&lt;strong>示例  2:&lt;/strong>&lt;br>
-&lt;strong>输入:&lt;/strong> nums = [2,5,6,0,0,1,2], target = 3&lt;br>
-&lt;strong>输出:&lt;/strong> &lt;code>false&lt;/code>&lt;/p>&lt;/div>
-&lt;h4 id="思路-5">思路&lt;/h4>
-&lt;ul>
-&lt;li>相对于 &lt;a href="./#33-%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84">33. 搜索旋转排序数组&lt;/a>，本题中&lt;strong>元素可能重复&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">while&lt;/span> &lt;span class="n">left&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="c1"># 消除重复元素&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="代码-5">代码&lt;/h4>
-&lt;details>
-&lt;summary> Python &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">search&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">bool&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nums&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">left&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">right&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">left&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">//&lt;/span>&lt;span class="mi">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">target&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="kc">True&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="n">left&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">mid&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="c1"># 消除重复元素&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]:&lt;/span> &lt;span class="c1"># 左侧为有序序列&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1"># 右侧为有序序列&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">mid&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">target&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">nums&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">]:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">left&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">right&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mid&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="kc">False&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
-&lt;h4 id="复杂度-5">复杂度&lt;/h4>
-&lt;ul>
-&lt;li>时间复杂度：$O(logN)$&lt;/li>
-&lt;li>空间复杂度：$O(1)$&lt;/li>
-&lt;/ul>
-&lt;!-- 模板
-#### 题目描述
-&lt;div class="notice note" >
-&lt;p class="first notice-title">&lt;span class="icon-notice baseline">&lt;svg>&lt;use href="https://blog.matnoble.top/dsa/topics/binary-search/#note-notice">&lt;/use>&lt;/svg>&lt;/span>Note&lt;/p>&lt;/div>
-#### 思路
-#### 代码
-&lt;details>
-&lt;summary> Python &lt;/summary>
-```python
-```
-&lt;/details>
-#### 复杂度
-- 时间复杂度：
-- 空间复杂度：
---></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/topics/" term="topics" label="topics"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry></feed>
+--></content><category scheme="https://blog.matnoble.top/dsa/" term="dsa" label="dsa"/><category scheme="https://blog.matnoble.top/dsa/top/" term="top" label="top"/><category scheme="https://blog.matnoble.top/tags/%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%A2%98/" term="高频算法题" label="高频算法题"/><category scheme="https://blog.matnoble.top/tags/%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/" term="编程刷题" label="编程刷题"/></entry></feed>
