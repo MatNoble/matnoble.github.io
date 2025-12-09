@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Mon, 08 Dec 2025 08:33:25 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>MathViz Lab: 基于 Cloudflare Workers 的微积分可视化实验</title><link>https://blog.matnoble.top/tech/app/math-viz-lab-launch/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/app/math-viz-lab-launch/</guid><pubDate>Sun, 07 Dec 2025 21:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>在学习微积分的过程中，很多概念如果仅仅停留在公式推导上，往往显得抽象且难以直观理解。比如 $dy$ 和 $\Delta y$ 到底差在哪？黎曼和是如何逼近真实面积的？&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Tue, 09 Dec 2025 12:10:42 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>MathViz Lab: 基于 Cloudflare Workers 的微积分可视化实验</title><link>https://blog.matnoble.top/tech/app/math-viz-lab-launch/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/app/math-viz-lab-launch/</guid><pubDate>Sun, 07 Dec 2025 21:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>在学习微积分的过程中，很多概念如果仅仅停留在公式推导上，往往显得抽象且难以直观理解。比如 $dy$ 和 $\Delta y$ 到底差在哪？黎曼和是如何逼近真实面积的？&lt;/p>
 &lt;p>为了解决这个问题（同时也为了折腾一下有趣的技术栈），我开发了 &lt;strong>MathViz Lab (数学思维探究社)&lt;/strong> —— 一个部署在边缘网络上的交互式可视化实验室。&lt;/p>
 &lt;p>👉 &lt;strong>在线体验&lt;/strong>: &lt;a href="https://viz.matnoble.top">viz.matnoble.top&lt;/a>&lt;/p>
 &lt;h2 id="-技术选型">🛠️ 技术选型&lt;/h2>
@@ -370,7 +370,7 @@ $$&lt;/p>
 &lt;/blockquote>
 &lt;p>在高等数学的世界里，泰勒公式就是那个无所不能的“支点”。&lt;/p>
 &lt;p>你是否也曾被它那长长的、看似复杂的公式吓到过？感觉它像一堵高墙，难以逾越？&lt;/p>
-&lt;p>别担心，这篇文章将带你彻底拆解这只“纸老虎”。我们将用最直观的比喻和最简单的例子，让你不仅理解泰勒公式，更能爱上它的简洁与强大。读完本文，你将掌握一个强大的数学工具，无论是求极限、估算值，还是理解其他复杂概念，都能从从容容，游刃有余。&lt;/p>
+&lt;p>别担心，这篇文章将带你彻底拆解这只“纸老虎”。我们将用最直观的比喻和最简单的例子，让你不仅理解泰勒公式，更能爱上它的简洁与强大。读完本文，你将掌握一个强大的数学工具，无论是在求极限、估算值，还是理解复杂概念时，你都能游刃有余。&lt;/p>
 &lt;p>准备好了吗？让我们一起开始这场征服泰勒公式的冒险之旅！&lt;/p>
 &lt;h2 id="核心思想用积木搭建复杂模型">核心思想：用积木搭建复杂模型&lt;/h2>
 &lt;p>想象一下，你面前有一个非常复杂的乐高模型，比如一个精致的巴黎埃菲尔铁塔。你没有完整的图纸，但你可以在模型的某一个点（比如塔底）仔细研究。&lt;/p>
@@ -485,7 +485,7 @@ $$&lt;/p>
 &lt;h3 id="1-化繁为简的智慧">1. 化繁为简的智慧&lt;/h3>
 &lt;p>泰勒公式教给我们，任何看似坚不可摧的复杂系统（无论是自然现象还是社会问题），都可以通过“降维打击”来理解。我们可以在一个已知的“点”上，通过分析其最基本的特性（一阶、二阶...变化率），来构建一个足够好的近似模型。这是一种从已知探索未知的强大思维范式。&lt;/p>
 &lt;h3 id="2-局部决定整体的观点">2. “局部决定整体”的观点&lt;/h3>
-&lt;p>这是微积分一以贯之的核心思想。泰勒公式将其发挥到了极致：一个点及其邻域的无限小信息（所有阶的导数），竟然能够完全决定一个“良好”函数在远处的行为。这启示我们，深刻理解事物的“当下”和“局部”，是预测其未来和全局走向的关键。&lt;/p>
+&lt;p>这是微积分一以贯之的核心思想。&lt;strong>如果您想系统地了解微积分的整体脉络，可以参考&lt;a href="https://blog.matnoble.top/math/calculus/knowledge-graph/">微积分知识图谱&lt;/a>。&lt;/strong> 泰勒公式将其发挥到了极致：一个点及其邻域的无限小信息（所有阶的导数），竟然能够完全决定一个“良好”函数在远处的行为。这启示我们，深刻理解事物的“当下”和“局部”，是预测其未来和全局走向的关键。&lt;/p>
 &lt;h3 id="3-无限与有限的桥梁">3. 无限与有限的桥梁&lt;/h3>
 &lt;p>泰勒公式用一个无限项的多项式完美地等同于一个复杂函数，但现实中我们又总能取其有限项来解决实际问题。这完美地展现了理论的完美性与实践的有效性之间的和谐统一。它告诉我们，即使我们无法穷尽所有细节，依然可以抓住主要矛盾，得到一个足够好的答案。&lt;/p>
 &lt;h3 id="4-基的思想">4. “基”的思想&lt;/h3>
@@ -7106,7 +7106,7 @@ width="95%"
 &lt;/footer>
 &lt;/blockquote>
 &lt;h2 id="科学上网方法">科学上网方法&lt;/h2>
-&lt;p>目前，我知道的有两大类：..商业软件VPN.. 和 ..机场..&lt;/p>
+&lt;p>目前，我知道的有两大类：&lt;strong>商业软件VPN&lt;/strong> 和 &lt;strong>机场&lt;/strong>&lt;/p>
 &lt;ol>
 &lt;li>商业软件 VPN 诸如著名的蓝灯之类的，价格略高，优点是简单且不折腾。&lt;/li>
 &lt;li>机场包括免费分享机场，付费机场和自建机场。
