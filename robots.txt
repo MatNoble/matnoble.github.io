@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: /search/
+Disallow: /tags/
+Disallow: /categories/
 Disallow: /404.html
 Sitemap: https://blog.matnoble.top/zh/sitemap.xml
