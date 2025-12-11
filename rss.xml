@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Tue, 09 Dec 2025 12:29:01 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>MathViz Lab: 基于 Cloudflare Workers 的微积分可视化实验</title><link>https://blog.matnoble.top/tech/app/math-viz-lab-launch/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/app/math-viz-lab-launch/</guid><pubDate>Sun, 07 Dec 2025 21:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>在学习微积分的过程中，很多概念如果仅仅停留在公式推导上，往往显得抽象且难以直观理解。比如 $dy$ 和 $\Delta y$ 到底差在哪？黎曼和是如何逼近真实面积的？&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Thu, 11 Dec 2025 05:37:12 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>Markdown 的流畅与 LaTeX 的优雅，我全都要：LaTeXRender 开发手记</title><link>https://blog.matnoble.top/tech/app/latexrender-project/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/app/latexrender-project/</guid><pubDate>Thu, 11 Dec 2025 08:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>在数学笔记整理和技术写作的道路上，我长久以来都面临着一个两难的选择。&lt;/p>
+&lt;p>左手是 &lt;strong>Markdown&lt;/strong>：它轻量、快捷，所见即所得。在 Typora 或 Obsidian 里敲击键盘，思绪如水流般顺畅，没有任何繁琐的标签阻断灵感。&lt;/p>
+&lt;p>右手是 &lt;strong>LaTeX&lt;/strong>：它是学术界的各种标准，是排版的终极奥义。那完美的数学公式渲染、专业的字体间距、严谨的定理环境，是任何网页渲染都无法比拟的艺术品。&lt;/p>
+&lt;p>&lt;strong>痛点在于：&lt;/strong> 用 LaTeX 直接写作太痛苦（满屏的 &lt;code>\begin&lt;/code> 和 &lt;code>\end&lt;/code>），而用 Markdown 导出的 PDF 又往往缺乏那份“专业感”。&lt;/p>
+&lt;p>于是，&lt;strong>LaTeXRender&lt;/strong> 诞生了。&lt;/p>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251211132158495.png"
+title="LateXRender"
+alt="LateXRender"
+width="95%"
+>
+&lt;span class="caption">◎ LateXRender&lt;/span>
+&lt;/span>
+&lt;h2 id="初衷鱼和熊掌兼得">初衷：鱼和熊掌兼得&lt;/h2>
+&lt;p>我开发 LaTeXRender 的核心目标非常简单：&lt;strong>用 Markdown 舒服地写，用 LaTeX 漂亮地发。&lt;/strong>&lt;/p>
+&lt;p>我希望我的工作流是这样的：&lt;/p>
+&lt;ol>
+&lt;li>打开我最喜欢的 Markdown 编辑器，专注于内容创作。&lt;/li>
+&lt;li>像写代码一样写公式：&lt;code>$E=mc^2$&lt;/code>，&lt;code>$$ \int f(x) dx $$&lt;/code>。&lt;/li>
+&lt;li>敲入一行命令 &lt;code>lxrender note.md --compile&lt;/code>。&lt;/li>
+&lt;li>&lt;strong>Boom!&lt;/strong> 一个排版精美、带有我个人品牌（页眉、页脚、Logo）的 PDF 就生成了。&lt;/li>
+&lt;/ol>
+&lt;h2 id="核心功能概览">核心功能概览&lt;/h2>
+&lt;p>经过不断的迭代（特别是最近对表格和 CLI 的重构），LaTeXRender 已经具备了以下核心能力：&lt;/p>
+&lt;h3 id="1-完美的数学公式支持">1. 完美的数学公式支持&lt;/h3>
+&lt;p>这是本项目的立身之本。它利用 Python 的 &lt;code>Mistune&lt;/code> 库解析 Markdown AST，将 &lt;code>$&lt;/code> 和 &lt;code>$$&lt;/code> 包裹的内容无缝转换为 LaTeX 的 &lt;code>\(&lt;/code> 和 &lt;code>\[&lt;/code> 环境，确保数学公式在 PDF 中原汁原味地呈现，相比 KeTeX 或 MathJax 更精美，更适合打印。&lt;/p>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251211132803148.png"
+title="精美的数学公式"
+alt="精美的数学公式"
+width="95%"
+>
+&lt;span class="caption">◎ 精美的数学公式&lt;/span>
+&lt;/span>
+&lt;h3 id="2-专业的表格渲染">2. 专业的表格渲染&lt;/h3>
+&lt;p>Markdown 的表格虽然简单，但转换成 LaTeX 却是一大难点。我专门重写了渲染逻辑，将 Markdown 表格自动转换为带有 &lt;code>booktabs&lt;/code> 风格（三线表）的 LaTeX 表格：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-latex" data-lang="latex">&lt;span class="line">&lt;span class="cl">&lt;span class="k">\toprule&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Header 1 &lt;span class="nb">&amp;amp;&lt;/span> Header 2 &lt;span class="k">\\&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\midrule&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Cell 1 &lt;span class="nb">&amp;amp;&lt;/span> Cell 2 &lt;span class="k">\\&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\bottomrule&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>告别丑陋的默认网格，拥抱学术范儿。&lt;/p>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251211132548788.png"
+title="LaTeXRendr 支持表格转换"
+alt="LaTeXRendr 支持表格转换"
+width="95%"
+>
+&lt;span class="caption">◎ LaTeXRendr 支持表格转换&lt;/span>
+&lt;/span>
+&lt;h3 id="3-定制化排版系统-matnoblecls">3. 定制化排版系统 (&lt;code>matnoble.cls&lt;/code>)&lt;/h3>
+&lt;p>工具不仅仅是转换，更是为了输出带有个人风格的作品。我内置了 &lt;code>matnoble.cls&lt;/code> 类文件，自动处理：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>中文字体&lt;/strong>：自动检测系统字体（思源宋体/黑体）。&lt;/li>
+&lt;li>&lt;strong>页面布局&lt;/strong>：包含“数学思维探究社”公众号二维码、GitHub 链接等页脚信息。&lt;/li>
+&lt;li>&lt;strong>特殊环境&lt;/strong>：核心公式、解题技巧、易错警示等彩色文本框（基于 &lt;code>tcolorbox&lt;/code>）。&lt;/li>
+&lt;/ul>
+&lt;h3 id="4-极简的命令行体验">4. 极简的命令行体验&lt;/h3>
+&lt;p>无需记住复杂的 Python 脚本路径。安装后，只需在终端任意位置调用：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 转换并编译&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lxrender my_note.md --compile --clean
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>它会自动处理 Markdown 解析、LaTeX 生成、XeLaTeX 编译以及繁琐的中间文件清理。&lt;/p>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251211133248542.png"
+title="一行脚本即是全部操作"
+alt="一行脚本即是全部操作"
+width="95%"
+>
+&lt;span class="caption">◎ 一行脚本即是全部操作&lt;/span>
+&lt;/span>
+&lt;h2 id="技术实现一瞥">技术实现一瞥&lt;/h2>
+&lt;p>本项目主要基于 &lt;strong>Python&lt;/strong> 构建，核心依赖包括：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Mistune v3&lt;/strong>: 强大的 Markdown 解析器，允许我们通过编写 Renderer 插件来深度定制输出逻辑（比如处理删除线 &lt;code>~~text~~&lt;/code> 和数学公式）。&lt;/li>
+&lt;li>&lt;strong>Python-Frontmatter&lt;/strong>: 解析文章开头的 YAML 元数据（标题、作者、副标题），并动态注入到 LaTeX 模板中。&lt;/li>
+&lt;li>&lt;strong>Latexmk&lt;/strong>: 调用系统底层的 LaTeX 编译链，自动化处理交叉引用。&lt;/li>
+&lt;/ul>
+&lt;h2 id="结语与开源">结语与开源&lt;/h2>
+&lt;p>目前，LaTeXRender 已经接管了我日常的数学笔记整理工作。它不仅让我保持了 Markdown 的高产，也让最终交付给读者的 PDF 文档保持了高水准的专业度。&lt;/p>
+&lt;p>如果你也是一名追求效率与美学的写作者，或者对 Python 自动化排版感兴趣，欢迎访问项目主页 Star 和试用！&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>GitHub&lt;/strong>: &lt;a href="https://github.com/MatNoble/LaTeXRender">https://github.com/MatNoble/LaTeXRender&lt;/a> (此处替换为你真实的仓库地址，如果有的话)&lt;/li>
+&lt;li>&lt;strong>博客&lt;/strong>: &lt;a href="https://blog.matnoble.top">https://blog.matnoble.top&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;blockquote>
+&lt;p>&lt;strong>关于作者&lt;/strong>：&lt;a href="https://blog.matnoble.top/about">MatNoble&lt;/a>，热衷于数学思维探究与技术工具折腾。&lt;br>
+关注公众号 &lt;strong>“数学思维探究社”&lt;/strong>，获取更多数学笔记与技术干货。&lt;/p>
+&lt;/blockquote></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/app/">app</category><category domain="https://blog.matnoble.top/tags/python/">Python</category><category domain="https://blog.matnoble.top/tags/latex/">LaTeX</category><category domain="https://blog.matnoble.top/tags/markdown/">Markdown</category><category domain="https://blog.matnoble.top/tags/efficiency/">Efficiency</category><category domain="https://blog.matnoble.top/tags/tools/">Tools</category></item><item><title>MathViz Lab: 基于 Cloudflare Workers 的微积分可视化实验</title><link>https://blog.matnoble.top/tech/app/math-viz-lab-launch/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/app/math-viz-lab-launch/</guid><pubDate>Sun, 07 Dec 2025 21:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>在学习微积分的过程中，很多概念如果仅仅停留在公式推导上，往往显得抽象且难以直观理解。比如 $dy$ 和 $\Delta y$ 到底差在哪？黎曼和是如何逼近真实面积的？&lt;/p>
 &lt;p>为了解决这个问题（同时也为了折腾一下有趣的技术栈），我开发了 &lt;strong>MathViz Lab (数学思维探究社)&lt;/strong> —— 一个部署在边缘网络上的交互式可视化实验室。&lt;/p>
 &lt;p>👉 &lt;strong>在线体验&lt;/strong>: &lt;a href="https://viz.matnoble.top">viz.matnoble.top&lt;/a>&lt;/p>
 &lt;h2 id="-技术选型">🛠️ 技术选型&lt;/h2>
@@ -9365,37 +9453,4 @@ width="95%"
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt purge google-chrome-stable
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rm -rf ~/.config/google-chrome
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rm -rf ~/.cache/google-chrome
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/ubuntu/">Ubuntu</category><category domain="https://blog.matnoble.top/tags/ubuntu-%E8%A3%85%E6%9C%BA%E4%B8%8E%E4%BC%98%E5%8C%96/">Ubuntu 装机与优化</category></item><item><title>高等代数习题集及资料分享</title><link>https://blog.matnoble.top/math/linear-algebra/linear-algebra-problem-set/</link><guid isPermaLink="true">https://blog.matnoble.top/math/linear-algebra/linear-algebra-problem-set/</guid><pubDate>Fri, 06 Mar 2020 00:17:38 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>研一时, 利用业余时间写了一份
-&lt;mark>高等代数习题集&lt;/mark>
-, 包含考研时做的一些经典例题及一些方法论. 提纲如下图所示, 共有 6 章, 可惜的是由于时间原因, 最后两章并没有完成. 目前只完成了前 4 章中的大部分, 如果需要的话, 可从下方下载 PDF 版!&lt;/p>
-&lt;span class="caption-wrapper">
-&lt;img class="caption" src="https://ttfou.com/images/2020/03/06/e503745fc92728f920414482f03f61ce.png"
-title="篇章结构"
-alt="篇章结构"
-width="95%"
->
-&lt;span class="caption">◎ 篇章结构&lt;/span>
-&lt;/span>
-&lt;h3>多项式&lt;/h3>
-&lt;div class="row" style="position: relative; width: 100%; padding-bottom: 100%; padding-top: 0px; height: 0; overflow: hidden;">
-&lt;embed src="https://blog.matnoble.top/files/pdf/duoxiangshi.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="application/pdf">
-&lt;/div>
-&lt;h3>行列式&lt;/h3>
-&lt;div class="row" style="position: relative; width: 100%; padding-bottom: 100%; padding-top: 0px; height: 0; overflow: hidden;">
-&lt;embed src="https://blog.matnoble.top/files/pdf/hls.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="application/pdf">
-&lt;/div>
-&lt;h3>线性方程组(线性系统)&lt;/h3>
-&lt;div class="row" style="position: relative; width: 100%; padding-bottom: 100%; padding-top: 0px; height: 0; overflow: hidden;">
-&lt;embed src="https://blog.matnoble.top/files/pdf/les.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="application/pdf">
-&lt;/div>
-&lt;h3>矩阵&lt;/h3>
-&lt;div class="row" style="position: relative; width: 100%; padding-bottom: 100%; padding-top: 0px; height: 0; overflow: hidden;">
-&lt;embed src="https://blog.matnoble.top/files/pdf/matrix.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="application/pdf">
-&lt;/div>
-&lt;hr />
-&lt;p>除了我自己的总结, 他山之石也是要借鉴学习的, 我上传到了&lt;a href="https://474b.com/dir/24879366-37697679-9deced">城通网盘&lt;/a>&lt;br>
-&lt;em>&lt;code>密码&lt;/code>请到公众号&lt;code>数系家园&lt;/code>, 回复&lt;code>高代习题2020&lt;/code>获取&lt;/em> &lt;br>&lt;/p>
-&lt;img src="https://ttfou.com/images/2020/03/06/7aeb74f40a7aa01c37ad4ba2d4ed3774.png" width="95%" />
-&lt;blockquote>
-&lt;p>申明: 以上资料仅供个人学习使用, 版权属于原作者&lt;/p>
-&lt;/blockquote></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/linear-algebra/">Linear-Algebra</category><category domain="https://blog.matnoble.top/tags/%E8%80%83%E7%A0%94/">考研</category></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/ubuntu/">Ubuntu</category><category domain="https://blog.matnoble.top/tags/ubuntu-%E8%A3%85%E6%9C%BA%E4%B8%8E%E4%BC%98%E5%8C%96/">Ubuntu 装机与优化</category></item></channel></rss>
