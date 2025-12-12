@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．&lt;br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Thu, 11 Dec 2025 05:37:12 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>Markdown 的流畅与 LaTeX 的优雅，我全都要：LaTeXRender 开发手记</title><link>https://blog.matnoble.top/tech/app/latexrender-project/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/app/latexrender-project/</guid><pubDate>Thu, 11 Dec 2025 08:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>在数学笔记整理和技术写作的道路上，我长久以来都面临着一个两难的选择。&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学直观理解, 大数据技术和 LaTeX 排版经验。MatNoble 致力于消除数学与代码之间的认知壁垒。</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Fri, 12 Dec 2025 12:07:20 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>Markdown 的流畅与 LaTeX 的优雅，我全都要：LaTeXRender 开发手记</title><link>https://blog.matnoble.top/tech/app/latexrender-project/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/app/latexrender-project/</guid><pubDate>Thu, 11 Dec 2025 08:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>在数学笔记整理和技术写作的道路上，我长久以来都面临着一个两难的选择。&lt;/p>
 &lt;p>左手是 &lt;strong>Markdown&lt;/strong>：它轻量、快捷，所见即所得。在 Typora 或 Obsidian 里敲击键盘，思绪如水流般顺畅，没有任何繁琐的标签阻断灵感。&lt;/p>
 &lt;p>右手是 &lt;strong>LaTeX&lt;/strong>：它是学术界的各种标准，是排版的终极奥义。那完美的数学公式渲染、专业的字体间距、严谨的定理环境，是任何网页渲染都无法比拟的艺术品。&lt;/p>
 &lt;p>&lt;strong>痛点在于：&lt;/strong> 用 LaTeX 直接写作太痛苦（满屏的 &lt;code>\begin&lt;/code> 和 &lt;code>\end&lt;/code>），而用 Markdown 导出的 PDF 又往往缺乏那份“专业感”。&lt;/p>
@@ -7365,8 +7365,15 @@ $$
 &lt;p>以上，除了第一个式子是 Gilbert Strang 教授本次拿出来作为教授线代的出发点，其余内容都可以在完整版 18.06 的课程中找到。&lt;/p>
 &lt;hr>
 &lt;p>之前看过台湾国立交通大学的线代课程，任课教授提到『线性代数是一门与时俱进的课程』每隔几年，工程中遇到的问题会反馈到教学中，之后在应用到实际工作中。当然，数学作为一门基础学科，不会直接影响实际的生产工作，但是这种影响是..间接..的，是..潜移默化..的。&lt;/p>
-&lt;p>正如本次 2020 更新，矩阵分解、特征值、特征向量，尤其是奇异值、奇异向量，对于当今人工智能领域，诸如机器学习，深度学习有很重要的应用。&lt;/p></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/linear-algebra/">Linear-Algebra</category><category domain="https://blog.matnoble.top/series/mla/">线代拾遗</category><category domain="https://blog.matnoble.top/tags/mit-2020/">MIT 2020</category></item><item><title>在 LaTeX 中添加图片</title><link>https://blog.matnoble.top/tech/latex/figure/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/latex/figure/</guid><pubDate>Tue, 07 Apr 2020 00:18:32 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;img src="https://imgkr.cn-bj.ufileos.com/4e7ca500-bdca-42dc-9444-bffa8af84fc5.png" width="95%" />
-&lt;div align="center">&lt;a href="https://blog.matnoble.top/series/latex">◎ 你过来啊 🤞&lt;/a>&lt;/div>
+&lt;p>正如本次 2020 更新，矩阵分解、特征值、特征向量，尤其是奇异值、奇异向量，对于当今人工智能领域，诸如机器学习，深度学习有很重要的应用。&lt;/p></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/linear-algebra/">Linear-Algebra</category><category domain="https://blog.matnoble.top/series/mla/">线代拾遗</category><category domain="https://blog.matnoble.top/tags/mit-2020/">MIT 2020</category></item><item><title>在 LaTeX 中添加图片</title><link>https://blog.matnoble.top/tech/latex/figure/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/latex/figure/</guid><pubDate>Tue, 07 Apr 2020 00:18:32 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://blog.matnoble.top/images/latex-banner.svg"
+title="LaTeX 排版教程系列图片横幅"
+alt="LaTeX 排版教程系列图片横幅"
+width="95%"
+>
+&lt;span class="caption">◎ LaTeX 排版教程系列图片横幅&lt;/span>
+&lt;/span>
 &lt;h2 id="最基础">最基础&lt;/h2>
 &lt;p>在 $\LaTeX$ 里添加图片使用 &lt;code>graphicx&lt;/code> 宏包，在导言区导入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-tex" data-lang="tex">&lt;span class="line">&lt;span class="cl">&lt;span class="k">\usepackage&lt;/span>&lt;span class="nb">{&lt;/span>graphicx&lt;span class="nb">}&lt;/span>
@@ -7520,7 +7527,7 @@ $$
 &lt;p>对应的还有浮动..表..环境&amp;#160;&lt;a href="https://blog.matnoble.top/tech/latex/figure/#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/series/latex/">LaTeX 排版「冷」知识</category><category domain="https://blog.matnoble.top/tags/">标签云</category></item><item><title>Ubuntu 安装 Zsh ，配置最强终端</title><link>https://blog.matnoble.top/tech/ubuntu/install-zsh/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/ubuntu/install-zsh/</guid><pubDate>Mon, 30 Mar 2020 00:12:58 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;blockquote>
+&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/series/latex/">LaTeX 排版「冷」知识</category><category domain="https://blog.matnoble.top/tags/%E5%9B%BE%E7%89%87%E8%A1%A8%E6%A0%BC/">图片表格</category></item><item><title>Ubuntu 安装 Zsh ，配置最强终端</title><link>https://blog.matnoble.top/tech/ubuntu/install-zsh/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/ubuntu/install-zsh/</guid><pubDate>Mon, 30 Mar 2020 00:12:58 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;blockquote>
 &lt;p>Z shell（Zsh）是一款可用作交互式登录的 shell 及脚本编写的命令解释器。Zsh 对 Bourne shell 做出了大量改进，同时加入了 Bash、ksh 及 tcsh 的某些功能。&lt;/p>
 &lt;footer>
 &lt;strong>&lt;/strong>
@@ -7826,8 +7833,15 @@ width="60%"
 &lt;p>最近，发现开源软件 Kdenlive、Gimp 和 Inkscape 也有很强大的素材编辑功能，而且比 Adobe 系的软件轻量的多，还是开源免费的&amp;#160;&lt;a href="https://blog.matnoble.top/tech/reviews/lenovo-xiaoxin-pro-13/#fnref:7" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/reviews/">Reviews</category><category domain="https://blog.matnoble.top/tags/%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%B9%B0/">值不值得买</category></item><item><title>LaTeX 排版多行公式</title><link>https://blog.matnoble.top/tech/latex/multi-line-equations/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/latex/multi-line-equations/</guid><pubDate>Mon, 23 Mar 2020 00:22:50 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;img src="https://imgkr.cn-bj.ufileos.com/4e7ca500-bdca-42dc-9444-bffa8af84fc5.png" width="95%" />
-&lt;div align="center">&lt;a href="https://blog.matnoble.top/series/latex">◎ 你过来啊 🤞&lt;/a>&lt;/div>
+&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/reviews/">Reviews</category><category domain="https://blog.matnoble.top/tags/%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%B9%B0/">值不值得买</category></item><item><title>LaTeX 排版多行公式</title><link>https://blog.matnoble.top/tech/latex/multi-line-equations/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/latex/multi-line-equations/</guid><pubDate>Mon, 23 Mar 2020 00:22:50 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://blog.matnoble.top/images/latex-banner.svg"
+title="LaTeX 排版教程系列图片横幅"
+alt="LaTeX 排版教程系列图片横幅"
+width="95%"
+>
+&lt;span class="caption">◎ LaTeX 排版教程系列图片横幅&lt;/span>
+&lt;/span>
 &lt;br />
 &lt;p>在 $\LaTeX$ 排版过程中，多行公式经常被遇到。其中，又分为多种情况&lt;/p>
 &lt;ul>
@@ -8131,8 +8145,14 @@ width="90%"
 &lt;p>a way to produce arbitrary delimiters that span entire math displays &lt;br> &lt;a href="http://mirror.lzu.edu.cn/CTAN/macros/latex/contrib/mathtools/empheq.pdf">http://mirror.lzu.edu.cn/CTAN/macros/latex/contrib/mathtools/empheq.pdf&lt;/a>&amp;#160;&lt;a href="https://blog.matnoble.top/tech/latex/multi-line-equations/#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="https://blog.matnoble.top/tech/latex/multi-line-equations/#fnref1:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/series/latex/">LaTeX 排版「冷」知识</category><category domain="https://blog.matnoble.top/tags/">标签云</category></item><item><title>LaTeX 定界符</title><link>https://blog.matnoble.top/tech/latex/delimiter/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/latex/delimiter/</guid><pubDate>Mon, 23 Mar 2020 00:12:07 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;img src="https://imgkr.cn-bj.ufileos.com/4e7ca500-bdca-42dc-9444-bffa8af84fc5.png" width="95%" />
-&lt;div align="center">&lt;a href="https://blog.matnoble.top/series/latex">◎ 你过来啊 🤞&lt;/a>&lt;/div>
+&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/series/latex/">LaTeX 排版「冷」知识</category><category domain="https://blog.matnoble.top/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">数学公式</category></item><item><title>LaTeX 定界符</title><link>https://blog.matnoble.top/tech/latex/delimiter/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/latex/delimiter/</guid><pubDate>Mon, 23 Mar 2020 00:12:07 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://blog.matnoble.top/images/latex-banner.svg"
+title="LaTeX 排版教程系列图片横幅"
+alt="LaTeX 排版教程系列图片横幅"
+width="95%"
+>
+&lt;span class="caption">◎ LaTeX 排版教程系列图片横幅&lt;/span>
+&lt;/span>
 &lt;br>
 &lt;p>$\LaTeX$ 提供了多种形式的定界符，包括各种括号:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-tex" data-lang="tex">&lt;span class="line">&lt;span class="cl">()
@@ -8187,7 +8207,7 @@ $$
 $$
 $$
 \Biggl\lVert \biggl\lVert \Bigl\lVert \bigl\lVert \bigr\rVert \Bigr\rVert \biggr\rVert \Biggr\rVert
-$$</description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/series/latex/">LaTeX 排版「冷」知识</category><category domain="https://blog.matnoble.top/tags/">标签云</category></item><item><title>向量范数与矩阵范数</title><link>https://blog.matnoble.top/math/linear-algebra/vector-and-matrix-norm/</link><guid isPermaLink="true">https://blog.matnoble.top/math/linear-algebra/vector-and-matrix-norm/</guid><pubDate>Thu, 19 Mar 2020 00:13:23 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h2 id="向量范数">向量范数&lt;/h2>
+$$</description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/series/latex/">LaTeX 排版「冷」知识</category><category domain="https://blog.matnoble.top/tags/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7/">数学符号</category></item><item><title>向量范数与矩阵范数</title><link>https://blog.matnoble.top/math/linear-algebra/vector-and-matrix-norm/</link><guid isPermaLink="true">https://blog.matnoble.top/math/linear-algebra/vector-and-matrix-norm/</guid><pubDate>Thu, 19 Mar 2020 00:13:23 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h2 id="向量范数">向量范数&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;strong>范数(模)&lt;/strong>(英语：norm), 是具有「长度」概念的函数. 在线性代数、泛函分析及相关的数学领域, 是一个函数, 其为..向量空间..内的所有向量赋予非零的正长度或大小.&lt;/p>
 &lt;footer>
@@ -9365,8 +9385,15 @@ width="95%"
 &lt;p>实际上 Word 比 $\TeX$ 产生的要晚，用户群也更大一些&amp;#160;&lt;a href="https://blog.matnoble.top/tech/latex/typeset-bbt/#fnref:7" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/tags/latex/">LaTeX</category></item><item><title>在 LaTeX 里更改字体大小</title><link>https://blog.matnoble.top/tech/latex/change-fontsize-in-latex/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/latex/change-fontsize-in-latex/</guid><pubDate>Tue, 10 Mar 2020 00:18:32 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;img src="https://imgkr.cn-bj.ufileos.com/4e7ca500-bdca-42dc-9444-bffa8af84fc5.png" width="95%" />
-&lt;div align="center">&lt;a href="https://blog.matnoble.top/series/latex">◎ 你过来啊 🤞&lt;/a>&lt;/div>
+&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/tags/%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/">字体设置</category><category domain="https://blog.matnoble.top/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">数学公式</category></item><item><title>在 LaTeX 里更改字体大小</title><link>https://blog.matnoble.top/tech/latex/change-fontsize-in-latex/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/latex/change-fontsize-in-latex/</guid><pubDate>Tue, 10 Mar 2020 00:18:32 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://blog.matnoble.top/images/latex-banner.svg"
+title="LaTeX 排版教程系列图片横幅"
+alt="LaTeX 排版教程系列图片横幅"
+width="95%"
+>
+&lt;span class="caption">◎ LaTeX 排版教程系列图片横幅&lt;/span>
+&lt;/span>
 &lt;p>在 $\LaTeX$ 里改变字体大小分为两个层级, 一是整个文档统一调整, 一是设置文档中某个部分的字体大小.&lt;/p>
 &lt;ul>
 &lt;li>全局调整:&lt;br>
@@ -9418,7 +9445,7 @@ width="95%"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">This is some large text
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\end&lt;/span>&lt;span class="nb">{&lt;/span>footnotesize&lt;span class="nb">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr />
-&lt;p>参考自 &lt;a href="https://texblog.org/2012/08/29/changing-the-font-size-in-latex/">Changing the font size in LaTeX&lt;/a>&lt;/p></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/series/latex/">LaTeX 排版「冷」知识</category><category domain="https://blog.matnoble.top/tags/">标签云</category></item><item><title>Chromium 和 Chrome 的安装与卸载</title><link>https://blog.matnoble.top/tech/ubuntu/install-chromium-browser-ubuntu/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/ubuntu/install-chromium-browser-ubuntu/</guid><pubDate>Sun, 08 Mar 2020 00:09:10 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
+&lt;p>参考自 &lt;a href="https://texblog.org/2012/08/29/changing-the-font-size-in-latex/">Changing the font size in LaTeX&lt;/a>&lt;/p></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/latex/">latex</category><category domain="https://blog.matnoble.top/series/latex/">LaTeX 排版「冷」知识</category><category domain="https://blog.matnoble.top/tags/%E6%8E%92%E7%89%88%E5%BE%AE%E8%B0%83/">排版微调</category><category domain="https://blog.matnoble.top/tags/%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/">字体设置</category></item><item><title>Chromium 和 Chrome 的安装与卸载</title><link>https://blog.matnoble.top/tech/ubuntu/install-chromium-browser-ubuntu/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/ubuntu/install-chromium-browser-ubuntu/</guid><pubDate>Sun, 08 Mar 2020 00:09:10 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>
 &lt;span class="caption-wrapper">
 &lt;img class="caption" src="https://ttfou.com/images/2020/03/08/3558b8170bbc25adfdbd312c5a729944.png"
 title="浏览器嘛, 用着舒服就行"
