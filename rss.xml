@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学直观理解, 大数据技术和 LaTeX 排版经验。MatNoble 致力于消除数学与代码之间的认知壁垒。</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Fri, 12 Dec 2025 15:46:51 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>Markdown 的流畅与 LaTeX 的优雅，我全都要：LaTeXRender 开发手记</title><link>https://blog.matnoble.top/tech/app/latexrender-project/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/app/latexrender-project/</guid><pubDate>Thu, 11 Dec 2025 08:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>在数学笔记整理和技术写作的道路上，我长久以来都面临着一个两难的选择。&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>MatNoble</title><link>https://blog.matnoble.top/</link><description>分享数学直观理解, 大数据技术和 LaTeX 排版经验。MatNoble 致力于消除数学与代码之间的认知壁垒。</description><generator>Hugo 0.115.3 https://gohugo.io/</generator><language>zh</language><managingEditor>hustmatnoble@gmail.com (MatNoble)</managingEditor><webMaster>hustmatnoble@gmail.com (MatNoble)</webMaster><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><lastBuildDate>Sat, 13 Dec 2025 12:14:37 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://blog.matnoble.top/rss.xml"/><item><title>Markdown 的流畅与 LaTeX 的优雅，我全都要：LaTeXRender 开发手记</title><link>https://blog.matnoble.top/tech/app/latexrender-project/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/app/latexrender-project/</guid><pubDate>Thu, 11 Dec 2025 08:30:00 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>在数学笔记整理和技术写作的道路上，我长久以来都面临着一个两难的选择。&lt;/p>
 &lt;p>左手是 &lt;strong>Markdown&lt;/strong>：它轻量、快捷，所见即所得。在 Typora 或 Obsidian 里敲击键盘，思绪如水流般顺畅，没有任何繁琐的标签阻断灵感。&lt;/p>
 &lt;p>右手是 &lt;strong>LaTeX&lt;/strong>：它是学术界的各种标准，是排版的终极奥义。那完美的数学公式渲染、专业的字体间距、严谨的定理环境，是任何网页渲染都无法比拟的艺术品。&lt;/p>
 &lt;p>&lt;strong>痛点在于：&lt;/strong> 用 LaTeX 直接写作太痛苦（满屏的 &lt;code>\begin&lt;/code> 和 &lt;code>\end&lt;/code>），而用 Markdown 导出的 PDF 又往往缺乏那份“专业感”。&lt;/p>
@@ -8593,132 +8593,7 @@ $$
 &lt;p>简述有限元中逼近向量用的也是 $L^2$ norm. &lt;br> &lt;a href="https://blog.matnoble.top/math/fem/fem1/#%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95-1">https://blog.matnoble.top/math/fem/fem1/#%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95-1&lt;/a>&amp;#160;&lt;a href="https://blog.matnoble.top/math/linear-algebra/vector-and-matrix-norm/#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/linear-algebra/">Linear-Algebra</category><category domain="https://blog.matnoble.top/series/mla/">线代拾遗</category><category domain="https://blog.matnoble.top/tags/">标签云</category></item><item><title>Inequality</title><link>https://blog.matnoble.top/math/fem/inequality/</link><guid isPermaLink="true">https://blog.matnoble.top/math/fem/inequality/</guid><pubDate>Tue, 17 Mar 2020 00:21:47 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h2 id="cauchy-inequality">Cauchy inequality&lt;/h2>
-&lt;p>Let $a, b$ are any real numbers, then&lt;/p>
-&lt;p>\begin{equation}
-\label{eq:eqc}
-ab \leq \frac{1}{2}(a^{2} + b^{2}),\quad (Cauchy\ inequality)
-\end{equation}&lt;/p>
-&lt;p>\begin{equation}
-\label{eq:eqce}
-ab \leq \epsilon a^{2} + \frac{b^{2}}{4\epsilon},\,\forall \epsilon &amp;gt; 0,\quad (Cauchy\ inequality\ with\ epsilon)
-\end{equation}&lt;/p>
-&lt;p>&lt;strong>Proof.&lt;/strong>&lt;/p>
-&lt;p>$$
-(a-b)^{2} \geq 0 \Rightarrow ab \leq\frac{1}{2}(a^{2} + b^{2}).
-$$&lt;/p>
-&lt;p>Constant deformation with $\epsilon$&lt;/p>
-&lt;p>$$
-\begin{aligned}
-ab &amp;amp;= ((2\epsilon)^{\frac{1}{2}}a)\bigg(\frac{b}{(2\epsilon)^{\frac{1}{2}}}\bigg) \\[3pt]
-&amp;amp;\leq \frac{1}{2} \biggl[((2\epsilon)^{\frac{1}{2}}a)^2 + \bigg(\frac{b}{(2\epsilon)^{\frac{1}{2}}}\biggl)^2 \biggl] \\[3pt]
-&amp;amp;= \frac{1}{2} \biggl(2\epsilon a^{2} + \frac{b^{2}}{2\epsilon}\biggr) \\[3pt]
-&amp;amp;= \epsilon a^{2} + \frac{b^{2}}{4\epsilon}.
-\end{aligned}
-$$&lt;/p>
-&lt;p style="text-align: right">
-$\blacksquare$
-&lt;/p>
-&lt;h3 id="cauchy-inequality-for-scalar-product">Cauchy inequality for scalar product&lt;/h3>
-&lt;p>Let $\lVert \mathbf{x} \rVert^2 = \sum_{k=1}^n \lvert x \rvert^2$, $\langle \mathbf{x}, \mathbf{y} \rangle = \sum_{k=1}^n x_k \bar{y}_k$, which $\mathbf{x} = \{ x_k \}_{k=1,\ldots,n}, \mathbf{y} = \{ y_k \}_{k=1,\ldots,n}$ then&lt;/p>
-&lt;p>\begin{equation}
-\langle \mathbf{x}, \mathbf{y} \rangle \leq \lVert \mathbf{x} \rVert \lVert \mathbf{y} \rVert
-\end{equation}&lt;/p>
-&lt;p>&lt;strong>Proof.&lt;/strong> We have
-$$
-f(\lambda) = \lVert \mathbf{x} + \lambda\mathbf{y}\rVert^2 \geq 0, \quad \forall \lambda \in \mathbb{R}
-$$
-Thus the quadratic function
-$$
-f(\lambda) = \lVert \mathbf{y} \rVert^2 \lambda^2 + 2\langle \mathbf{x}, \mathbf{y} \rangle \lambda + \lVert \mathbf{x} \rVert^2 \geq 0
-$$
-According to &lt;em>the discriminant of the quadratic polynomial&lt;/em>
-$$
-\langle \mathbf{x}, \mathbf{y} \rangle ^2 \leq \lVert \mathbf{x} \rVert^2 \lVert \mathbf{y} \rVert^2
-$$&lt;/p>
-&lt;p style="text-align: right">
-$\blacksquare$
-&lt;/p>
-&lt;h2 id="youngs-inequality">Young's inequality&lt;/h2>
-&lt;p>For $a, b \geq 0$ and $p,q \geq 1$ such that $ \frac{1}{p} + \frac{1}{q} = 1$, then&lt;/p>
-&lt;p>\begin{equation}
-\label{eq:eqy}
-ab \leq \frac{a^{p}}{p} + \frac{b^{q}}{q}. \quad (Young\ inequality)
-\end{equation}&lt;/p>
-&lt;p>&lt;strong>Proof.&lt;/strong> The function $x \mapsto e^x$ is convex. This means that for $x, y\in \mathbb{R}$ and $0\leq \theta \leq 1$&lt;/p>
-&lt;p>$$
-\mbox{exp}(\theta x + (1-\theta)y) \leq \theta\mbox{exp}(x) + (1-\theta)\mbox{exp}(y)
-$$&lt;/p>
-&lt;p>When $a$ or $b$ are zero the inequality is trivial. Otherwise, the theorem is just this inequality with&lt;/p>
-&lt;p>$$
-x:= p \ln a \quad y:= q \ln b \quad \theta = \frac{1}{p}
-$$&lt;/p>
-&lt;p style="text-align: right">
-$\blacksquare$
-&lt;/p>
-&lt;h3 id="general-youngs-inequality">General Young’s inequality&lt;/h3>
-&lt;p>Let $c&amp;gt;0$ and $f:[0, c] \to \mathbb{R}$ be a strictly increasing continuous function such that $f(0)=0$. Let $a\in [0, c]$ and $b\in [0, f(c)]$. Then&lt;/p>
-&lt;p>\begin{equation}
-ab \leq \int_0^a f(x) \, \mathrm{d}x + \int_0^b f^{-1}(x) \, \mathrm{d}x
-\label{eq:eqy2}
-\end{equation}&lt;/p>
-&lt;span class="caption-wrapper">
-&lt;img class="caption" src="https://imgkr.cn-bj.ufileos.com/a41e796b-adbb-44a7-adbe-3da2bb474641.svg"
-title="Figure 1"
-alt="Figure 1"
-width="95%"
->
-&lt;span class="caption">◎ Figure 1&lt;/span>
-&lt;/span>
-&lt;p>(\ref{eq:eqy2}) can be understood with the figure 1.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Lemma&lt;/strong> Let $c&amp;gt;0$. For a strictly increasing continuous function $f:[0, c]\to \mathbb{R}$ and $b\in [0, f(c)]$, we have that
-$$
-bf^{-1}(b) = \int_0^b f^{-1}(x) \, \mathrm{d}x + \int_0^{f^{-1}(b)} f(x) \, \mathrm{d}x
-$$
-&lt;strong>Proof.&lt;/strong> It is enough to prove it when $f$ is $C^1$, as then a continuous $f$ can be uniformly approximated by strictly increasing $C^1$ functions while $f ^{−1}$ is also uniformly approximated. It is also enough to prove it when $f(a) \geq b$, as otherwise we can just interchange both $f, f^{−1}$ and $a, b$.&lt;/p>
-&lt;p>To prove it in this case we can change variables in the integral $\int_0^b\ f^{−1}(x)\, \mathrm{d}x$ by putting $x = f(y)$, and then integrate by parts:
-$$
-\int_0^b f^{-1}(x) \, \mathrm{d}x = \int_0^{f^{-1}(b)} yf'(y) \, \mathrm{d}y = bf^{-1}(b) - \int_0^{f^{-1}(b)} f(x) \, \mathrm{d}x
-$$&lt;/p>
-&lt;p style="text-align: right"> $\blacksquare$ &lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>Proof.&lt;/strong> Use (\ref{eq:eqy2}), and $f(a)\geq b$, we get&lt;/p>
-&lt;p>$$
-\begin{aligned}
-ab &amp;amp; = bf^{-1}(b) + b(a-f^{-1}(b)) \\[3pt]
-&amp;amp; = \int_0^b f^{-1}(x) \, \mathrm{d}x + \int_0^{f^{-1}(b)} f(x) \, \mathrm{d}x + b(a-f^{-1}(b)) \\[3pt]
-&amp;amp; \leq \int_0^b f^{-1}(x) \, \mathrm{d}x + \int_0^{f^{-1}(b)} f(x) \, \mathrm{d}x + \int_{f^{-1}(b)}^a f(x) \, \mathrm{d}x \\[3pt]
-&amp;amp; = \int_0^b f^{-1}(x) \, \mathrm{d}x + \int_0^a f(x) \, \mathrm{d}x
-\end{aligned}
-$$&lt;/p>
-&lt;p>While $f(a)\leq b$, the proof process is similar.&lt;/p>
-&lt;p style="text-align: right"> $\blacksquare$ &lt;/p>
-&lt;h2 id="holder-inequality">Holder inequality&lt;/h2>
-&lt;p>Let $p, q$ are real numbers $1\leq p, q\leq \infty$ connected by the relationship $\frac{1}{p} + \frac{1}{q} = 1$ and $u \in L^p, v \in L^q$. then&lt;/p>
-&lt;p>\begin{equation}
-\int \lvert uv \rvert \,\mathrm{d}x \leq \sqrt[p]{\int \lvert u \rvert \,\mathrm{d}x} \sqrt[q]{\int \lvert v \rvert \,\mathrm{d}x}
-\label{eq:eqh}
-\end{equation}&lt;/p>
-&lt;p>&lt;strong>Proof.&lt;/strong> The formula Young inequality (\ref{eq:eqy}) implies
-$$
-\int \lvert ab \rvert \,\mathrm{d}x \leq \frac{1}{p} \int \lvert a \rvert^p \,\mathrm{d}x + \frac{1}{q} \int \lvert b \rvert^q \,\mathrm{d}x
-$$&lt;/p>
-&lt;p>set $a=\frac{|u|}{c_1}, a=\frac{|v|}{c_2}$, where $c_1=\sqrt[p]{\int \lvert u \rvert \,\mathrm{d}x}$ and $\sqrt[q]{\int \lvert v \rvert \,\mathrm{d}x}$, then&lt;/p>
-&lt;p>$$
-\begin{aligned}
-\frac{1}{c_1c_2} \int \lvert uv \rvert \,\mathrm{d}x &amp;amp; \leq \frac{1}{p} \int \Biggl| \frac{|u|}{c_1} \Biggr| ^p \,\mathrm{d}x + \frac{1}{q} \int \Biggl| \frac{|v|}{c_2} \Biggr| ^q \,\mathrm{d}x \\[3pt]
-&amp;amp; = \frac{1}{p} + \frac{1}{q} \\[3pt]
-&amp;amp; = 1
-\end{aligned}
-$$
-Hence
-$$
-\int \lvert uv \rvert \,\mathrm{d}x \leq c_1 c_2 = \sqrt[p]{\int \lvert u \rvert \,\mathrm{d}x} \sqrt[q]{\int \lvert v \rvert \,\mathrm{d}x}
-$$&lt;/p>
-&lt;p style="text-align: right">
-$\blacksquare$
-&lt;/p></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/fem/">fem</category><category domain="https://blog.matnoble.top/tags/">标签云</category></item><item><title>在 Ubuntu 中配置 Python 环境</title><link>https://blog.matnoble.top/tech/ubuntu/configure-python-environment-in-ubuntu/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/ubuntu/configure-python-environment-in-ubuntu/</guid><pubDate>Tue, 17 Mar 2020 00:09:10 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h2 id="安装-python2">安装 Python2&lt;/h2>
+&lt;/div></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/linear-algebra/">Linear-Algebra</category><category domain="https://blog.matnoble.top/series/mla/">线代拾遗</category><category domain="https://blog.matnoble.top/tags/">标签云</category></item><item><title>在 Ubuntu 中配置 Python 环境</title><link>https://blog.matnoble.top/tech/ubuntu/configure-python-environment-in-ubuntu/</link><guid isPermaLink="true">https://blog.matnoble.top/tech/ubuntu/configure-python-environment-in-ubuntu/</guid><pubDate>Tue, 17 Mar 2020 00:09:10 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;h2 id="安装-python2">安装 Python2&lt;/h2>
 &lt;p>自从 Ubuntu 18.04 以来，Python 2 不再是默认的 Python 版本。在最新的 Ubuntu 20.04 中，Python 2 更是被完全抛弃。但是 Python 2 依旧有用，所以需要自行安装&lt;/p>
 &lt;ol>
 &lt;li>安装 Python2，打开 Terminal 输入&lt;/li>
@@ -9480,4 +9355,37 @@ width="95%"
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt purge google-chrome-stable
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rm -rf ~/.config/google-chrome
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rm -rf ~/.cache/google-chrome
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/ubuntu/">Ubuntu</category><category domain="https://blog.matnoble.top/tags/ubuntu-%E8%A3%85%E6%9C%BA%E4%B8%8E%E4%BC%98%E5%8C%96/">Ubuntu 装机与优化</category></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><category domain="https://blog.matnoble.top/tech/">tech</category><category domain="https://blog.matnoble.top/tech/ubuntu/">Ubuntu</category><category domain="https://blog.matnoble.top/tags/ubuntu-%E8%A3%85%E6%9C%BA%E4%B8%8E%E4%BC%98%E5%8C%96/">Ubuntu 装机与优化</category></item><item><title>高等代数习题集及资料分享</title><link>https://blog.matnoble.top/math/linear-algebra/linear-algebra-problem-set/</link><guid isPermaLink="true">https://blog.matnoble.top/math/linear-algebra/linear-algebra-problem-set/</guid><pubDate>Fri, 06 Mar 2020 00:17:38 +0800</pubDate><author>hustmatnoble@gmail.com (MatNoble)</author><copyright>本博客遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 版权协议，转载请附上原文出处链接和本声明</copyright><description>&lt;p>研一时, 利用业余时间写了一份
+&lt;mark>高等代数习题集&lt;/mark>
+, 包含考研时做的一些经典例题及一些方法论. 提纲如下图所示, 共有 6 章, 可惜的是由于时间原因, 最后两章并没有完成. 目前只完成了前 4 章中的大部分, 如果需要的话, 可从下方下载 PDF 版!&lt;/p>
+&lt;span class="caption-wrapper">
+&lt;img class="caption" src="https://ttfou.com/images/2020/03/06/e503745fc92728f920414482f03f61ce.png"
+title="篇章结构"
+alt="篇章结构"
+width="95%"
+>
+&lt;span class="caption">◎ 篇章结构&lt;/span>
+&lt;/span>
+&lt;h3>多项式&lt;/h3>
+&lt;div class="row" style="position: relative; width: 100%; padding-bottom: 100%; padding-top: 0px; height: 0; overflow: hidden;">
+&lt;embed src="https://blog.matnoble.top/files/pdf/duoxiangshi.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="application/pdf">
+&lt;/div>
+&lt;h3>行列式&lt;/h3>
+&lt;div class="row" style="position: relative; width: 100%; padding-bottom: 100%; padding-top: 0px; height: 0; overflow: hidden;">
+&lt;embed src="https://blog.matnoble.top/files/pdf/hls.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="application/pdf">
+&lt;/div>
+&lt;h3>线性方程组(线性系统)&lt;/h3>
+&lt;div class="row" style="position: relative; width: 100%; padding-bottom: 100%; padding-top: 0px; height: 0; overflow: hidden;">
+&lt;embed src="https://blog.matnoble.top/files/pdf/les.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="application/pdf">
+&lt;/div>
+&lt;h3>矩阵&lt;/h3>
+&lt;div class="row" style="position: relative; width: 100%; padding-bottom: 100%; padding-top: 0px; height: 0; overflow: hidden;">
+&lt;embed src="https://blog.matnoble.top/files/pdf/matrix.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="application/pdf">
+&lt;/div>
+&lt;hr />
+&lt;p>除了我自己的总结, 他山之石也是要借鉴学习的, 我上传到了&lt;a href="https://474b.com/dir/24879366-37697679-9deced">城通网盘&lt;/a>&lt;br>
+&lt;em>&lt;code>密码&lt;/code>请到公众号&lt;code>数系家园&lt;/code>, 回复&lt;code>高代习题2020&lt;/code>获取&lt;/em> &lt;br>&lt;/p>
+&lt;img src="https://ttfou.com/images/2020/03/06/7aeb74f40a7aa01c37ad4ba2d4ed3774.png" width="95%" />
+&lt;blockquote>
+&lt;p>申明: 以上资料仅供个人学习使用, 版权属于原作者&lt;/p>
+&lt;/blockquote></description><category domain="https://blog.matnoble.top/math/">math</category><category domain="https://blog.matnoble.top/math/linear-algebra/">Linear-Algebra</category><category domain="https://blog.matnoble.top/tags/%E8%80%83%E7%A0%94/">考研</category></item></channel></rss>
