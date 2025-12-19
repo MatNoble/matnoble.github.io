@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>正在跳转 / Redirecting...</title>
+  
+  <!-- 核心：Canonical 标签 -->
+  <!-- 注意：在 404.html 中，静态的 canonical 只能指向首页， -->
+  <!-- 但对于 SEO 权重转移，主页的 index.html 才是最重要的。 -->
+  <link rel="canonical" href="https://blog.matnoble.top/">
+  
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0;url=https://blog.matnoble.top/">
+
+  <script type="text/javascript">
+    // 配置新域名（不带最后的斜杠）
+    var targetHost = "https://blog.matnoble.top";
+    
+    // 获取当前路径、参数和哈希
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
+
+    // 智能处理：防止双斜杠 (//)
+    // 如果 path 是 /，拼接后就是 domain/
+    // 如果 path 是 /post/1，拼接后就是 domain/post/1
+    var newUrl = targetHost + path + search + hash;
+
+    // 立即跳转
+    window.location.href = newUrl;
+  </script>
+</head>
+<body>
+  <div style="text-align: center; padding-top: 50px; font-family: sans-serif;">
+    <p>网站已迁移至新地址。</p>
+    <p>正在为您跳转...</p>
+    <p>
+      如果未自动跳转，请点击：<br>
+      <!-- 这里留空，让 JS 自动填充完整的新链接 -->
+      <a id="redirect-link" href="https://blog.matnoble.top/">blog.matnoble.top</a>
+    </p>
+  </div>
+  
+  <script>
+    // 辅助脚本：更新页面上的可见链接，以防 JS 跳转失败用户需要手动点击
+    var linkElement = document.getElementById('redirect-link');
+    linkElement.href = newUrl;
+    linkElement.innerText = newUrl;
+  </script>
+</body>
+</html>
