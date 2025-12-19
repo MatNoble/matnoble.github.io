@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  
+  <!-- 1. Canonical 标签：这是 SEO 的核心 -->
+  <!-- 它告诉 Google：“这个页面的权重属于 blog.matnoble.top，请把权重转移过去” -->
+  <link rel="canonical" href="https://blog.matnoble.top/">
+  
+  <!-- 2. Meta Refresh：这是行为上的重定向 -->
+  <!-- content="0" 意味着 0 秒等待，立即跳转。Google 会将其视为 301 重定向 -->
+  <meta http-equiv="refresh" content="0;url=https://blog.matnoble.top/">
+  
+  <!-- 3. 禁止搜索引擎索引这个跳板页本身，防止它出现在搜索结果中干扰主站 -->
+  <meta name="robots" content="noindex">
+
+  <script type="text/javascript">
+    // 4. JavaScript 智能跳转（保留路径）
+    // 能够将 matnoble.github.io/posts/hello 
+    // 精准跳转到 blog.matnoble.top/posts/hello
+    
+    var targetHost = "https://blog.matnoble.top";
+    var currentPath = window.location.pathname;
+    var currentSearch = window.location.search;
+    var currentHash = window.location.hash;
+
+    // 拼接新地址
+    var newUrl = targetHost + currentPath + currentSearch + currentHash;
+
+    // 执行跳转
+    window.location.href = newUrl;
+  </script>
+</head>
+<body>
+  <p>网站已迁移。</p>
+  <p>正在跳转至新地址：<a href="https://blog.matnoble.top/">blog.matnoble.top</a></p>
+  <script>
+      // 如果上面的 JS 没执行，这里作为备用再次尝试
+      var a = document.querySelector('a');
+      a.href = newUrl;
+      a.innerText = newUrl;
+  </script>
+</body>
+</html>
